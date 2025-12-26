@@ -32,8 +32,12 @@ This is the "Smart" part of the system. It takes raw, messy text and extracts st
 
 **Algorithms Used:**
 - **Regex (Regular Expressions):**  
-    - `r'\b' + skill + r'\b'` ensures we match "Go" (the language) but ignore "Google".
-    - `(5\+|[5-9])` matches specific years of experience patterns.
+    Regex is used for three critical tasks:
+    1. **Data Cleaning**: Stripping URLs (`http\S+`) and collapsing multiple spaces (`\s+`) into one.
+    2. **Pattern Matching**: Identifying years of experience (e.g., `(5\+|[5-9])`) across different variations like "5+ years", "8 yrs", or "10 year".
+    3. **Precise Skill Extraction**: Using "Word Boundaries" (`\b`).
+        - Without `\b`, searching for "Go" would incorrectly match "Google" or "Django".
+        - `\b` acts like a "textual anchor" that only triggers a match if the character before and after the word is not a letter/number (e.g., a space or punctuation).
 - **Heuristic Scoring (Weighted Sum):**  
     - Iterates through the text checking for "signals".
     - Assigns points: Title (+3), Years (+3), Keywords (+1).

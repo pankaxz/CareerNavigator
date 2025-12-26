@@ -7,8 +7,19 @@ class TextProcessor:
     @staticmethod
     def clean_text(text):
         text = text.lower()
-        text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE) # Remove URLs
-        text = re.sub(r'\s+', ' ', text) # Remove extra whitespace
+        
+        # --- Regex: URL Removal ---
+        # Pattern: http\S+ | www\S+ | https\S+
+        # - \S+ matches any non-whitespace character until a space is found.
+        # - This effectively strips out links so they don't interfere with skill detection.
+        text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE) 
+
+        # --- Regex: Whitespace Normalization ---
+        # Pattern: \s+
+        # - \s+ matches one or more whitespace characters (spaces, tabs, newlines).
+        # - Replacing them with a single space ensures consistent word-boundary matching.
+        text = re.sub(r'\s+', ' ', text) 
+        
         return text
 
     @staticmethod
@@ -27,7 +38,17 @@ class TextProcessor:
             score += 1.5
 
         # 2. Base Score: Years of Experience (Max 3.0)
+        
+        # --- Regex: Senior Experience Detection ---
+        # Pattern: (5\+|[5-9]|1[0-9])\s*(years|yrs|year)
+        # - (5\+|[5-9]|1[0-9]): Matches '5+', individual digits 5-9, or teen numbers 10-19.
+        # - \s*: Matches zero or more whitespace characters.
+        # - (years|yrs|year): Matches any of the common experience suffixes.
         senior_exp_pattern = r"(5\+|[5-9]|1[0-9])\s*(years|yrs|year)"
+
+        # --- Regex: Mid-Level Experience Detection ---
+        # Pattern: (3|4)\s*(years|yrs|year)
+        # - (3|4): Matches the digit 3 or 4.
         mid_exp_pattern = r"(3|4)\s*(years|yrs|year)"
         
         if re.search(senior_exp_pattern, desc_lower):
@@ -98,7 +119,12 @@ class TextProcessor:
         found = set()
         clean_jd = TextProcessor.clean_text(text)
         for skill in skill_list:
+            # --- Regex: Whole Word Skill Matching ---
+            # Pattern: \b + Escaped Skill + \b
+            # - \b: Word boundary anchor. Ensures we don't match substrings (e.g., 'C' inside 'Cloud').
+            # - re.escape(skill): Safely handles skills with special regex characters (e.g., 'C++', '.NET').
             pattern = r'\b' + re.escape(skill) + r'\b'
+            
             if re.search(pattern, clean_jd):
                 found.add(skill)
         return list(found)
