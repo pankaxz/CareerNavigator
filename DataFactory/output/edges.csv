@@ -3354,6 +3354,7 @@ sqs,system design,1
 .net,threading,1
 .net,troubleshooting,1
 .net,unit testing,2
+.net,virtual reality,1
 .net,web services,1
 .net,windows,1
 accelerate,angular,1
@@ -3373,6 +3374,7 @@ accelerate,sql server,1
 accelerate,threading,1
 accelerate,troubleshooting,1
 accelerate,unit testing,1
+accelerate,virtual reality,1
 accelerate,web services,1
 accelerate,windows,1
 angular,c++,1
@@ -3392,6 +3394,7 @@ angular,sql server,1
 angular,threading,1
 angular,troubleshooting,1
 angular,unit testing,2
+angular,virtual reality,1
 angular,web services,1
 angular,windows,1
 c,inter-operability,1
@@ -3405,6 +3408,7 @@ c,sql server,1
 c,threading,1
 c,troubleshooting,1
 c,unit testing,2
+c,virtual reality,1
 c,web services,1
 c#,c++,1
 c#,collaboration,1
@@ -3423,6 +3427,7 @@ c#,sql server,1
 c#,threading,1
 c#,troubleshooting,1
 c#,unit testing,2
+c#,virtual reality,1
 c#,web services,1
 c#,windows,1
 c++,css,1
@@ -3440,6 +3445,7 @@ c++,sql server,1
 c++,threading,1
 c++,troubleshooting,1
 c++,unit testing,1
+c++,virtual reality,1
 c++,web services,1
 collaboration,css,1
 collaboration,inter-operability,1
@@ -3453,6 +3459,7 @@ collaboration,restful api,1
 collaboration,sql server,1
 collaboration,threading,1
 collaboration,unit testing,1
+collaboration,virtual reality,1
 collaboration,web services,1
 collaboration,windows,1
 css,docker,1
@@ -3470,6 +3477,7 @@ css,sql server,1
 css,threading,1
 css,troubleshooting,1
 css,unit testing,1
+css,virtual reality,1
 css,web services,1
 css,windows,1
 docker,inter-operability,1
@@ -3483,6 +3491,7 @@ docker,restful api,1
 docker,sql server,1
 docker,threading,1
 docker,unit testing,1
+docker,virtual reality,1
 docker,web services,1
 git,inter-operability,1
 git,mentoring,1
@@ -3494,6 +3503,7 @@ git,restful api,1
 git,sql server,1
 git,threading,1
 git,unit testing,1
+git,virtual reality,1
 git,web services,1
 git,windows,1
 inter-operability,linux,1
@@ -3511,6 +3521,7 @@ inter-operability,sql server,1
 inter-operability,threading,1
 inter-operability,troubleshooting,1
 inter-operability,unit testing,1
+inter-operability,virtual reality,1
 inter-operability,web services,1
 inter-operability,windows,1
 linux,mentoring,1
@@ -3524,6 +3535,7 @@ linux,sql server,1
 linux,threading,1
 linux,troubleshooting,1
 linux,unit testing,1
+linux,virtual reality,1
 linux,web services,1
 maintenance,mentoring,2
 maintenance,ms test,1
@@ -3536,6 +3548,7 @@ maintenance,sql server,1
 maintenance,threading,1
 maintenance,troubleshooting,1
 maintenance,unit testing,2
+maintenance,virtual reality,1
 maintenance,web services,1
 maintenance,windows,1
 mentoring,ms test,1
@@ -3550,6 +3563,7 @@ mentoring,sql server,1
 mentoring,threading,1
 mentoring,troubleshooting,1
 mentoring,unit testing,2
+mentoring,virtual reality,1
 mentoring,web services,1
 mentoring,windows,1
 ms test,mysql,1
@@ -3563,6 +3577,7 @@ ms test,sql server,1
 ms test,threading,1
 ms test,troubleshooting,1
 ms test,unit testing,1
+ms test,virtual reality,1
 ms test,web services,1
 ms test,windows,1
 mysql,nunit,1
@@ -3573,6 +3588,7 @@ mysql,sql server,1
 mysql,threading,1
 mysql,troubleshooting,1
 mysql,unit testing,1
+mysql,virtual reality,1
 mysql,web services,1
 mysql,windows,1
 nunit,object-oriented design,1
@@ -3584,6 +3600,7 @@ nunit,sql server,1
 nunit,threading,1
 nunit,troubleshooting,1
 nunit,unit testing,1
+nunit,virtual reality,1
 nunit,web services,1
 nunit,windows,1
 object-oriented design,python,1
@@ -3594,6 +3611,7 @@ object-oriented design,sql server,1
 object-oriented design,threading,1
 object-oriented design,troubleshooting,1
 object-oriented design,unit testing,1
+object-oriented design,virtual reality,1
 object-oriented design,web services,1
 object-oriented design,windows,1
 python,relational databases,1
@@ -3601,6 +3619,7 @@ python,restful api,1
 python,sql server,1
 python,threading,1
 python,unit testing,1
+python,virtual reality,1
 python,web services,1
 relational databases,restful api,1
 relational databases,sql,1
@@ -3608,6 +3627,7 @@ relational databases,sql server,1
 relational databases,threading,1
 relational databases,troubleshooting,1
 relational databases,unit testing,1
+relational databases,virtual reality,1
 relational databases,web services,1
 relational databases,windows,1
 restful api,sql,1
@@ -3615,27 +3635,35 @@ restful api,sql server,1
 restful api,threading,1
 restful api,troubleshooting,1
 restful api,unit testing,1
+restful api,virtual reality,1
 restful api,web services,1
 restful api,windows,1
 sql,sql server,1
 sql,threading,1
 sql,unit testing,2
+sql,virtual reality,1
 sql,web services,1
 sql,windows,1
 sql server,threading,1
 sql server,troubleshooting,1
 sql server,unit testing,1
+sql server,virtual reality,1
 sql server,web services,1
 sql server,windows,1
 threading,troubleshooting,1
 threading,unit testing,1
+threading,virtual reality,1
 threading,web services,1
 threading,windows,1
 troubleshooting,unit testing,1
+troubleshooting,virtual reality,1
 troubleshooting,web services,1
 troubleshooting,windows,1
+unit testing,virtual reality,1
 unit testing,web services,1
 unit testing,windows,1
+virtual reality,web services,1
+virtual reality,windows,1
 web services,windows,1
 c,rendering,1
 c,rtos,1

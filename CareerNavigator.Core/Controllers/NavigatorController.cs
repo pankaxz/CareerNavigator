@@ -5,28 +5,35 @@ using Microsoft.AspNetCore.Mvc;
 namespace CareerNavigator.Core.Controllers;
 
 [ApiController]
-[Route("api/[controller]")] // This maps to "api/navigator"
+[Route("api/[controller]")]
 public class NavigatorController : ControllerBase
 {
     private readonly SkillScanner _scanner;
+    private readonly BridgeEngine _bridgeEngine;
 
-    public NavigatorController(SkillScanner scanner)
+    public NavigatorController(SkillScanner scanner, BridgeEngine bridgeEngine)
     {
         _scanner = scanner;
+        _bridgeEngine = bridgeEngine;
     }
 
-    // Matches "api/navigator/analyze" AND "api/navigator/analyze/"
-    [HttpPost("analyze")] 
+    [HttpPost("analyze")]
     public IActionResult Analyze([FromBody] AnalysisRequest request)
     {
-        if (request == null || string.IsNullOrWhiteSpace(request.Text))
-        {
-            return BadRequest("Job Description (JD) text is required.");
-        }
+        if (string.IsNullOrWhiteSpace(request.Text)) return BadRequest("Text required");
 
-        var foundSkills = _scanner.FindMatches(request.Text);
-        
-        // Return the list of matched Node IDs
-        return Ok(foundSkills);
+        // 1. Understand the User
+        JobProfile profile = _scanner.AnalyzeProfile(request.Text);
+
+        // 2. Find the Bridges
+        var bridgeSkills = _bridgeEngine.SuggestBridges(profile);
+
+        return Ok(new
+        {
+            skills = profile.Skills,
+            yearsOfExperience = profile.YearsOfExperience,
+            level = profile.Level,
+            bridgeSkills
+        });
     }
 }

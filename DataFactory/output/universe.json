@@ -10,9 +10,9 @@
             "0.6-0.7": 9,
             "0.7-0.8": 7,
             "0.8-0.9": 7,
-            "0.9-1.0": 62
+            "0.9-1.0": 63
         },
-        "totalSkills": 221
+        "totalSkills": 222
     },
     "nodes": [
         {
@@ -917,6 +917,13 @@
             "val": 1,
             "seniorityScore": 0.0,
             "isSenior": false
+        },
+        {
+            "id": "virtual reality",
+            "group": "XR_Technologies",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
         },
         {
             "id": "extended reality",
@@ -25051,6 +25058,13 @@
         },
         {
             "source": ".net",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": ".net",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -25184,6 +25198,13 @@
         },
         {
             "source": "accelerate",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "accelerate",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -25317,6 +25338,13 @@
         },
         {
             "source": "angular",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "angular",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -25405,6 +25433,13 @@
             "value": 2,
             "seniorityScore": 0.5,
             "isSenior": false
+        },
+        {
+            "source": "c",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
         },
         {
             "source": "c",
@@ -25534,6 +25569,13 @@
         },
         {
             "source": "c#",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "c#",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -25653,6 +25695,13 @@
         },
         {
             "source": "c++",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "c++",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -25738,6 +25787,13 @@
         {
             "source": "collaboration",
             "target": "unit testing",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "collaboration",
+            "target": "virtual reality",
             "value": 1,
             "seniorityScore": 1.0,
             "isSenior": true
@@ -25863,6 +25919,13 @@
         },
         {
             "source": "css",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "css",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -25954,6 +26017,13 @@
         },
         {
             "source": "docker",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "docker",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26025,6 +26095,13 @@
         {
             "source": "git",
             "target": "unit testing",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "git",
+            "target": "virtual reality",
             "value": 1,
             "seniorityScore": 1.0,
             "isSenior": true
@@ -26150,6 +26227,13 @@
         },
         {
             "source": "inter-operability",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "inter-operability",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26241,6 +26325,13 @@
         },
         {
             "source": "linux",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "linux",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26325,6 +26416,13 @@
         },
         {
             "source": "maintenance",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "maintenance",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26423,6 +26521,13 @@
         },
         {
             "source": "mentoring",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "mentoring",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26514,6 +26619,13 @@
         },
         {
             "source": "ms test",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "ms test",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26584,6 +26696,13 @@
         },
         {
             "source": "mysql",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "mysql",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26661,6 +26780,13 @@
         },
         {
             "source": "nunit",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "nunit",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26731,6 +26857,13 @@
         },
         {
             "source": "object-oriented design",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "object-oriented design",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26780,6 +26913,13 @@
         },
         {
             "source": "python",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "python",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26829,6 +26969,13 @@
         },
         {
             "source": "relational databases",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "relational databases",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26878,6 +27025,13 @@
         },
         {
             "source": "restful api",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "restful api",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26913,6 +27067,13 @@
         },
         {
             "source": "sql",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "sql",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26948,6 +27109,13 @@
         },
         {
             "source": "sql server",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "sql server",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26976,6 +27144,13 @@
         },
         {
             "source": "threading",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "threading",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -26997,6 +27172,13 @@
         },
         {
             "source": "troubleshooting",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "troubleshooting",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -27011,6 +27193,13 @@
         },
         {
             "source": "unit testing",
+            "target": "virtual reality",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "unit testing",
             "target": "web services",
             "value": 1,
             "seniorityScore": 1.0,
@@ -27018,6 +27207,20 @@
         },
         {
             "source": "unit testing",
+            "target": "windows",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "virtual reality",
+            "target": "web services",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "isSenior": true
+        },
+        {
+            "source": "virtual reality",
             "target": "windows",
             "value": 1,
             "seniorityScore": 1.0,

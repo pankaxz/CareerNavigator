@@ -117,7 +117,7 @@ TAXONOMY = {
         "congestion analysis", "thermal analysis", "reliability", "dfat", "dft", "atpg", "mbist"
     ],
     "XR_Technologies": [
-        "extended reality", "ar", "vr", "mr", "3d spatial computing", "sensor fusion", "unity", "unreal engine", 
+        "virtual reality", "game development", "extended reality", "ar", "vr", "mr", "3d spatial computing", "sensor fusion", "unity", "unreal engine", 
         "visionpro", "quest", "slam", "lidar", "point clouds", "occlusion", "eye tracking", "hand tracking", 
         "spatial audio", "unity engine", "godot", "cryengine", "openxr", "webxr", "arkit", "arcore", 
         "vuforia", "8th wall", "niantic lightship", "photogrammetry", "volumetric video", "haptics", 

@@ -4,7 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Register CareerNavigator Engines
 builder.Services.AddSingleton<IUniverseProvider, UniverseProvider>();
-builder.Services.AddScoped<SkillScanner>();
+builder.Services.AddSingleton<SkillScanner>();
+// Registered the new BridgeEngine
+builder.Services.AddSingleton<BridgeEngine>();
 
 builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddCors(opt => opt.AddPolicy("NavGui", p =>

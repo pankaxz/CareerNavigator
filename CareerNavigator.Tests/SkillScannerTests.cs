@@ -34,7 +34,7 @@ public class SkillScannerTests
     [Fact]
     public void FindMatches_Should_Return_Empty_If_Text_Is_Null()
     {
-        var result = _scanner.FindMatches(null!);
+        var result = _scanner.AnalyzeProfile(null!).Skills;
         Assert.Empty(result);
     }
 
@@ -42,7 +42,7 @@ public class SkillScannerTests
     public void FindMatches_Should_Identify_Simple_Skills()
     {
         var text = "I know Python and Java.";
-        var result = _scanner.FindMatches(text);
+        var result = _scanner.AnalyzeProfile(text).Skills;
 
         Assert.Contains("Python", result);
         Assert.Contains("Java", result);
@@ -52,7 +52,7 @@ public class SkillScannerTests
     public void FindMatches_Should_Identify_Special_Char_Skills()
     {
         var text = "I am an expert in C++ and .NET development.";
-        var result = _scanner.FindMatches(text);
+        var result = _scanner.AnalyzeProfile(text).Skills;
 
         Assert.Contains("C++", result);
         Assert.Contains(".NET", result);
@@ -63,7 +63,7 @@ public class SkillScannerTests
     {
         // "C" should match "C programming" but NOT "Cloud", "Case", "Music"
         var text = "I like Cloud Computing and C programming.";
-        var result = _scanner.FindMatches(text);
+        var result = _scanner.AnalyzeProfile(text).Skills;
 
         Assert.Contains("C", result);
         // We can't assert "Cloud" is NOT there because it's not in our fake universe anyway.
@@ -77,7 +77,7 @@ public class SkillScannerTests
         // "Go" (not in list, but hypothetically) shouldn't match "Google".
         // "C" shouldn't match in "Basic".
         var text = "Visual Basic is old.";
-        var result = _scanner.FindMatches(text);
+        var result = _scanner.AnalyzeProfile(text).Skills;
 
         Assert.DoesNotContain("C", result);
     }
