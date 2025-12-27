@@ -7,15 +7,15 @@ namespace CareerNavigator.Core.Controllers;
 [Route("api/[controller]")] // This makes the URL "api/map"
 public class MapController : ControllerBase
 {
-    private readonly UniverseProvider _universeProvider;
+    private readonly IUniverseProvider _universeProvider;
 
-    public MapController(UniverseProvider universeProvider)
+    public MapController(IUniverseProvider universeProvider)
     {
         _universeProvider = universeProvider;
     }
 
     [HttpGet("universe")] // This makes the URL "api/map/universe"
-    public IActionResult GetUniverse() 
+    public IActionResult GetUniverse()
     {
         var universe = _universeProvider.GetUniverse();
         return Ok(universe);

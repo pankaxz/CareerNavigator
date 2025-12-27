@@ -40,7 +40,7 @@ def print_execution_summary(
 def process_data() -> None:
     print("🚀 Starting Data Factory...")
 
-    debug: bool = True
+    debug: bool = False
     # 1. Load Data
     jds: List[str] = IOHandler.load_raw_jds() if debug == False else IOHandler.load_raw_jds(file_path="raw_jds copy.txt")
     if not jds:

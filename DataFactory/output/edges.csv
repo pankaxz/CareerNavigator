@@ -1,21 +1,21 @@
 source,target,value
-collaboration,computer vision,1
+collaboration,computer vision,3
 collaboration,contribution,1
-collaboration,deep learning,1
+collaboration,deep learning,3
 collaboration,generative ai,1
 collaboration,image processing,1
 collaboration,neural networks,1
-collaboration,pytorch,1
+collaboration,pytorch,3
 collaboration,sme,1
-collaboration,tensorflow,1
+collaboration,tensorflow,3
 computer vision,contribution,1
-computer vision,deep learning,1
+computer vision,deep learning,3
 computer vision,generative ai,1
 computer vision,image processing,1
 computer vision,neural networks,1
-computer vision,pytorch,1
+computer vision,pytorch,4
 computer vision,sme,1
-computer vision,tensorflow,1
+computer vision,tensorflow,4
 contribution,deep learning,1
 contribution,generative ai,1
 contribution,image processing,1
@@ -23,17 +23,17 @@ contribution,neural networks,1
 contribution,pytorch,1
 contribution,sme,1
 contribution,tensorflow,1
-deep learning,generative ai,1
+deep learning,generative ai,4
 deep learning,image processing,1
 deep learning,neural networks,1
-deep learning,pytorch,1
+deep learning,pytorch,6
 deep learning,sme,1
-deep learning,tensorflow,1
+deep learning,tensorflow,6
 generative ai,image processing,1
 generative ai,neural networks,1
-generative ai,pytorch,1
+generative ai,pytorch,4
 generative ai,sme,1
-generative ai,tensorflow,1
+generative ai,tensorflow,4
 image processing,neural networks,1
 image processing,pytorch,1
 image processing,sme,1
@@ -42,5 +42,3757 @@ neural networks,pytorch,1
 neural networks,sme,1
 neural networks,tensorflow,1
 pytorch,sme,1
-pytorch,tensorflow,1
+pytorch,tensorflow,7
 sme,tensorflow,1
+clustering,context management,3
+clustering,deep learning,3
+clustering,dsp,3
+clustering,feature selection,3
+clustering,fpga,3
+clustering,generative ai,3
+clustering,gradient clipping,3
+clustering,learning rate scheduling,3
+clustering,llms,3
+clustering,mutual information,3
+clustering,numpy,3
+clustering,pandas,3
+clustering,parameter-efficient finetuning,3
+clustering,pca,3
+clustering,pnr,3
+clustering,prompt engineering,3
+clustering,python,3
+clustering,pytorch,3
+clustering,rag,3
+clustering,regression,3
+clustering,scikit-learn,3
+clustering,sta,3
+clustering,svms,3
+clustering,tensorflow,3
+clustering,time series,3
+clustering,transformers,3
+clustering,tree ensembles,3
+clustering,vlsi design,3
+context management,deep learning,3
+context management,dsp,3
+context management,feature selection,3
+context management,fpga,3
+context management,generative ai,3
+context management,gradient clipping,3
+context management,learning rate scheduling,3
+context management,llms,3
+context management,mutual information,3
+context management,numpy,3
+context management,pandas,3
+context management,parameter-efficient finetuning,3
+context management,pca,3
+context management,pnr,3
+context management,prompt engineering,3
+context management,python,3
+context management,pytorch,3
+context management,rag,3
+context management,regression,3
+context management,scikit-learn,3
+context management,sta,3
+context management,svms,3
+context management,tensorflow,3
+context management,time series,3
+context management,transformers,3
+context management,tree ensembles,3
+context management,vlsi design,3
+deep learning,dsp,3
+deep learning,feature selection,3
+deep learning,fpga,3
+deep learning,gradient clipping,3
+deep learning,learning rate scheduling,3
+deep learning,llms,3
+deep learning,mutual information,3
+deep learning,numpy,3
+deep learning,pandas,3
+deep learning,parameter-efficient finetuning,3
+deep learning,pca,3
+deep learning,pnr,3
+deep learning,prompt engineering,3
+deep learning,python,5
+deep learning,rag,3
+deep learning,regression,3
+deep learning,scikit-learn,3
+deep learning,sta,3
+deep learning,svms,3
+deep learning,time series,3
+deep learning,transformers,3
+deep learning,tree ensembles,3
+deep learning,vlsi design,3
+dsp,feature selection,3
+dsp,fpga,3
+dsp,generative ai,3
+dsp,gradient clipping,3
+dsp,learning rate scheduling,3
+dsp,llms,3
+dsp,mutual information,3
+dsp,numpy,3
+dsp,pandas,3
+dsp,parameter-efficient finetuning,3
+dsp,pca,3
+dsp,pnr,3
+dsp,prompt engineering,3
+dsp,python,3
+dsp,pytorch,3
+dsp,rag,3
+dsp,regression,3
+dsp,scikit-learn,3
+dsp,sta,3
+dsp,svms,3
+dsp,tensorflow,3
+dsp,time series,3
+dsp,transformers,3
+dsp,tree ensembles,3
+dsp,vlsi design,3
+feature selection,fpga,3
+feature selection,generative ai,3
+feature selection,gradient clipping,3
+feature selection,learning rate scheduling,3
+feature selection,llms,3
+feature selection,mutual information,3
+feature selection,numpy,3
+feature selection,pandas,3
+feature selection,parameter-efficient finetuning,3
+feature selection,pca,3
+feature selection,pnr,3
+feature selection,prompt engineering,3
+feature selection,python,3
+feature selection,pytorch,3
+feature selection,rag,3
+feature selection,regression,3
+feature selection,scikit-learn,3
+feature selection,sta,3
+feature selection,svms,3
+feature selection,tensorflow,3
+feature selection,time series,3
+feature selection,transformers,3
+feature selection,tree ensembles,3
+feature selection,vlsi design,3
+fpga,generative ai,3
+fpga,gradient clipping,3
+fpga,learning rate scheduling,3
+fpga,llms,3
+fpga,mutual information,3
+fpga,numpy,3
+fpga,pandas,3
+fpga,parameter-efficient finetuning,3
+fpga,pca,3
+fpga,pnr,3
+fpga,prompt engineering,3
+fpga,python,3
+fpga,pytorch,3
+fpga,rag,3
+fpga,regression,3
+fpga,scikit-learn,3
+fpga,sta,3
+fpga,svms,3
+fpga,tensorflow,3
+fpga,time series,3
+fpga,transformers,3
+fpga,tree ensembles,3
+fpga,vlsi design,3
+generative ai,gradient clipping,3
+generative ai,learning rate scheduling,3
+generative ai,llms,3
+generative ai,mutual information,3
+generative ai,numpy,3
+generative ai,pandas,3
+generative ai,parameter-efficient finetuning,3
+generative ai,pca,3
+generative ai,pnr,3
+generative ai,prompt engineering,3
+generative ai,python,3
+generative ai,rag,3
+generative ai,regression,3
+generative ai,scikit-learn,3
+generative ai,sta,3
+generative ai,svms,3
+generative ai,time series,3
+generative ai,transformers,3
+generative ai,tree ensembles,3
+generative ai,vlsi design,3
+gradient clipping,learning rate scheduling,3
+gradient clipping,llms,3
+gradient clipping,mutual information,3
+gradient clipping,numpy,3
+gradient clipping,pandas,3
+gradient clipping,parameter-efficient finetuning,3
+gradient clipping,pca,3
+gradient clipping,pnr,3
+gradient clipping,prompt engineering,3
+gradient clipping,python,3
+gradient clipping,pytorch,3
+gradient clipping,rag,3
+gradient clipping,regression,3
+gradient clipping,scikit-learn,3
+gradient clipping,sta,3
+gradient clipping,svms,3
+gradient clipping,tensorflow,3
+gradient clipping,time series,3
+gradient clipping,transformers,3
+gradient clipping,tree ensembles,3
+gradient clipping,vlsi design,3
+learning rate scheduling,llms,3
+learning rate scheduling,mutual information,3
+learning rate scheduling,numpy,3
+learning rate scheduling,pandas,3
+learning rate scheduling,parameter-efficient finetuning,3
+learning rate scheduling,pca,3
+learning rate scheduling,pnr,3
+learning rate scheduling,prompt engineering,3
+learning rate scheduling,python,3
+learning rate scheduling,pytorch,3
+learning rate scheduling,rag,3
+learning rate scheduling,regression,3
+learning rate scheduling,scikit-learn,3
+learning rate scheduling,sta,3
+learning rate scheduling,svms,3
+learning rate scheduling,tensorflow,3
+learning rate scheduling,time series,3
+learning rate scheduling,transformers,3
+learning rate scheduling,tree ensembles,3
+learning rate scheduling,vlsi design,3
+llms,mutual information,3
+llms,numpy,3
+llms,pandas,3
+llms,parameter-efficient finetuning,3
+llms,pca,3
+llms,pnr,3
+llms,prompt engineering,3
+llms,python,4
+llms,pytorch,3
+llms,rag,3
+llms,regression,3
+llms,scikit-learn,3
+llms,sta,3
+llms,svms,3
+llms,tensorflow,3
+llms,time series,3
+llms,transformers,3
+llms,tree ensembles,3
+llms,vlsi design,3
+mutual information,numpy,3
+mutual information,pandas,3
+mutual information,parameter-efficient finetuning,3
+mutual information,pca,3
+mutual information,pnr,3
+mutual information,prompt engineering,3
+mutual information,python,3
+mutual information,pytorch,3
+mutual information,rag,3
+mutual information,regression,3
+mutual information,scikit-learn,3
+mutual information,sta,3
+mutual information,svms,3
+mutual information,tensorflow,3
+mutual information,time series,3
+mutual information,transformers,3
+mutual information,tree ensembles,3
+mutual information,vlsi design,3
+numpy,pandas,3
+numpy,parameter-efficient finetuning,3
+numpy,pca,3
+numpy,pnr,3
+numpy,prompt engineering,3
+numpy,python,3
+numpy,pytorch,3
+numpy,rag,3
+numpy,regression,3
+numpy,scikit-learn,3
+numpy,sta,3
+numpy,svms,3
+numpy,tensorflow,3
+numpy,time series,3
+numpy,transformers,3
+numpy,tree ensembles,3
+numpy,vlsi design,3
+pandas,parameter-efficient finetuning,3
+pandas,pca,3
+pandas,pnr,3
+pandas,prompt engineering,3
+pandas,python,3
+pandas,pytorch,3
+pandas,rag,3
+pandas,regression,3
+pandas,scikit-learn,3
+pandas,sta,3
+pandas,svms,3
+pandas,tensorflow,3
+pandas,time series,3
+pandas,transformers,3
+pandas,tree ensembles,3
+pandas,vlsi design,3
+parameter-efficient finetuning,pca,3
+parameter-efficient finetuning,pnr,3
+parameter-efficient finetuning,prompt engineering,3
+parameter-efficient finetuning,python,3
+parameter-efficient finetuning,pytorch,3
+parameter-efficient finetuning,rag,3
+parameter-efficient finetuning,regression,3
+parameter-efficient finetuning,scikit-learn,3
+parameter-efficient finetuning,sta,3
+parameter-efficient finetuning,svms,3
+parameter-efficient finetuning,tensorflow,3
+parameter-efficient finetuning,time series,3
+parameter-efficient finetuning,transformers,3
+parameter-efficient finetuning,tree ensembles,3
+parameter-efficient finetuning,vlsi design,3
+pca,pnr,3
+pca,prompt engineering,3
+pca,python,3
+pca,pytorch,3
+pca,rag,3
+pca,regression,3
+pca,scikit-learn,3
+pca,sta,3
+pca,svms,3
+pca,tensorflow,3
+pca,time series,3
+pca,transformers,3
+pca,tree ensembles,3
+pca,vlsi design,3
+pnr,prompt engineering,3
+pnr,python,3
+pnr,pytorch,3
+pnr,rag,3
+pnr,regression,3
+pnr,scikit-learn,3
+pnr,sta,3
+pnr,svms,3
+pnr,tensorflow,3
+pnr,time series,3
+pnr,transformers,3
+pnr,tree ensembles,3
+pnr,vlsi design,3
+prompt engineering,python,3
+prompt engineering,pytorch,3
+prompt engineering,rag,3
+prompt engineering,regression,3
+prompt engineering,scikit-learn,3
+prompt engineering,sta,3
+prompt engineering,svms,3
+prompt engineering,tensorflow,3
+prompt engineering,time series,3
+prompt engineering,transformers,3
+prompt engineering,tree ensembles,3
+prompt engineering,vlsi design,3
+python,pytorch,5
+python,rag,3
+python,regression,3
+python,scikit-learn,3
+python,sta,3
+python,svms,3
+python,tensorflow,5
+python,time series,3
+python,transformers,3
+python,tree ensembles,3
+python,vlsi design,3
+pytorch,rag,3
+pytorch,regression,3
+pytorch,scikit-learn,3
+pytorch,sta,3
+pytorch,svms,3
+pytorch,time series,3
+pytorch,transformers,3
+pytorch,tree ensembles,3
+pytorch,vlsi design,3
+rag,regression,3
+rag,scikit-learn,3
+rag,sta,3
+rag,svms,3
+rag,tensorflow,3
+rag,time series,3
+rag,transformers,3
+rag,tree ensembles,3
+rag,vlsi design,3
+regression,scikit-learn,3
+regression,sta,3
+regression,svms,3
+regression,tensorflow,3
+regression,time series,3
+regression,transformers,3
+regression,tree ensembles,3
+regression,vlsi design,3
+scikit-learn,sta,3
+scikit-learn,svms,3
+scikit-learn,tensorflow,3
+scikit-learn,time series,3
+scikit-learn,transformers,3
+scikit-learn,tree ensembles,3
+scikit-learn,vlsi design,3
+sta,svms,3
+sta,tensorflow,3
+sta,time series,3
+sta,transformers,3
+sta,tree ensembles,3
+sta,vlsi design,3
+svms,tensorflow,3
+svms,time series,3
+svms,transformers,3
+svms,tree ensembles,3
+svms,vlsi design,3
+tensorflow,time series,3
+tensorflow,transformers,3
+tensorflow,tree ensembles,3
+tensorflow,vlsi design,3
+time series,transformers,3
+time series,tree ensembles,3
+time series,vlsi design,3
+transformers,tree ensembles,3
+transformers,vlsi design,3
+tree ensembles,vlsi design,3
+automation scripts,bash,1
+automation scripts,c,1
+automation scripts,c++,1
+automation scripts,ci/cd pipelines,1
+automation scripts,communication,1
+automation scripts,distributed systems,1
+automation scripts,docker,1
+automation scripts,documentation,1
+automation scripts,exoscale,1
+automation scripts,gerrit,1
+automation scripts,git,1
+automation scripts,jenkins,1
+automation scripts,kubernetes,1
+automation scripts,langchain,1
+automation scripts,llms,1
+automation scripts,pcie,1
+automation scripts,python,1
+automation scripts,scalable architectures,1
+bash,c,1
+bash,c++,1
+bash,ci/cd pipelines,1
+bash,communication,1
+bash,distributed systems,1
+bash,docker,1
+bash,documentation,1
+bash,exoscale,1
+bash,gerrit,1
+bash,git,1
+bash,jenkins,1
+bash,kubernetes,1
+bash,langchain,1
+bash,llms,1
+bash,pcie,1
+bash,python,1
+bash,scalable architectures,1
+c,c++,7
+c,ci/cd pipelines,3
+c,communication,7
+c,distributed systems,2
+c,docker,4
+c,documentation,2
+c,exoscale,1
+c,gerrit,1
+c,git,4
+c,jenkins,1
+c,kubernetes,2
+c,langchain,2
+c,llms,2
+c,pcie,1
+c,python,8
+c,scalable architectures,1
+c++,ci/cd pipelines,1
+c++,communication,4
+c++,distributed systems,1
+c++,docker,4
+c++,documentation,1
+c++,exoscale,1
+c++,gerrit,1
+c++,git,2
+c++,jenkins,1
+c++,kubernetes,1
+c++,langchain,1
+c++,llms,1
+c++,pcie,1
+c++,python,4
+c++,scalable architectures,1
+ci/cd pipelines,communication,4
+ci/cd pipelines,distributed systems,2
+ci/cd pipelines,docker,3
+ci/cd pipelines,documentation,3
+ci/cd pipelines,exoscale,1
+ci/cd pipelines,gerrit,1
+ci/cd pipelines,git,6
+ci/cd pipelines,jenkins,1
+ci/cd pipelines,kubernetes,4
+ci/cd pipelines,langchain,1
+ci/cd pipelines,llms,3
+ci/cd pipelines,pcie,1
+ci/cd pipelines,python,3
+ci/cd pipelines,scalable architectures,1
+communication,distributed systems,2
+communication,docker,4
+communication,documentation,3
+communication,exoscale,1
+communication,gerrit,1
+communication,git,5
+communication,jenkins,1
+communication,kubernetes,2
+communication,langchain,1
+communication,llms,1
+communication,pcie,1
+communication,python,8
+communication,scalable architectures,1
+distributed systems,docker,1
+distributed systems,documentation,1
+distributed systems,exoscale,1
+distributed systems,gerrit,1
+distributed systems,git,2
+distributed systems,jenkins,1
+distributed systems,kubernetes,1
+distributed systems,langchain,1
+distributed systems,llms,1
+distributed systems,pcie,1
+distributed systems,python,2
+distributed systems,scalable architectures,1
+docker,documentation,3
+docker,exoscale,1
+docker,gerrit,1
+docker,git,4
+docker,jenkins,1
+docker,kubernetes,3
+docker,langchain,1
+docker,llms,1
+docker,pcie,1
+docker,python,4
+docker,scalable architectures,1
+documentation,exoscale,1
+documentation,gerrit,1
+documentation,git,4
+documentation,jenkins,1
+documentation,kubernetes,3
+documentation,langchain,1
+documentation,llms,3
+documentation,pcie,1
+documentation,python,3
+documentation,scalable architectures,1
+exoscale,gerrit,1
+exoscale,git,1
+exoscale,jenkins,1
+exoscale,kubernetes,1
+exoscale,langchain,1
+exoscale,llms,1
+exoscale,pcie,1
+exoscale,python,1
+exoscale,scalable architectures,1
+gerrit,git,1
+gerrit,jenkins,1
+gerrit,kubernetes,1
+gerrit,langchain,1
+gerrit,llms,1
+gerrit,pcie,1
+gerrit,python,1
+gerrit,scalable architectures,1
+git,jenkins,1
+git,kubernetes,3
+git,langchain,1
+git,llms,2
+git,pcie,1
+git,python,5
+git,scalable architectures,1
+jenkins,kubernetes,1
+jenkins,langchain,1
+jenkins,llms,1
+jenkins,pcie,1
+jenkins,python,1
+jenkins,scalable architectures,1
+kubernetes,langchain,1
+kubernetes,llms,2
+kubernetes,pcie,1
+kubernetes,python,2
+kubernetes,scalable architectures,1
+langchain,llms,1
+langchain,pcie,1
+langchain,python,2
+langchain,scalable architectures,1
+llms,pcie,1
+llms,scalable architectures,1
+pcie,python,1
+pcie,scalable architectures,1
+python,scalable architectures,1
+3d spatial computing,ar,1
+3d spatial computing,blockchain quality assurance,1
+3d spatial computing,c,1
+3d spatial computing,c++,1
+3d spatial computing,computer vision,1
+3d spatial computing,edge devices,1
+3d spatial computing,embedded firmware,1
+3d spatial computing,extended reality,1
+3d spatial computing,gesture recognition,1
+3d spatial computing,inference pipelines,1
+3d spatial computing,mr,1
+3d spatial computing,onnx,1
+3d spatial computing,pytorch,1
+3d spatial computing,sensor fusion,1
+3d spatial computing,spatial understanding,1
+3d spatial computing,tensorflow,1
+3d spatial computing,vr,1
+ar,blockchain quality assurance,1
+ar,c,1
+ar,c++,1
+ar,computer vision,1
+ar,edge devices,1
+ar,embedded firmware,1
+ar,extended reality,1
+ar,gesture recognition,1
+ar,inference pipelines,1
+ar,mr,1
+ar,onnx,1
+ar,pytorch,1
+ar,sensor fusion,1
+ar,spatial understanding,1
+ar,tensorflow,1
+ar,vr,1
+blockchain quality assurance,c,3
+blockchain quality assurance,c++,2
+blockchain quality assurance,computer vision,2
+blockchain quality assurance,edge devices,1
+blockchain quality assurance,embedded firmware,1
+blockchain quality assurance,extended reality,1
+blockchain quality assurance,gesture recognition,1
+blockchain quality assurance,inference pipelines,1
+blockchain quality assurance,mr,1
+blockchain quality assurance,onnx,1
+blockchain quality assurance,pytorch,2
+blockchain quality assurance,sensor fusion,1
+blockchain quality assurance,spatial understanding,1
+blockchain quality assurance,tensorflow,2
+blockchain quality assurance,vr,1
+c,computer vision,2
+c,edge devices,1
+c,embedded firmware,1
+c,extended reality,1
+c,gesture recognition,1
+c,inference pipelines,1
+c,mr,1
+c,onnx,1
+c,pytorch,2
+c,sensor fusion,1
+c,spatial understanding,1
+c,tensorflow,2
+c,vr,1
+c++,computer vision,2
+c++,edge devices,1
+c++,embedded firmware,1
+c++,extended reality,1
+c++,gesture recognition,1
+c++,inference pipelines,1
+c++,mr,1
+c++,onnx,1
+c++,pytorch,2
+c++,sensor fusion,1
+c++,spatial understanding,1
+c++,tensorflow,2
+c++,vr,1
+computer vision,edge devices,1
+computer vision,embedded firmware,1
+computer vision,extended reality,1
+computer vision,gesture recognition,1
+computer vision,inference pipelines,1
+computer vision,mr,1
+computer vision,onnx,1
+computer vision,sensor fusion,1
+computer vision,spatial understanding,1
+computer vision,vr,1
+edge devices,embedded firmware,1
+edge devices,extended reality,1
+edge devices,gesture recognition,1
+edge devices,inference pipelines,1
+edge devices,mr,1
+edge devices,onnx,1
+edge devices,pytorch,1
+edge devices,sensor fusion,1
+edge devices,spatial understanding,1
+edge devices,tensorflow,1
+edge devices,vr,1
+embedded firmware,extended reality,1
+embedded firmware,gesture recognition,1
+embedded firmware,inference pipelines,1
+embedded firmware,mr,1
+embedded firmware,onnx,1
+embedded firmware,pytorch,1
+embedded firmware,sensor fusion,1
+embedded firmware,spatial understanding,1
+embedded firmware,tensorflow,1
+embedded firmware,vr,1
+extended reality,gesture recognition,1
+extended reality,inference pipelines,1
+extended reality,mr,1
+extended reality,onnx,1
+extended reality,pytorch,1
+extended reality,sensor fusion,1
+extended reality,spatial understanding,1
+extended reality,tensorflow,1
+extended reality,vr,1
+gesture recognition,inference pipelines,1
+gesture recognition,mr,1
+gesture recognition,onnx,1
+gesture recognition,pytorch,1
+gesture recognition,sensor fusion,1
+gesture recognition,spatial understanding,1
+gesture recognition,tensorflow,1
+gesture recognition,vr,1
+inference pipelines,mr,1
+inference pipelines,onnx,1
+inference pipelines,pytorch,1
+inference pipelines,sensor fusion,1
+inference pipelines,spatial understanding,1
+inference pipelines,tensorflow,1
+inference pipelines,vr,1
+mr,onnx,1
+mr,pytorch,1
+mr,sensor fusion,1
+mr,spatial understanding,1
+mr,tensorflow,1
+mr,vr,1
+onnx,pytorch,1
+onnx,sensor fusion,1
+onnx,spatial understanding,1
+onnx,tensorflow,1
+onnx,vr,1
+pytorch,sensor fusion,1
+pytorch,spatial understanding,1
+pytorch,vr,1
+sensor fusion,spatial understanding,1
+sensor fusion,tensorflow,1
+sensor fusion,vr,1
+spatial understanding,tensorflow,1
+spatial understanding,vr,1
+tensorflow,vr,1
+blockchain quality assurance,cloud security,1
+blockchain quality assurance,communication,2
+blockchain quality assurance,google cloud,2
+blockchain quality assurance,incident management,1
+blockchain quality assurance,incident response,1
+blockchain quality assurance,malware prevention,1
+blockchain quality assurance,security design reviews,1
+blockchain quality assurance,threat modeling,1
+blockchain quality assurance,vulnerability assessment,1
+cloud security,communication,2
+cloud security,google cloud,2
+cloud security,incident management,1
+cloud security,incident response,1
+cloud security,malware prevention,1
+cloud security,security design reviews,1
+cloud security,threat modeling,1
+cloud security,vulnerability assessment,1
+communication,google cloud,5
+communication,incident management,1
+communication,incident response,1
+communication,malware prevention,1
+communication,security design reviews,1
+communication,threat modeling,1
+communication,vulnerability assessment,1
+google cloud,incident management,1
+google cloud,incident response,1
+google cloud,malware prevention,1
+google cloud,security design reviews,1
+google cloud,threat modeling,1
+google cloud,vulnerability assessment,1
+incident management,incident response,1
+incident management,malware prevention,1
+incident management,security design reviews,1
+incident management,threat modeling,1
+incident management,vulnerability assessment,1
+incident response,malware prevention,1
+incident response,security design reviews,1
+incident response,threat modeling,1
+incident response,vulnerability assessment,1
+malware prevention,security design reviews,1
+malware prevention,threat modeling,1
+malware prevention,vulnerability assessment,1
+security design reviews,threat modeling,1
+security design reviews,vulnerability assessment,1
+threat modeling,vulnerability assessment,1
+aws,azure,6
+aws,azure data factory,1
+aws,azure data lake,1
+aws,azure ml,1
+aws,azure sql database,1
+aws,azure synapse,1
+aws,ci/cd pipelines,6
+aws,cloud security,1
+aws,code reviews,4
+aws,collaboration,1
+aws,communication,3
+aws,compliance,1
+aws,computer vision,1
+aws,data governance,1
+aws,data pipelines,1
+aws,databricks,1
+aws,deep learning,1
+aws,docker,2
+aws,documentation,3
+aws,git,5
+aws,github,3
+aws,google cloud,4
+aws,governance,1
+aws,hadoop,1
+aws,java,4
+aws,kubernetes,3
+aws,model deployment,1
+aws,python,3
+aws,pytorch,1
+aws,r,2
+aws,reliability,1
+aws,soft skills,1
+aws,spark,1
+aws,sql,3
+aws,synapse,1
+aws,tensorflow,1
+aws,troubleshooting,1
+aws,unsupervised learning,1
+azure,azure data factory,1
+azure,azure data lake,1
+azure,azure ml,1
+azure,azure sql database,1
+azure,azure synapse,1
+azure,ci/cd pipelines,5
+azure,cloud security,1
+azure,code reviews,3
+azure,collaboration,1
+azure,communication,2
+azure,compliance,1
+azure,computer vision,1
+azure,data governance,1
+azure,data pipelines,1
+azure,databricks,1
+azure,deep learning,1
+azure,docker,2
+azure,documentation,2
+azure,git,4
+azure,github,3
+azure,google cloud,3
+azure,governance,1
+azure,hadoop,1
+azure,java,4
+azure,kubernetes,3
+azure,model deployment,1
+azure,python,2
+azure,pytorch,1
+azure,r,2
+azure,reliability,1
+azure,soft skills,1
+azure,spark,1
+azure,sql,3
+azure,synapse,1
+azure,tensorflow,1
+azure,troubleshooting,1
+azure,unsupervised learning,1
+azure data factory,azure data lake,1
+azure data factory,azure ml,1
+azure data factory,azure sql database,1
+azure data factory,azure synapse,1
+azure data factory,ci/cd pipelines,1
+azure data factory,cloud security,1
+azure data factory,code reviews,1
+azure data factory,collaboration,1
+azure data factory,communication,1
+azure data factory,compliance,1
+azure data factory,computer vision,1
+azure data factory,data governance,1
+azure data factory,data pipelines,1
+azure data factory,databricks,1
+azure data factory,deep learning,1
+azure data factory,docker,1
+azure data factory,documentation,1
+azure data factory,git,1
+azure data factory,github,1
+azure data factory,google cloud,1
+azure data factory,governance,1
+azure data factory,hadoop,1
+azure data factory,java,1
+azure data factory,kubernetes,1
+azure data factory,model deployment,1
+azure data factory,python,1
+azure data factory,pytorch,1
+azure data factory,r,1
+azure data factory,reliability,1
+azure data factory,soft skills,1
+azure data factory,spark,1
+azure data factory,sql,1
+azure data factory,synapse,1
+azure data factory,tensorflow,1
+azure data factory,troubleshooting,1
+azure data factory,unsupervised learning,1
+azure data lake,azure ml,1
+azure data lake,azure sql database,1
+azure data lake,azure synapse,1
+azure data lake,ci/cd pipelines,1
+azure data lake,cloud security,1
+azure data lake,code reviews,1
+azure data lake,collaboration,1
+azure data lake,communication,1
+azure data lake,compliance,1
+azure data lake,computer vision,1
+azure data lake,data governance,1
+azure data lake,data pipelines,1
+azure data lake,databricks,1
+azure data lake,deep learning,1
+azure data lake,docker,1
+azure data lake,documentation,1
+azure data lake,git,1
+azure data lake,github,1
+azure data lake,google cloud,1
+azure data lake,governance,1
+azure data lake,hadoop,1
+azure data lake,java,1
+azure data lake,kubernetes,1
+azure data lake,model deployment,1
+azure data lake,python,1
+azure data lake,pytorch,1
+azure data lake,r,1
+azure data lake,reliability,1
+azure data lake,soft skills,1
+azure data lake,spark,1
+azure data lake,sql,1
+azure data lake,synapse,1
+azure data lake,tensorflow,1
+azure data lake,troubleshooting,1
+azure data lake,unsupervised learning,1
+azure ml,azure sql database,1
+azure ml,azure synapse,1
+azure ml,ci/cd pipelines,1
+azure ml,cloud security,1
+azure ml,code reviews,1
+azure ml,collaboration,1
+azure ml,communication,1
+azure ml,compliance,1
+azure ml,computer vision,1
+azure ml,data governance,1
+azure ml,data pipelines,1
+azure ml,databricks,1
+azure ml,deep learning,1
+azure ml,docker,1
+azure ml,documentation,1
+azure ml,git,1
+azure ml,github,1
+azure ml,google cloud,1
+azure ml,governance,1
+azure ml,hadoop,1
+azure ml,java,1
+azure ml,kubernetes,1
+azure ml,model deployment,1
+azure ml,python,1
+azure ml,pytorch,1
+azure ml,r,1
+azure ml,reliability,1
+azure ml,soft skills,1
+azure ml,spark,1
+azure ml,sql,1
+azure ml,synapse,1
+azure ml,tensorflow,1
+azure ml,troubleshooting,1
+azure ml,unsupervised learning,1
+azure sql database,azure synapse,1
+azure sql database,ci/cd pipelines,1
+azure sql database,cloud security,1
+azure sql database,code reviews,1
+azure sql database,collaboration,1
+azure sql database,communication,1
+azure sql database,compliance,1
+azure sql database,computer vision,1
+azure sql database,data governance,1
+azure sql database,data pipelines,1
+azure sql database,databricks,1
+azure sql database,deep learning,1
+azure sql database,docker,1
+azure sql database,documentation,1
+azure sql database,git,1
+azure sql database,github,1
+azure sql database,google cloud,1
+azure sql database,governance,1
+azure sql database,hadoop,1
+azure sql database,java,1
+azure sql database,kubernetes,1
+azure sql database,model deployment,1
+azure sql database,python,1
+azure sql database,pytorch,1
+azure sql database,r,1
+azure sql database,reliability,1
+azure sql database,soft skills,1
+azure sql database,spark,1
+azure sql database,sql,1
+azure sql database,synapse,1
+azure sql database,tensorflow,1
+azure sql database,troubleshooting,1
+azure sql database,unsupervised learning,1
+azure synapse,ci/cd pipelines,1
+azure synapse,cloud security,1
+azure synapse,code reviews,1
+azure synapse,collaboration,1
+azure synapse,communication,1
+azure synapse,compliance,1
+azure synapse,computer vision,1
+azure synapse,data governance,1
+azure synapse,data pipelines,1
+azure synapse,databricks,1
+azure synapse,deep learning,1
+azure synapse,docker,1
+azure synapse,documentation,1
+azure synapse,git,1
+azure synapse,github,1
+azure synapse,google cloud,1
+azure synapse,governance,1
+azure synapse,hadoop,1
+azure synapse,java,1
+azure synapse,kubernetes,1
+azure synapse,model deployment,1
+azure synapse,python,1
+azure synapse,pytorch,1
+azure synapse,r,1
+azure synapse,reliability,1
+azure synapse,soft skills,1
+azure synapse,spark,1
+azure synapse,sql,1
+azure synapse,synapse,1
+azure synapse,tensorflow,1
+azure synapse,troubleshooting,1
+azure synapse,unsupervised learning,1
+ci/cd pipelines,cloud security,1
+ci/cd pipelines,code reviews,5
+ci/cd pipelines,collaboration,2
+ci/cd pipelines,compliance,2
+ci/cd pipelines,computer vision,1
+ci/cd pipelines,data governance,1
+ci/cd pipelines,data pipelines,1
+ci/cd pipelines,databricks,1
+ci/cd pipelines,deep learning,1
+ci/cd pipelines,github,2
+ci/cd pipelines,google cloud,3
+ci/cd pipelines,governance,1
+ci/cd pipelines,hadoop,1
+ci/cd pipelines,java,4
+ci/cd pipelines,model deployment,1
+ci/cd pipelines,pytorch,1
+ci/cd pipelines,r,2
+ci/cd pipelines,reliability,2
+ci/cd pipelines,soft skills,1
+ci/cd pipelines,spark,2
+ci/cd pipelines,sql,4
+ci/cd pipelines,synapse,1
+ci/cd pipelines,tensorflow,1
+ci/cd pipelines,troubleshooting,1
+ci/cd pipelines,unsupervised learning,1
+cloud security,code reviews,1
+cloud security,collaboration,1
+cloud security,compliance,1
+cloud security,computer vision,1
+cloud security,data governance,1
+cloud security,data pipelines,1
+cloud security,databricks,1
+cloud security,deep learning,1
+cloud security,docker,1
+cloud security,documentation,1
+cloud security,git,1
+cloud security,github,1
+cloud security,governance,1
+cloud security,hadoop,1
+cloud security,java,1
+cloud security,kubernetes,1
+cloud security,model deployment,1
+cloud security,python,1
+cloud security,pytorch,1
+cloud security,r,1
+cloud security,reliability,1
+cloud security,soft skills,1
+cloud security,spark,1
+cloud security,sql,1
+cloud security,synapse,1
+cloud security,tensorflow,1
+cloud security,troubleshooting,1
+cloud security,unsupervised learning,1
+code reviews,collaboration,2
+code reviews,communication,5
+code reviews,compliance,2
+code reviews,computer vision,3
+code reviews,data governance,1
+code reviews,data pipelines,1
+code reviews,databricks,1
+code reviews,deep learning,1
+code reviews,docker,3
+code reviews,documentation,5
+code reviews,git,3
+code reviews,github,1
+code reviews,google cloud,3
+code reviews,governance,1
+code reviews,hadoop,1
+code reviews,java,7
+code reviews,kubernetes,2
+code reviews,model deployment,4
+code reviews,python,3
+code reviews,pytorch,1
+code reviews,r,2
+code reviews,reliability,3
+code reviews,soft skills,1
+code reviews,spark,2
+code reviews,sql,4
+code reviews,synapse,1
+code reviews,tensorflow,1
+code reviews,troubleshooting,1
+code reviews,unsupervised learning,1
+collaboration,communication,3
+collaboration,compliance,2
+collaboration,data governance,1
+collaboration,data pipelines,1
+collaboration,databricks,1
+collaboration,docker,2
+collaboration,documentation,1
+collaboration,git,3
+collaboration,github,1
+collaboration,google cloud,1
+collaboration,governance,1
+collaboration,hadoop,1
+collaboration,java,2
+collaboration,kubernetes,1
+collaboration,model deployment,1
+collaboration,python,4
+collaboration,r,1
+collaboration,reliability,3
+collaboration,soft skills,1
+collaboration,spark,2
+collaboration,sql,3
+collaboration,synapse,1
+collaboration,troubleshooting,2
+collaboration,unsupervised learning,1
+communication,compliance,2
+communication,computer vision,2
+communication,data governance,1
+communication,data pipelines,1
+communication,databricks,1
+communication,deep learning,2
+communication,github,1
+communication,governance,1
+communication,hadoop,1
+communication,java,6
+communication,model deployment,1
+communication,pytorch,2
+communication,r,1
+communication,reliability,4
+communication,soft skills,1
+communication,spark,2
+communication,sql,3
+communication,synapse,1
+communication,tensorflow,2
+communication,troubleshooting,1
+communication,unsupervised learning,1
+compliance,computer vision,1
+compliance,data governance,1
+compliance,data pipelines,1
+compliance,databricks,1
+compliance,deep learning,1
+compliance,docker,1
+compliance,documentation,1
+compliance,git,2
+compliance,github,1
+compliance,google cloud,1
+compliance,governance,1
+compliance,hadoop,1
+compliance,java,2
+compliance,kubernetes,1
+compliance,model deployment,1
+compliance,python,2
+compliance,pytorch,1
+compliance,r,1
+compliance,reliability,2
+compliance,soft skills,1
+compliance,spark,2
+compliance,sql,2
+compliance,synapse,1
+compliance,tensorflow,1
+compliance,troubleshooting,1
+compliance,unsupervised learning,1
+computer vision,data governance,1
+computer vision,data pipelines,1
+computer vision,databricks,1
+computer vision,docker,1
+computer vision,documentation,3
+computer vision,git,1
+computer vision,github,1
+computer vision,google cloud,1
+computer vision,governance,1
+computer vision,hadoop,1
+computer vision,java,1
+computer vision,kubernetes,1
+computer vision,model deployment,4
+computer vision,python,2
+computer vision,r,1
+computer vision,reliability,2
+computer vision,soft skills,1
+computer vision,spark,1
+computer vision,sql,1
+computer vision,synapse,1
+computer vision,troubleshooting,1
+computer vision,unsupervised learning,1
+data governance,data pipelines,1
+data governance,databricks,1
+data governance,deep learning,1
+data governance,docker,1
+data governance,documentation,1
+data governance,git,1
+data governance,github,1
+data governance,google cloud,1
+data governance,governance,1
+data governance,hadoop,1
+data governance,java,1
+data governance,kubernetes,1
+data governance,model deployment,1
+data governance,python,1
+data governance,pytorch,1
+data governance,r,1
+data governance,reliability,1
+data governance,soft skills,1
+data governance,spark,1
+data governance,sql,1
+data governance,synapse,1
+data governance,tensorflow,1
+data governance,troubleshooting,1
+data governance,unsupervised learning,1
+data pipelines,databricks,1
+data pipelines,deep learning,1
+data pipelines,docker,1
+data pipelines,documentation,1
+data pipelines,git,1
+data pipelines,github,1
+data pipelines,google cloud,1
+data pipelines,governance,1
+data pipelines,hadoop,1
+data pipelines,java,1
+data pipelines,kubernetes,1
+data pipelines,model deployment,1
+data pipelines,python,1
+data pipelines,pytorch,1
+data pipelines,r,1
+data pipelines,reliability,1
+data pipelines,soft skills,1
+data pipelines,spark,1
+data pipelines,sql,1
+data pipelines,synapse,1
+data pipelines,tensorflow,1
+data pipelines,troubleshooting,1
+data pipelines,unsupervised learning,1
+databricks,deep learning,1
+databricks,docker,1
+databricks,documentation,1
+databricks,git,1
+databricks,github,1
+databricks,google cloud,1
+databricks,governance,1
+databricks,hadoop,1
+databricks,java,1
+databricks,kubernetes,1
+databricks,model deployment,1
+databricks,python,1
+databricks,pytorch,1
+databricks,r,1
+databricks,reliability,1
+databricks,soft skills,1
+databricks,spark,1
+databricks,sql,1
+databricks,synapse,1
+databricks,tensorflow,1
+databricks,troubleshooting,1
+databricks,unsupervised learning,1
+deep learning,docker,1
+deep learning,documentation,1
+deep learning,git,1
+deep learning,github,1
+deep learning,google cloud,1
+deep learning,governance,1
+deep learning,hadoop,1
+deep learning,java,1
+deep learning,kubernetes,1
+deep learning,model deployment,1
+deep learning,r,1
+deep learning,reliability,2
+deep learning,soft skills,1
+deep learning,spark,1
+deep learning,sql,1
+deep learning,synapse,1
+deep learning,troubleshooting,1
+deep learning,unsupervised learning,1
+docker,github,1
+docker,google cloud,1
+docker,governance,1
+docker,hadoop,1
+docker,java,1
+docker,model deployment,1
+docker,pytorch,1
+docker,r,1
+docker,reliability,1
+docker,soft skills,1
+docker,spark,1
+docker,sql,2
+docker,synapse,1
+docker,tensorflow,1
+docker,troubleshooting,2
+docker,unsupervised learning,1
+documentation,github,1
+documentation,google cloud,3
+documentation,governance,1
+documentation,hadoop,1
+documentation,java,3
+documentation,model deployment,4
+documentation,pytorch,1
+documentation,r,1
+documentation,reliability,1
+documentation,soft skills,1
+documentation,spark,1
+documentation,sql,1
+documentation,synapse,1
+documentation,tensorflow,1
+documentation,troubleshooting,1
+documentation,unsupervised learning,1
+git,github,2
+git,google cloud,4
+git,governance,1
+git,hadoop,1
+git,java,4
+git,model deployment,1
+git,pytorch,1
+git,r,1
+git,reliability,2
+git,soft skills,1
+git,spark,2
+git,sql,4
+git,synapse,1
+git,tensorflow,1
+git,troubleshooting,2
+git,unsupervised learning,1
+github,google cloud,2
+github,governance,1
+github,hadoop,1
+github,java,1
+github,kubernetes,1
+github,model deployment,1
+github,python,2
+github,pytorch,1
+github,r,1
+github,reliability,1
+github,soft skills,1
+github,spark,1
+github,sql,1
+github,synapse,1
+github,tensorflow,1
+github,troubleshooting,1
+github,unsupervised learning,1
+google cloud,governance,1
+google cloud,hadoop,1
+google cloud,java,3
+google cloud,kubernetes,1
+google cloud,model deployment,4
+google cloud,python,2
+google cloud,pytorch,1
+google cloud,r,1
+google cloud,reliability,1
+google cloud,soft skills,1
+google cloud,spark,1
+google cloud,sql,2
+google cloud,synapse,1
+google cloud,tensorflow,1
+google cloud,troubleshooting,1
+google cloud,unsupervised learning,1
+governance,hadoop,1
+governance,java,1
+governance,kubernetes,1
+governance,model deployment,1
+governance,python,1
+governance,pytorch,1
+governance,r,1
+governance,reliability,1
+governance,soft skills,1
+governance,spark,1
+governance,sql,1
+governance,synapse,1
+governance,tensorflow,1
+governance,troubleshooting,1
+governance,unsupervised learning,1
+hadoop,java,1
+hadoop,kubernetes,1
+hadoop,model deployment,1
+hadoop,python,1
+hadoop,pytorch,1
+hadoop,r,1
+hadoop,reliability,1
+hadoop,soft skills,1
+hadoop,spark,1
+hadoop,sql,1
+hadoop,synapse,1
+hadoop,tensorflow,1
+hadoop,troubleshooting,1
+hadoop,unsupervised learning,1
+java,kubernetes,2
+java,model deployment,1
+java,python,5
+java,pytorch,1
+java,r,2
+java,reliability,4
+java,soft skills,1
+java,spark,2
+java,sql,4
+java,synapse,1
+java,tensorflow,1
+java,troubleshooting,1
+java,unsupervised learning,1
+kubernetes,model deployment,1
+kubernetes,pytorch,1
+kubernetes,r,2
+kubernetes,reliability,1
+kubernetes,soft skills,1
+kubernetes,spark,1
+kubernetes,sql,2
+kubernetes,synapse,1
+kubernetes,tensorflow,1
+kubernetes,troubleshooting,1
+kubernetes,unsupervised learning,1
+model deployment,python,1
+model deployment,pytorch,1
+model deployment,r,1
+model deployment,reliability,1
+model deployment,soft skills,1
+model deployment,spark,1
+model deployment,sql,1
+model deployment,synapse,1
+model deployment,tensorflow,1
+model deployment,troubleshooting,1
+model deployment,unsupervised learning,1
+python,r,1
+python,reliability,4
+python,soft skills,1
+python,spark,2
+python,sql,3
+python,synapse,1
+python,troubleshooting,2
+python,unsupervised learning,1
+pytorch,r,1
+pytorch,reliability,2
+pytorch,soft skills,1
+pytorch,spark,1
+pytorch,sql,1
+pytorch,synapse,1
+pytorch,troubleshooting,1
+pytorch,unsupervised learning,1
+r,reliability,1
+r,soft skills,1
+r,spark,1
+r,sql,2
+r,synapse,1
+r,tensorflow,1
+r,troubleshooting,1
+r,unsupervised learning,1
+reliability,soft skills,1
+reliability,spark,2
+reliability,sql,2
+reliability,synapse,1
+reliability,tensorflow,2
+reliability,troubleshooting,1
+reliability,unsupervised learning,1
+soft skills,spark,1
+soft skills,sql,1
+soft skills,synapse,1
+soft skills,tensorflow,1
+soft skills,troubleshooting,1
+soft skills,unsupervised learning,1
+spark,sql,2
+spark,synapse,1
+spark,tensorflow,1
+spark,troubleshooting,1
+spark,unsupervised learning,1
+sql,synapse,1
+sql,tensorflow,1
+sql,troubleshooting,2
+sql,unsupervised learning,1
+synapse,tensorflow,1
+synapse,troubleshooting,1
+synapse,unsupervised learning,1
+tensorflow,troubleshooting,1
+tensorflow,unsupervised learning,1
+troubleshooting,unsupervised learning,1
+ai compilers,blockchain quality assurance,1
+ai compilers,c,1
+ai compilers,c++,1
+ai compilers,collaboration,1
+ai compilers,communication,1
+ai compilers,computer vision,1
+ai compilers,cuda,1
+ai compilers,data ingestion,1
+ai compilers,deep learning,1
+ai compilers,glow,1
+ai compilers,gpu,1
+ai compilers,hugging face,1
+ai compilers,mkldnn,1
+ai compilers,model optimization,1
+ai compilers,npu,1
+ai compilers,opencl,1
+ai compilers,parallel programming,1
+ai compilers,python,1
+ai compilers,pytorch,1
+ai compilers,reliability,1
+ai compilers,tensorflow,1
+ai compilers,tvm,1
+blockchain quality assurance,collaboration,1
+blockchain quality assurance,cuda,1
+blockchain quality assurance,data ingestion,1
+blockchain quality assurance,deep learning,1
+blockchain quality assurance,glow,1
+blockchain quality assurance,gpu,1
+blockchain quality assurance,hugging face,2
+blockchain quality assurance,mkldnn,1
+blockchain quality assurance,model optimization,2
+blockchain quality assurance,npu,1
+blockchain quality assurance,opencl,1
+blockchain quality assurance,parallel programming,1
+blockchain quality assurance,python,2
+blockchain quality assurance,reliability,1
+blockchain quality assurance,tvm,1
+c,collaboration,3
+c,cuda,1
+c,data ingestion,1
+c,deep learning,1
+c,glow,1
+c,gpu,1
+c,hugging face,2
+c,mkldnn,1
+c,model optimization,1
+c,npu,1
+c,opencl,1
+c,parallel programming,1
+c,reliability,2
+c,tvm,1
+c++,collaboration,2
+c++,cuda,1
+c++,data ingestion,1
+c++,deep learning,1
+c++,glow,1
+c++,gpu,1
+c++,hugging face,1
+c++,mkldnn,1
+c++,model optimization,1
+c++,npu,1
+c++,opencl,1
+c++,parallel programming,1
+c++,reliability,1
+c++,tvm,1
+collaboration,cuda,1
+collaboration,data ingestion,1
+collaboration,glow,1
+collaboration,gpu,1
+collaboration,hugging face,1
+collaboration,mkldnn,1
+collaboration,model optimization,1
+collaboration,npu,1
+collaboration,opencl,1
+collaboration,parallel programming,1
+collaboration,tvm,1
+communication,cuda,1
+communication,data ingestion,1
+communication,glow,1
+communication,gpu,1
+communication,hugging face,1
+communication,mkldnn,1
+communication,model optimization,1
+communication,npu,1
+communication,opencl,1
+communication,parallel programming,1
+communication,tvm,1
+computer vision,cuda,1
+computer vision,data ingestion,1
+computer vision,glow,1
+computer vision,gpu,1
+computer vision,hugging face,1
+computer vision,mkldnn,1
+computer vision,model optimization,1
+computer vision,npu,1
+computer vision,opencl,1
+computer vision,parallel programming,1
+computer vision,tvm,1
+cuda,data ingestion,1
+cuda,deep learning,1
+cuda,glow,1
+cuda,gpu,1
+cuda,hugging face,1
+cuda,mkldnn,1
+cuda,model optimization,1
+cuda,npu,1
+cuda,opencl,1
+cuda,parallel programming,1
+cuda,python,1
+cuda,pytorch,1
+cuda,reliability,1
+cuda,tensorflow,1
+cuda,tvm,1
+data ingestion,deep learning,1
+data ingestion,glow,1
+data ingestion,gpu,1
+data ingestion,hugging face,1
+data ingestion,mkldnn,1
+data ingestion,model optimization,1
+data ingestion,npu,1
+data ingestion,opencl,1
+data ingestion,parallel programming,1
+data ingestion,python,1
+data ingestion,pytorch,1
+data ingestion,reliability,1
+data ingestion,tensorflow,1
+data ingestion,tvm,1
+deep learning,glow,1
+deep learning,gpu,1
+deep learning,hugging face,1
+deep learning,mkldnn,1
+deep learning,model optimization,1
+deep learning,npu,1
+deep learning,opencl,1
+deep learning,parallel programming,1
+deep learning,tvm,1
+glow,gpu,1
+glow,hugging face,1
+glow,mkldnn,1
+glow,model optimization,1
+glow,npu,1
+glow,opencl,1
+glow,parallel programming,1
+glow,python,1
+glow,pytorch,1
+glow,reliability,1
+glow,tensorflow,1
+glow,tvm,1
+gpu,hugging face,1
+gpu,mkldnn,1
+gpu,model optimization,1
+gpu,npu,1
+gpu,opencl,1
+gpu,parallel programming,1
+gpu,python,1
+gpu,pytorch,1
+gpu,reliability,1
+gpu,tensorflow,1
+gpu,tvm,1
+hugging face,mkldnn,1
+hugging face,model optimization,1
+hugging face,npu,1
+hugging face,opencl,1
+hugging face,parallel programming,1
+hugging face,python,2
+hugging face,pytorch,1
+hugging face,reliability,1
+hugging face,tensorflow,1
+hugging face,tvm,1
+mkldnn,model optimization,1
+mkldnn,npu,1
+mkldnn,opencl,1
+mkldnn,parallel programming,1
+mkldnn,python,1
+mkldnn,pytorch,1
+mkldnn,reliability,1
+mkldnn,tensorflow,1
+mkldnn,tvm,1
+model optimization,npu,1
+model optimization,opencl,1
+model optimization,parallel programming,1
+model optimization,python,1
+model optimization,pytorch,1
+model optimization,reliability,1
+model optimization,tensorflow,1
+model optimization,tvm,1
+npu,opencl,1
+npu,parallel programming,1
+npu,python,1
+npu,pytorch,1
+npu,reliability,1
+npu,tensorflow,1
+npu,tvm,1
+opencl,parallel programming,1
+opencl,python,1
+opencl,pytorch,1
+opencl,reliability,1
+opencl,tensorflow,1
+opencl,tvm,1
+parallel programming,python,1
+parallel programming,pytorch,1
+parallel programming,reliability,1
+parallel programming,tensorflow,1
+parallel programming,tvm,1
+python,tvm,1
+pytorch,tvm,1
+reliability,tvm,1
+tensorflow,tvm,1
+asic,assertions,1
+asic,cdc,1
+asic,dft,1
+asic,fv,1
+asic,lint,1
+asic,low power microarchitecture,1
+asic,microarchitecture,1
+asic,noc design,1
+asic,rtl coding,1
+asic,soc integration,1
+asic,system verilog,1
+asic,upf,1
+asic,upf checks,1
+asic,verilog,1
+asic,white-box testing,1
+assertions,cdc,1
+assertions,dft,1
+assertions,fv,1
+assertions,lint,1
+assertions,low power microarchitecture,1
+assertions,microarchitecture,1
+assertions,noc design,1
+assertions,rtl coding,1
+assertions,soc integration,1
+assertions,system verilog,1
+assertions,upf,1
+assertions,upf checks,1
+assertions,verilog,1
+assertions,white-box testing,1
+cdc,dft,1
+cdc,fv,1
+cdc,lint,1
+cdc,low power microarchitecture,1
+cdc,microarchitecture,1
+cdc,noc design,1
+cdc,rtl coding,1
+cdc,soc integration,1
+cdc,system verilog,1
+cdc,upf,1
+cdc,upf checks,1
+cdc,verilog,1
+cdc,white-box testing,1
+dft,fv,1
+dft,lint,1
+dft,low power microarchitecture,1
+dft,microarchitecture,1
+dft,noc design,1
+dft,rtl coding,1
+dft,soc integration,1
+dft,system verilog,1
+dft,upf,1
+dft,upf checks,1
+dft,verilog,1
+dft,white-box testing,1
+fv,lint,1
+fv,low power microarchitecture,1
+fv,microarchitecture,1
+fv,noc design,1
+fv,rtl coding,1
+fv,soc integration,1
+fv,system verilog,1
+fv,upf,1
+fv,upf checks,1
+fv,verilog,1
+fv,white-box testing,1
+lint,low power microarchitecture,1
+lint,microarchitecture,1
+lint,noc design,1
+lint,rtl coding,1
+lint,soc integration,1
+lint,system verilog,1
+lint,upf,1
+lint,upf checks,1
+lint,verilog,1
+lint,white-box testing,1
+low power microarchitecture,microarchitecture,1
+low power microarchitecture,noc design,1
+low power microarchitecture,rtl coding,1
+low power microarchitecture,soc integration,1
+low power microarchitecture,system verilog,1
+low power microarchitecture,upf,1
+low power microarchitecture,upf checks,1
+low power microarchitecture,verilog,1
+low power microarchitecture,white-box testing,1
+microarchitecture,noc design,1
+microarchitecture,rtl coding,1
+microarchitecture,soc integration,1
+microarchitecture,system verilog,1
+microarchitecture,upf,1
+microarchitecture,upf checks,1
+microarchitecture,verilog,1
+microarchitecture,white-box testing,1
+noc design,rtl coding,1
+noc design,soc integration,1
+noc design,system verilog,1
+noc design,upf,1
+noc design,upf checks,1
+noc design,verilog,1
+noc design,white-box testing,1
+rtl coding,soc integration,1
+rtl coding,system verilog,1
+rtl coding,upf,1
+rtl coding,upf checks,1
+rtl coding,verilog,1
+rtl coding,white-box testing,1
+soc integration,system verilog,1
+soc integration,upf,1
+soc integration,upf checks,1
+soc integration,verilog,1
+soc integration,white-box testing,1
+system verilog,upf,1
+system verilog,upf checks,1
+system verilog,verilog,1
+system verilog,white-box testing,1
+upf,upf checks,1
+upf,verilog,1
+upf,white-box testing,1
+upf checks,verilog,1
+upf checks,white-box testing,1
+verilog,white-box testing,1
+blockchain quality assurance,code reviews,1
+blockchain quality assurance,documentation,1
+blockchain quality assurance,model deployment,1
+blockchain quality assurance,model evaluation,1
+blockchain quality assurance,reinforcement learning,1
+blockchain quality assurance,speech/audio,1
+blockchain quality assurance,system design,1
+code reviews,model evaluation,3
+code reviews,model optimization,1
+code reviews,reinforcement learning,1
+code reviews,speech/audio,1
+code reviews,system design,4
+documentation,model evaluation,3
+documentation,model optimization,1
+documentation,reinforcement learning,1
+documentation,speech/audio,1
+documentation,system design,4
+google cloud,model evaluation,2
+google cloud,model optimization,1
+google cloud,reinforcement learning,3
+google cloud,speech/audio,3
+google cloud,system design,3
+model deployment,model evaluation,5
+model deployment,model optimization,1
+model deployment,reinforcement learning,3
+model deployment,speech/audio,3
+model deployment,system design,6
+model evaluation,model optimization,1
+model evaluation,reinforcement learning,2
+model evaluation,speech/audio,2
+model evaluation,system design,5
+model optimization,reinforcement learning,1
+model optimization,speech/audio,1
+model optimization,system design,1
+reinforcement learning,speech/audio,3
+reinforcement learning,system design,3
+speech/audio,system design,3
+distributed systems,full stack,2
+distributed systems,google cloud,2
+distributed systems,model deployment,2
+distributed systems,protocols,2
+distributed systems,react,2
+distributed systems,reinforcement learning,2
+distributed systems,speech/audio,2
+distributed systems,system design,2
+distributed systems,web server optimization,2
+full stack,google cloud,5
+full stack,model deployment,2
+full stack,protocols,2
+full stack,react,4
+full stack,reinforcement learning,2
+full stack,speech/audio,2
+full stack,system design,3
+full stack,web server optimization,2
+google cloud,protocols,2
+google cloud,react,4
+google cloud,web server optimization,2
+model deployment,protocols,2
+model deployment,react,2
+model deployment,web server optimization,2
+protocols,react,2
+protocols,reinforcement learning,2
+protocols,speech/audio,2
+protocols,system design,2
+protocols,web server optimization,2
+react,reinforcement learning,2
+react,speech/audio,2
+react,system design,3
+react,web server optimization,2
+reinforcement learning,web server optimization,2
+speech/audio,web server optimization,2
+system design,web server optimization,2
+agile,ai coding assistants,2
+agile,aider,1
+agile,autogen,1
+agile,aws,3
+agile,azure,2
+agile,blockchain quality assurance,1
+agile,c,6
+agile,c#,3
+agile,cline,1
+agile,copilot,1
+agile,cursor,1
+agile,github,1
+agile,hugging face,1
+agile,langchain,1
+agile,langgraph,1
+agile,litellm,1
+agile,llamaindex,1
+agile,microservices,2
+agile,pydantic,1
+agile,python,5
+agile,semantickernel,1
+agile,technical leadership,1
+agile,typescript,1
+agile,vercel,1
+agile,windsurf,1
+ai coding assistants,aider,1
+ai coding assistants,autogen,1
+ai coding assistants,aws,1
+ai coding assistants,azure,1
+ai coding assistants,blockchain quality assurance,1
+ai coding assistants,c,2
+ai coding assistants,c#,1
+ai coding assistants,cline,1
+ai coding assistants,copilot,1
+ai coding assistants,cursor,1
+ai coding assistants,github,1
+ai coding assistants,hugging face,1
+ai coding assistants,langchain,1
+ai coding assistants,langgraph,1
+ai coding assistants,litellm,1
+ai coding assistants,llamaindex,1
+ai coding assistants,microservices,1
+ai coding assistants,pydantic,1
+ai coding assistants,python,2
+ai coding assistants,semantickernel,1
+ai coding assistants,technical leadership,1
+ai coding assistants,typescript,1
+ai coding assistants,vercel,1
+ai coding assistants,windsurf,1
+aider,autogen,1
+aider,aws,1
+aider,azure,1
+aider,blockchain quality assurance,1
+aider,c,1
+aider,c#,1
+aider,cline,1
+aider,copilot,1
+aider,cursor,1
+aider,github,1
+aider,hugging face,1
+aider,langchain,1
+aider,langgraph,1
+aider,litellm,1
+aider,llamaindex,1
+aider,microservices,1
+aider,pydantic,1
+aider,python,1
+aider,semantickernel,1
+aider,technical leadership,1
+aider,typescript,1
+aider,vercel,1
+aider,windsurf,1
+autogen,aws,1
+autogen,azure,1
+autogen,blockchain quality assurance,1
+autogen,c,1
+autogen,c#,1
+autogen,cline,1
+autogen,copilot,1
+autogen,cursor,1
+autogen,github,1
+autogen,hugging face,1
+autogen,langchain,1
+autogen,langgraph,1
+autogen,litellm,1
+autogen,llamaindex,1
+autogen,microservices,1
+autogen,pydantic,1
+autogen,python,1
+autogen,semantickernel,1
+autogen,technical leadership,1
+autogen,typescript,1
+autogen,vercel,1
+autogen,windsurf,1
+aws,blockchain quality assurance,1
+aws,c,3
+aws,c#,3
+aws,cline,1
+aws,copilot,1
+aws,cursor,1
+aws,hugging face,1
+aws,langchain,1
+aws,langgraph,1
+aws,litellm,1
+aws,llamaindex,1
+aws,microservices,3
+aws,pydantic,1
+aws,semantickernel,1
+aws,technical leadership,1
+aws,typescript,1
+aws,vercel,1
+aws,windsurf,1
+azure,blockchain quality assurance,1
+azure,c,2
+azure,c#,2
+azure,cline,1
+azure,copilot,1
+azure,cursor,1
+azure,hugging face,1
+azure,langchain,1
+azure,langgraph,1
+azure,litellm,1
+azure,llamaindex,1
+azure,microservices,2
+azure,pydantic,1
+azure,semantickernel,1
+azure,technical leadership,1
+azure,typescript,2
+azure,vercel,1
+azure,windsurf,1
+blockchain quality assurance,c#,1
+blockchain quality assurance,cline,1
+blockchain quality assurance,copilot,1
+blockchain quality assurance,cursor,1
+blockchain quality assurance,github,1
+blockchain quality assurance,langchain,1
+blockchain quality assurance,langgraph,1
+blockchain quality assurance,litellm,1
+blockchain quality assurance,llamaindex,1
+blockchain quality assurance,microservices,1
+blockchain quality assurance,pydantic,1
+blockchain quality assurance,semantickernel,1
+blockchain quality assurance,technical leadership,1
+blockchain quality assurance,typescript,1
+blockchain quality assurance,vercel,1
+blockchain quality assurance,windsurf,1
+c,c#,5
+c,cline,1
+c,copilot,1
+c,cursor,1
+c,github,1
+c,langgraph,1
+c,litellm,1
+c,llamaindex,1
+c,microservices,2
+c,pydantic,1
+c,semantickernel,1
+c,technical leadership,1
+c,typescript,1
+c,vercel,1
+c,windsurf,1
+c#,cline,1
+c#,copilot,1
+c#,cursor,1
+c#,github,1
+c#,hugging face,1
+c#,langchain,1
+c#,langgraph,1
+c#,litellm,1
+c#,llamaindex,1
+c#,microservices,2
+c#,pydantic,1
+c#,python,4
+c#,semantickernel,1
+c#,technical leadership,1
+c#,typescript,1
+c#,vercel,1
+c#,windsurf,1
+cline,copilot,1
+cline,cursor,1
+cline,github,1
+cline,hugging face,1
+cline,langchain,1
+cline,langgraph,1
+cline,litellm,1
+cline,llamaindex,1
+cline,microservices,1
+cline,pydantic,1
+cline,python,1
+cline,semantickernel,1
+cline,technical leadership,1
+cline,typescript,1
+cline,vercel,1
+cline,windsurf,1
+copilot,cursor,1
+copilot,github,1
+copilot,hugging face,1
+copilot,langchain,1
+copilot,langgraph,1
+copilot,litellm,1
+copilot,llamaindex,1
+copilot,microservices,1
+copilot,pydantic,1
+copilot,python,1
+copilot,semantickernel,1
+copilot,technical leadership,1
+copilot,typescript,1
+copilot,vercel,1
+copilot,windsurf,1
+cursor,github,1
+cursor,hugging face,1
+cursor,langchain,1
+cursor,langgraph,1
+cursor,litellm,1
+cursor,llamaindex,1
+cursor,microservices,1
+cursor,pydantic,1
+cursor,python,1
+cursor,semantickernel,1
+cursor,technical leadership,1
+cursor,typescript,1
+cursor,vercel,1
+cursor,windsurf,1
+github,hugging face,1
+github,langchain,1
+github,langgraph,1
+github,litellm,1
+github,llamaindex,1
+github,microservices,1
+github,pydantic,1
+github,semantickernel,1
+github,technical leadership,1
+github,typescript,1
+github,vercel,1
+github,windsurf,1
+hugging face,langchain,1
+hugging face,langgraph,1
+hugging face,litellm,1
+hugging face,llamaindex,1
+hugging face,microservices,1
+hugging face,pydantic,1
+hugging face,semantickernel,1
+hugging face,technical leadership,1
+hugging face,typescript,1
+hugging face,vercel,1
+hugging face,windsurf,1
+langchain,langgraph,1
+langchain,litellm,1
+langchain,llamaindex,1
+langchain,microservices,1
+langchain,pydantic,1
+langchain,semantickernel,1
+langchain,technical leadership,1
+langchain,typescript,1
+langchain,vercel,1
+langchain,windsurf,1
+langgraph,litellm,1
+langgraph,llamaindex,1
+langgraph,microservices,1
+langgraph,pydantic,1
+langgraph,python,1
+langgraph,semantickernel,1
+langgraph,technical leadership,1
+langgraph,typescript,1
+langgraph,vercel,1
+langgraph,windsurf,1
+litellm,llamaindex,1
+litellm,microservices,1
+litellm,pydantic,1
+litellm,python,1
+litellm,semantickernel,1
+litellm,technical leadership,1
+litellm,typescript,1
+litellm,vercel,1
+litellm,windsurf,1
+llamaindex,microservices,1
+llamaindex,pydantic,1
+llamaindex,python,1
+llamaindex,semantickernel,1
+llamaindex,technical leadership,1
+llamaindex,typescript,1
+llamaindex,vercel,1
+llamaindex,windsurf,1
+microservices,pydantic,1
+microservices,python,2
+microservices,semantickernel,1
+microservices,technical leadership,1
+microservices,typescript,1
+microservices,vercel,1
+microservices,windsurf,1
+pydantic,python,1
+pydantic,semantickernel,1
+pydantic,technical leadership,1
+pydantic,typescript,1
+pydantic,vercel,1
+pydantic,windsurf,1
+python,semantickernel,1
+python,technical leadership,1
+python,typescript,1
+python,vercel,1
+python,windsurf,1
+semantickernel,technical leadership,1
+semantickernel,typescript,1
+semantickernel,vercel,1
+semantickernel,windsurf,1
+technical leadership,typescript,1
+technical leadership,vercel,1
+technical leadership,windsurf,1
+typescript,vercel,1
+typescript,windsurf,1
+vercel,windsurf,1
+distributed systems,model evaluation,1
+full stack,model evaluation,1
+model evaluation,protocols,1
+model evaluation,react,1
+model evaluation,web server optimization,1
+computer vision,large vision models,3
+computer vision,llms,3
+computer vision,model evaluation,3
+computer vision,multi-modal,3
+computer vision,system design,3
+computer vision,technical leadership,3
+large vision models,llms,3
+large vision models,model deployment,3
+large vision models,model evaluation,3
+large vision models,multi-modal,3
+large vision models,system design,3
+large vision models,technical leadership,3
+llms,model deployment,3
+llms,model evaluation,3
+llms,multi-modal,3
+llms,system design,3
+llms,technical leadership,3
+model deployment,multi-modal,3
+model deployment,technical leadership,3
+model evaluation,multi-modal,3
+model evaluation,technical leadership,3
+multi-modal,system design,3
+multi-modal,technical leadership,3
+system design,technical leadership,3
+code reviews,large vision models,2
+code reviews,llms,3
+code reviews,multi-modal,2
+code reviews,technical leadership,2
+documentation,large vision models,2
+documentation,multi-modal,2
+documentation,technical leadership,2
+accelerate,agile,1
+accelerate,ai coding assistants,1
+accelerate,apache airflow,1
+accelerate,c,2
+accelerate,ci/cd pipelines,1
+accelerate,code reviews,1
+accelerate,collaboration,2
+accelerate,communication,1
+accelerate,compliance,1
+accelerate,data modeling,1
+accelerate,distributed systems,1
+accelerate,extreme programming (xp),1
+accelerate,git,2
+accelerate,golang,1
+accelerate,grafana,1
+accelerate,infrastructure as code,1
+accelerate,java,1
+accelerate,jira,1
+accelerate,linux,2
+accelerate,maintenance,2
+accelerate,prometheus,1
+accelerate,python,2
+accelerate,reliability,1
+accelerate,rest apis,1
+accelerate,rpcs,1
+accelerate,rust,1
+accelerate,serverless,1
+accelerate,soa,1
+accelerate,spark,1
+accelerate,sql,2
+agile,apache airflow,1
+agile,ci/cd pipelines,2
+agile,code reviews,3
+agile,collaboration,1
+agile,communication,5
+agile,compliance,1
+agile,data modeling,1
+agile,distributed systems,1
+agile,extreme programming (xp),1
+agile,git,3
+agile,golang,2
+agile,grafana,1
+agile,infrastructure as code,1
+agile,java,3
+agile,jira,2
+agile,linux,3
+agile,maintenance,1
+agile,prometheus,1
+agile,reliability,1
+agile,rest apis,3
+agile,rpcs,1
+agile,rust,1
+agile,serverless,1
+agile,soa,1
+agile,spark,1
+agile,sql,1
+ai coding assistants,apache airflow,1
+ai coding assistants,ci/cd pipelines,1
+ai coding assistants,code reviews,1
+ai coding assistants,collaboration,1
+ai coding assistants,communication,1
+ai coding assistants,compliance,1
+ai coding assistants,data modeling,1
+ai coding assistants,distributed systems,1
+ai coding assistants,extreme programming (xp),1
+ai coding assistants,git,1
+ai coding assistants,golang,1
+ai coding assistants,grafana,1
+ai coding assistants,infrastructure as code,1
+ai coding assistants,java,1
+ai coding assistants,jira,1
+ai coding assistants,linux,1
+ai coding assistants,maintenance,1
+ai coding assistants,prometheus,1
+ai coding assistants,reliability,1
+ai coding assistants,rest apis,1
+ai coding assistants,rpcs,1
+ai coding assistants,rust,1
+ai coding assistants,serverless,1
+ai coding assistants,soa,1
+ai coding assistants,spark,1
+ai coding assistants,sql,1
+apache airflow,c,1
+apache airflow,ci/cd pipelines,1
+apache airflow,code reviews,1
+apache airflow,collaboration,1
+apache airflow,communication,1
+apache airflow,compliance,1
+apache airflow,data modeling,1
+apache airflow,distributed systems,1
+apache airflow,extreme programming (xp),1
+apache airflow,git,1
+apache airflow,golang,1
+apache airflow,grafana,1
+apache airflow,infrastructure as code,1
+apache airflow,java,1
+apache airflow,jira,1
+apache airflow,linux,1
+apache airflow,maintenance,1
+apache airflow,prometheus,1
+apache airflow,python,1
+apache airflow,reliability,1
+apache airflow,rest apis,1
+apache airflow,rpcs,1
+apache airflow,rust,1
+apache airflow,serverless,1
+apache airflow,soa,1
+apache airflow,spark,1
+apache airflow,sql,1
+c,code reviews,4
+c,compliance,1
+c,data modeling,1
+c,extreme programming (xp),1
+c,golang,2
+c,grafana,1
+c,infrastructure as code,1
+c,java,4
+c,jira,2
+c,linux,5
+c,maintenance,3
+c,prometheus,1
+c,rest apis,2
+c,rpcs,1
+c,rust,1
+c,serverless,2
+c,soa,1
+c,spark,1
+c,sql,3
+ci/cd pipelines,data modeling,1
+ci/cd pipelines,extreme programming (xp),1
+ci/cd pipelines,golang,1
+ci/cd pipelines,grafana,1
+ci/cd pipelines,infrastructure as code,1
+ci/cd pipelines,jira,1
+ci/cd pipelines,linux,1
+ci/cd pipelines,maintenance,3
+ci/cd pipelines,prometheus,1
+ci/cd pipelines,rest apis,2
+ci/cd pipelines,rpcs,1
+ci/cd pipelines,rust,1
+ci/cd pipelines,serverless,2
+ci/cd pipelines,soa,1
+code reviews,data modeling,1
+code reviews,distributed systems,1
+code reviews,extreme programming (xp),1
+code reviews,golang,1
+code reviews,grafana,1
+code reviews,infrastructure as code,1
+code reviews,jira,1
+code reviews,linux,3
+code reviews,maintenance,3
+code reviews,prometheus,1
+code reviews,rest apis,1
+code reviews,rpcs,1
+code reviews,rust,1
+code reviews,serverless,2
+code reviews,soa,1
+collaboration,data modeling,1
+collaboration,distributed systems,1
+collaboration,extreme programming (xp),1
+collaboration,golang,1
+collaboration,grafana,1
+collaboration,infrastructure as code,1
+collaboration,jira,1
+collaboration,linux,2
+collaboration,maintenance,2
+collaboration,prometheus,1
+collaboration,rest apis,1
+collaboration,rpcs,1
+collaboration,rust,1
+collaboration,serverless,1
+collaboration,soa,1
+communication,data modeling,1
+communication,extreme programming (xp),1
+communication,golang,2
+communication,grafana,1
+communication,infrastructure as code,1
+communication,jira,2
+communication,linux,3
+communication,maintenance,1
+communication,prometheus,1
+communication,rest apis,2
+communication,rpcs,1
+communication,rust,1
+communication,serverless,1
+communication,soa,1
+compliance,data modeling,1
+compliance,distributed systems,1
+compliance,extreme programming (xp),1
+compliance,golang,1
+compliance,grafana,1
+compliance,infrastructure as code,1
+compliance,jira,1
+compliance,linux,1
+compliance,maintenance,1
+compliance,prometheus,1
+compliance,rest apis,1
+compliance,rpcs,1
+compliance,rust,1
+compliance,serverless,1
+compliance,soa,1
+data modeling,distributed systems,1
+data modeling,extreme programming (xp),1
+data modeling,git,1
+data modeling,golang,1
+data modeling,grafana,1
+data modeling,infrastructure as code,1
+data modeling,java,1
+data modeling,jira,1
+data modeling,linux,1
+data modeling,maintenance,1
+data modeling,prometheus,1
+data modeling,python,1
+data modeling,reliability,1
+data modeling,rest apis,1
+data modeling,rpcs,1
+data modeling,rust,1
+data modeling,serverless,1
+data modeling,soa,1
+data modeling,spark,1
+data modeling,sql,1
+distributed systems,extreme programming (xp),1
+distributed systems,golang,1
+distributed systems,grafana,1
+distributed systems,infrastructure as code,1
+distributed systems,java,1
+distributed systems,jira,1
+distributed systems,linux,1
+distributed systems,maintenance,1
+distributed systems,prometheus,1
+distributed systems,reliability,1
+distributed systems,rest apis,1
+distributed systems,rpcs,1
+distributed systems,rust,1
+distributed systems,serverless,1
+distributed systems,soa,1
+distributed systems,spark,1
+distributed systems,sql,1
+extreme programming (xp),git,1
+extreme programming (xp),golang,1
+extreme programming (xp),grafana,1
+extreme programming (xp),infrastructure as code,1
+extreme programming (xp),java,1
+extreme programming (xp),jira,1
+extreme programming (xp),linux,1
+extreme programming (xp),maintenance,1
+extreme programming (xp),prometheus,1
+extreme programming (xp),python,1
+extreme programming (xp),reliability,1
+extreme programming (xp),rest apis,1
+extreme programming (xp),rpcs,1
+extreme programming (xp),rust,1
+extreme programming (xp),serverless,1
+extreme programming (xp),soa,1
+extreme programming (xp),spark,1
+extreme programming (xp),sql,1
+git,golang,1
+git,grafana,1
+git,infrastructure as code,1
+git,jira,2
+git,linux,2
+git,maintenance,2
+git,prometheus,1
+git,rest apis,3
+git,rpcs,1
+git,rust,1
+git,serverless,1
+git,soa,1
+golang,grafana,1
+golang,infrastructure as code,1
+golang,java,2
+golang,jira,1
+golang,linux,1
+golang,maintenance,1
+golang,prometheus,1
+golang,python,2
+golang,reliability,1
+golang,rest apis,1
+golang,rpcs,1
+golang,rust,1
+golang,serverless,1
+golang,soa,1
+golang,spark,1
+golang,sql,1
+grafana,infrastructure as code,1
+grafana,java,1
+grafana,jira,1
+grafana,linux,1
+grafana,maintenance,1
+grafana,prometheus,1
+grafana,python,1
+grafana,reliability,1
+grafana,rest apis,1
+grafana,rpcs,1
+grafana,rust,1
+grafana,serverless,1
+grafana,soa,1
+grafana,spark,1
+grafana,sql,1
+infrastructure as code,java,1
+infrastructure as code,jira,1
+infrastructure as code,linux,1
+infrastructure as code,maintenance,1
+infrastructure as code,prometheus,1
+infrastructure as code,python,1
+infrastructure as code,reliability,1
+infrastructure as code,rest apis,1
+infrastructure as code,rpcs,1
+infrastructure as code,rust,1
+infrastructure as code,serverless,1
+infrastructure as code,soa,1
+infrastructure as code,spark,1
+infrastructure as code,sql,1
+java,jira,2
+java,linux,1
+java,maintenance,2
+java,prometheus,1
+java,rest apis,2
+java,rpcs,1
+java,rust,1
+java,serverless,2
+java,soa,1
+jira,linux,1
+jira,maintenance,1
+jira,prometheus,1
+jira,python,2
+jira,reliability,1
+jira,rest apis,2
+jira,rpcs,1
+jira,rust,1
+jira,serverless,1
+jira,soa,1
+jira,spark,1
+jira,sql,1
+linux,maintenance,2
+linux,prometheus,1
+linux,python,3
+linux,reliability,1
+linux,rest apis,1
+linux,rpcs,1
+linux,rust,1
+linux,serverless,1
+linux,soa,1
+linux,spark,1
+linux,sql,2
+maintenance,prometheus,1
+maintenance,python,2
+maintenance,reliability,1
+maintenance,rest apis,1
+maintenance,rpcs,1
+maintenance,rust,1
+maintenance,serverless,2
+maintenance,soa,1
+maintenance,spark,1
+maintenance,sql,3
+prometheus,python,1
+prometheus,reliability,1
+prometheus,rest apis,1
+prometheus,rpcs,1
+prometheus,rust,1
+prometheus,serverless,1
+prometheus,soa,1
+prometheus,spark,1
+prometheus,sql,1
+python,rest apis,2
+python,rpcs,1
+python,rust,1
+python,serverless,1
+python,soa,1
+reliability,rest apis,1
+reliability,rpcs,1
+reliability,rust,1
+reliability,serverless,1
+reliability,soa,1
+rest apis,rpcs,1
+rest apis,rust,1
+rest apis,serverless,1
+rest apis,soa,1
+rest apis,spark,1
+rest apis,sql,1
+rpcs,rust,1
+rpcs,serverless,1
+rpcs,soa,1
+rpcs,spark,1
+rpcs,sql,1
+rust,serverless,1
+rust,soa,1
+rust,spark,1
+rust,sql,1
+serverless,soa,1
+serverless,spark,1
+serverless,sql,2
+soa,spark,1
+soa,sql,1
+agile,c++,2
+agile,docker,3
+agile,integration testing,2
+agile,open source,2
+agile,windows,2
+c,integration testing,2
+c,open source,2
+c,windows,3
+c++,code reviews,2
+c++,integration testing,2
+c++,linux,4
+c++,open source,2
+c++,windows,3
+code reviews,integration testing,3
+code reviews,open source,2
+code reviews,windows,2
+communication,integration testing,2
+communication,open source,2
+communication,windows,2
+docker,integration testing,2
+docker,linux,3
+docker,open source,2
+docker,windows,3
+integration testing,linux,2
+integration testing,open source,2
+integration testing,windows,2
+linux,open source,2
+linux,windows,3
+open source,windows,2
+cassandra,code reviews,1
+cassandra,documentation,1
+cassandra,integration testing,1
+cassandra,java,1
+cassandra,redis,1
+cassandra,regression,1
+code reviews,redis,1
+code reviews,regression,1
+documentation,integration testing,1
+documentation,redis,1
+documentation,regression,1
+integration testing,java,1
+integration testing,redis,1
+integration testing,regression,1
+java,redis,1
+java,regression,1
+redis,regression,1
+agile,full stack,2
+c,full stack,2
+c++,full stack,1
+code reviews,full stack,2
+communication,full stack,3
+docker,full stack,1
+full stack,integration testing,1
+full stack,linux,1
+full stack,open source,1
+full stack,python,2
+full stack,windows,1
+integration testing,python,1
+open source,python,1
+python,windows,2
+azure,full stack,2
+azure,jest,1
+azure,junit,1
+azure,node.js,3
+azure,postgresql,5
+azure,system design,2
+azure,unit testing,2
+full stack,java,3
+full stack,jest,1
+full stack,junit,1
+full stack,node.js,3
+full stack,postgresql,2
+full stack,typescript,2
+full stack,unit testing,1
+java,jest,1
+java,junit,1
+java,node.js,2
+java,postgresql,3
+java,system design,1
+java,typescript,1
+java,unit testing,2
+jest,junit,1
+jest,node.js,1
+jest,postgresql,1
+jest,system design,1
+jest,typescript,1
+jest,unit testing,1
+junit,node.js,1
+junit,postgresql,1
+junit,system design,1
+junit,typescript,1
+junit,unit testing,1
+node.js,postgresql,3
+node.js,system design,2
+node.js,typescript,1
+node.js,unit testing,1
+postgresql,system design,2
+postgresql,typescript,1
+postgresql,unit testing,2
+system design,typescript,1
+system design,unit testing,1
+typescript,unit testing,1
+communication,css,2
+communication,graphql,1
+communication,mongodb,3
+communication,typescript,1
+communication,vue.js,1
+css,full stack,3
+css,google cloud,3
+css,graphql,1
+css,mongodb,3
+css,typescript,1
+css,vue.js,1
+full stack,graphql,1
+full stack,mongodb,3
+full stack,vue.js,1
+google cloud,graphql,1
+google cloud,mongodb,4
+google cloud,typescript,1
+google cloud,vue.js,1
+graphql,mongodb,1
+graphql,typescript,1
+graphql,vue.js,1
+mongodb,typescript,1
+mongodb,vue.js,1
+typescript,vue.js,1
+aws,maintenance,2
+aws,system design,2
+ci/cd pipelines,system design,2
+maintenance,system design,1
+aws,mongodb,3
+aws,mysql,4
+aws,nosql,3
+aws,postgresql,4
+aws,ruby,1
+azure,mongodb,2
+azure,mysql,3
+azure,nosql,2
+azure,ruby,1
+ci/cd pipelines,microservices,1
+ci/cd pipelines,mongodb,2
+ci/cd pipelines,mysql,3
+ci/cd pipelines,nosql,2
+ci/cd pipelines,postgresql,4
+ci/cd pipelines,ruby,1
+code reviews,microservices,2
+code reviews,mongodb,1
+code reviews,mysql,1
+code reviews,nosql,2
+code reviews,postgresql,2
+code reviews,ruby,1
+communication,microservices,2
+communication,mysql,2
+communication,nosql,2
+communication,postgresql,1
+communication,ruby,1
+git,microservices,2
+git,mongodb,3
+git,mysql,5
+git,nosql,2
+git,postgresql,3
+git,ruby,1
+google cloud,microservices,2
+google cloud,mysql,3
+google cloud,nosql,2
+google cloud,postgresql,2
+google cloud,ruby,1
+java,microservices,3
+java,mongodb,2
+java,mysql,2
+java,nosql,3
+java,ruby,1
+microservices,mongodb,2
+microservices,mysql,2
+microservices,nosql,2
+microservices,postgresql,1
+microservices,ruby,1
+microservices,sql,1
+mongodb,mysql,3
+mongodb,nosql,2
+mongodb,postgresql,2
+mongodb,ruby,1
+mongodb,sql,1
+mysql,nosql,2
+mysql,postgresql,3
+mysql,ruby,1
+mysql,sql,2
+nosql,postgresql,2
+nosql,ruby,1
+nosql,sql,2
+postgresql,ruby,1
+postgresql,sql,2
+ruby,sql,1
+agile,angular,1
+agile,bigquery,1
+agile,css,1
+agile,documentation,2
+agile,firebase,1
+agile,google cloud,1
+agile,kanban,1
+agile,mongodb,1
+agile,mysql,2
+agile,node.js,2
+agile,nosql,1
+agile,php,2
+agile,postman,1
+agile,pubsub,1
+agile,react,2
+agile,scrum,1
+agile,websockets,1
+angular,aws,2
+angular,bigquery,1
+angular,c,3
+angular,c#,3
+angular,communication,1
+angular,css,2
+angular,documentation,1
+angular,firebase,1
+angular,full stack,1
+angular,git,2
+angular,google cloud,1
+angular,java,2
+angular,jira,1
+angular,kanban,1
+angular,microservices,1
+angular,mongodb,1
+angular,mysql,2
+angular,node.js,1
+angular,nosql,2
+angular,php,1
+angular,postman,1
+angular,pubsub,1
+angular,python,2
+angular,react,1
+angular,rest apis,1
+angular,scrum,1
+angular,websockets,1
+aws,bigquery,1
+aws,css,2
+aws,firebase,1
+aws,full stack,2
+aws,jira,1
+aws,kanban,1
+aws,node.js,3
+aws,php,2
+aws,postman,1
+aws,pubsub,1
+aws,react,3
+aws,rest apis,2
+aws,scrum,1
+aws,websockets,1
+bigquery,c,1
+bigquery,c#,1
+bigquery,communication,1
+bigquery,css,1
+bigquery,documentation,1
+bigquery,firebase,1
+bigquery,full stack,1
+bigquery,git,1
+bigquery,google cloud,1
+bigquery,java,1
+bigquery,jira,1
+bigquery,kanban,1
+bigquery,microservices,1
+bigquery,mongodb,1
+bigquery,mysql,1
+bigquery,node.js,1
+bigquery,nosql,1
+bigquery,php,1
+bigquery,postman,1
+bigquery,pubsub,1
+bigquery,python,1
+bigquery,react,1
+bigquery,rest apis,1
+bigquery,scrum,1
+bigquery,websockets,1
+c,css,2
+c,firebase,1
+c,google cloud,1
+c,kanban,1
+c,mongodb,1
+c,mysql,2
+c,node.js,1
+c,nosql,2
+c,php,1
+c,postman,1
+c,pubsub,1
+c,react,1
+c,scrum,1
+c,websockets,1
+c#,communication,2
+c#,css,2
+c#,documentation,1
+c#,firebase,1
+c#,full stack,1
+c#,git,2
+c#,google cloud,1
+c#,java,3
+c#,jira,1
+c#,kanban,1
+c#,mongodb,1
+c#,mysql,2
+c#,node.js,1
+c#,nosql,2
+c#,php,1
+c#,postman,1
+c#,pubsub,1
+c#,react,1
+c#,rest apis,1
+c#,scrum,1
+c#,websockets,1
+communication,firebase,1
+communication,kanban,1
+communication,node.js,1
+communication,php,1
+communication,postman,1
+communication,pubsub,1
+communication,react,1
+communication,scrum,1
+communication,websockets,1
+css,documentation,1
+css,firebase,1
+css,git,3
+css,java,1
+css,jira,1
+css,kanban,1
+css,microservices,1
+css,mysql,3
+css,node.js,2
+css,nosql,1
+css,php,1
+css,postman,1
+css,pubsub,1
+css,python,2
+css,react,2
+css,rest apis,1
+css,scrum,1
+css,websockets,1
+documentation,firebase,1
+documentation,full stack,1
+documentation,jira,1
+documentation,kanban,1
+documentation,microservices,1
+documentation,mongodb,1
+documentation,mysql,2
+documentation,node.js,2
+documentation,nosql,1
+documentation,php,2
+documentation,postman,1
+documentation,pubsub,1
+documentation,react,2
+documentation,rest apis,2
+documentation,scrum,1
+documentation,websockets,1
+firebase,full stack,1
+firebase,git,1
+firebase,google cloud,1
+firebase,java,1
+firebase,jira,1
+firebase,kanban,1
+firebase,microservices,1
+firebase,mongodb,1
+firebase,mysql,1
+firebase,node.js,1
+firebase,nosql,1
+firebase,php,1
+firebase,postman,1
+firebase,pubsub,1
+firebase,python,1
+firebase,react,1
+firebase,rest apis,1
+firebase,scrum,1
+firebase,websockets,1
+full stack,git,2
+full stack,jira,1
+full stack,kanban,1
+full stack,microservices,2
+full stack,mysql,2
+full stack,nosql,1
+full stack,php,1
+full stack,postman,1
+full stack,pubsub,1
+full stack,rest apis,1
+full stack,scrum,1
+full stack,websockets,1
+git,kanban,1
+git,node.js,3
+git,php,2
+git,postman,1
+git,pubsub,1
+git,react,3
+git,scrum,1
+git,websockets,1
+google cloud,jira,1
+google cloud,kanban,1
+google cloud,node.js,2
+google cloud,php,1
+google cloud,postman,1
+google cloud,pubsub,1
+google cloud,rest apis,1
+google cloud,scrum,1
+google cloud,websockets,1
+java,kanban,1
+java,php,1
+java,postman,1
+java,pubsub,1
+java,react,1
+java,scrum,1
+java,websockets,1
+jira,kanban,1
+jira,microservices,1
+jira,mongodb,1
+jira,mysql,1
+jira,node.js,1
+jira,nosql,1
+jira,php,1
+jira,postman,1
+jira,pubsub,1
+jira,react,1
+jira,scrum,1
+jira,websockets,1
+kanban,microservices,1
+kanban,mongodb,1
+kanban,mysql,1
+kanban,node.js,1
+kanban,nosql,1
+kanban,php,1
+kanban,postman,1
+kanban,pubsub,1
+kanban,python,1
+kanban,react,1
+kanban,rest apis,1
+kanban,scrum,1
+kanban,websockets,1
+microservices,node.js,1
+microservices,php,1
+microservices,postman,1
+microservices,pubsub,1
+microservices,react,1
+microservices,rest apis,1
+microservices,scrum,1
+microservices,websockets,1
+mongodb,node.js,2
+mongodb,php,1
+mongodb,postman,1
+mongodb,pubsub,1
+mongodb,python,1
+mongodb,react,2
+mongodb,rest apis,1
+mongodb,scrum,1
+mongodb,websockets,1
+mysql,node.js,3
+mysql,php,2
+mysql,postman,1
+mysql,pubsub,1
+mysql,python,2
+mysql,react,3
+mysql,rest apis,2
+mysql,scrum,1
+mysql,websockets,1
+node.js,nosql,1
+node.js,php,2
+node.js,postman,1
+node.js,pubsub,1
+node.js,python,1
+node.js,react,3
+node.js,rest apis,2
+node.js,scrum,1
+node.js,websockets,1
+nosql,php,1
+nosql,postman,1
+nosql,pubsub,1
+nosql,python,1
+nosql,react,1
+nosql,rest apis,1
+nosql,scrum,1
+nosql,websockets,1
+php,postman,1
+php,pubsub,1
+php,python,1
+php,react,2
+php,rest apis,2
+php,scrum,1
+php,websockets,1
+postman,pubsub,1
+postman,python,1
+postman,react,1
+postman,rest apis,1
+postman,scrum,1
+postman,websockets,1
+pubsub,python,1
+pubsub,react,1
+pubsub,rest apis,1
+pubsub,scrum,1
+pubsub,websockets,1
+python,react,1
+python,scrum,1
+python,websockets,1
+react,rest apis,2
+react,scrum,1
+react,websockets,1
+rest apis,scrum,1
+rest apis,websockets,1
+scrum,websockets,1
+aws,jwt,1
+aws,llms,2
+azure,css,1
+azure,jwt,1
+azure,llms,2
+azure,react,2
+ci/cd pipelines,css,1
+ci/cd pipelines,full stack,1
+ci/cd pipelines,jwt,1
+ci/cd pipelines,node.js,2
+ci/cd pipelines,react,2
+css,github,1
+css,jwt,1
+css,llms,1
+css,postgresql,1
+full stack,github,1
+full stack,jwt,1
+full stack,llms,1
+git,jwt,1
+github,jwt,1
+github,llms,1
+github,mongodb,1
+github,mysql,1
+github,node.js,1
+github,postgresql,1
+github,react,1
+google cloud,jwt,1
+google cloud,llms,1
+jwt,llms,1
+jwt,mongodb,1
+jwt,mysql,1
+jwt,node.js,1
+jwt,postgresql,1
+jwt,react,1
+llms,mongodb,1
+llms,mysql,1
+llms,node.js,1
+llms,postgresql,2
+llms,react,1
+postgresql,react,2
+agile,design patterns,2
+agile,kafka,1
+agile,kubernetes,1
+agile,postgresql,1
+agile,pub/sub,1
+agile,rabbitmq,1
+agile,sns,1
+agile,sqs,1
+agile,system design,1
+aws,design patterns,2
+aws,kafka,1
+aws,pub/sub,1
+aws,rabbitmq,1
+aws,sns,1
+aws,sqs,1
+azure,design patterns,2
+azure,kafka,1
+azure,php,1
+azure,pub/sub,1
+azure,rabbitmq,1
+azure,rest apis,1
+azure,sns,1
+azure,sqs,1
+ci/cd pipelines,design patterns,2
+ci/cd pipelines,kafka,1
+ci/cd pipelines,php,1
+ci/cd pipelines,pub/sub,1
+ci/cd pipelines,rabbitmq,1
+ci/cd pipelines,sns,1
+ci/cd pipelines,sqs,1
+design patterns,docker,1
+design patterns,documentation,1
+design patterns,git,1
+design patterns,kafka,1
+design patterns,kubernetes,2
+design patterns,mysql,1
+design patterns,node.js,1
+design patterns,php,1
+design patterns,postgresql,2
+design patterns,pub/sub,1
+design patterns,rabbitmq,1
+design patterns,react,1
+design patterns,rest apis,1
+design patterns,sns,1
+design patterns,sqs,1
+design patterns,system design,1
+docker,kafka,1
+docker,mysql,2
+docker,node.js,1
+docker,php,1
+docker,postgresql,1
+docker,pub/sub,1
+docker,rabbitmq,1
+docker,react,1
+docker,rest apis,1
+docker,sns,1
+docker,sqs,1
+docker,system design,1
+documentation,kafka,1
+documentation,postgresql,1
+documentation,pub/sub,1
+documentation,rabbitmq,1
+documentation,sns,1
+documentation,sqs,1
+git,kafka,1
+git,pub/sub,1
+git,rabbitmq,1
+git,sns,1
+git,sqs,1
+git,system design,1
+kafka,kubernetes,1
+kafka,mysql,1
+kafka,node.js,1
+kafka,php,1
+kafka,postgresql,1
+kafka,pub/sub,1
+kafka,rabbitmq,1
+kafka,react,1
+kafka,rest apis,1
+kafka,sns,1
+kafka,sqs,1
+kafka,system design,1
+kubernetes,mysql,1
+kubernetes,node.js,1
+kubernetes,php,1
+kubernetes,postgresql,2
+kubernetes,pub/sub,1
+kubernetes,rabbitmq,1
+kubernetes,react,1
+kubernetes,rest apis,1
+kubernetes,sns,1
+kubernetes,sqs,1
+kubernetes,system design,1
+mysql,pub/sub,1
+mysql,rabbitmq,1
+mysql,sns,1
+mysql,sqs,1
+mysql,system design,1
+node.js,pub/sub,1
+node.js,rabbitmq,1
+node.js,sns,1
+node.js,sqs,1
+php,postgresql,1
+php,pub/sub,1
+php,rabbitmq,1
+php,sns,1
+php,sqs,1
+php,system design,1
+postgresql,pub/sub,1
+postgresql,rabbitmq,1
+postgresql,rest apis,1
+postgresql,sns,1
+postgresql,sqs,1
+pub/sub,rabbitmq,1
+pub/sub,react,1
+pub/sub,rest apis,1
+pub/sub,sns,1
+pub/sub,sqs,1
+pub/sub,system design,1
+rabbitmq,react,1
+rabbitmq,rest apis,1
+rabbitmq,sns,1
+rabbitmq,sqs,1
+rabbitmq,system design,1
+react,sns,1
+react,sqs,1
+rest apis,sns,1
+rest apis,sqs,1
+rest apis,system design,1
+sns,sqs,1
+sns,system design,1
+sqs,system design,1
+.net,accelerate,1
+.net,angular,2
+.net,c,3
+.net,c#,3
+.net,c++,1
+.net,collaboration,1
+.net,css,1
+.net,docker,1
+.net,git,1
+.net,inter-operability,1
+.net,linux,1
+.net,maintenance,2
+.net,mentoring,2
+.net,ms test,1
+.net,mysql,1
+.net,nunit,1
+.net,object-oriented design,1
+.net,python,2
+.net,relational databases,1
+.net,restful api,1
+.net,sql,2
+.net,sql server,1
+.net,threading,1
+.net,troubleshooting,1
+.net,unit testing,2
+.net,web services,1
+.net,windows,1
+accelerate,angular,1
+accelerate,c#,1
+accelerate,c++,1
+accelerate,css,1
+accelerate,docker,1
+accelerate,inter-operability,1
+accelerate,mentoring,1
+accelerate,ms test,1
+accelerate,mysql,1
+accelerate,nunit,1
+accelerate,object-oriented design,1
+accelerate,relational databases,1
+accelerate,restful api,1
+accelerate,sql server,1
+accelerate,threading,1
+accelerate,troubleshooting,1
+accelerate,unit testing,1
+accelerate,web services,1
+accelerate,windows,1
+angular,c++,1
+angular,collaboration,1
+angular,docker,1
+angular,inter-operability,1
+angular,linux,1
+angular,maintenance,2
+angular,mentoring,2
+angular,ms test,1
+angular,nunit,1
+angular,object-oriented design,1
+angular,relational databases,1
+angular,restful api,1
+angular,sql,2
+angular,sql server,1
+angular,threading,1
+angular,troubleshooting,1
+angular,unit testing,2
+angular,web services,1
+angular,windows,1
+c,inter-operability,1
+c,mentoring,2
+c,ms test,1
+c,nunit,1
+c,object-oriented design,1
+c,relational databases,1
+c,restful api,1
+c,sql server,1
+c,threading,1
+c,troubleshooting,1
+c,unit testing,2
+c,web services,1
+c#,c++,1
+c#,collaboration,1
+c#,docker,1
+c#,inter-operability,1
+c#,linux,1
+c#,maintenance,2
+c#,mentoring,2
+c#,ms test,1
+c#,nunit,1
+c#,object-oriented design,1
+c#,relational databases,1
+c#,restful api,1
+c#,sql,2
+c#,sql server,1
+c#,threading,1
+c#,troubleshooting,1
+c#,unit testing,2
+c#,web services,1
+c#,windows,1
+c++,css,1
+c++,inter-operability,1
+c++,maintenance,1
+c++,mentoring,1
+c++,ms test,1
+c++,mysql,1
+c++,nunit,1
+c++,object-oriented design,1
+c++,relational databases,1
+c++,restful api,1
+c++,sql,1
+c++,sql server,1
+c++,threading,1
+c++,troubleshooting,1
+c++,unit testing,1
+c++,web services,1
+collaboration,css,1
+collaboration,inter-operability,1
+collaboration,mentoring,1
+collaboration,ms test,1
+collaboration,mysql,1
+collaboration,nunit,1
+collaboration,object-oriented design,1
+collaboration,relational databases,1
+collaboration,restful api,1
+collaboration,sql server,1
+collaboration,threading,1
+collaboration,unit testing,1
+collaboration,web services,1
+collaboration,windows,1
+css,docker,1
+css,inter-operability,1
+css,linux,1
+css,maintenance,1
+css,mentoring,1
+css,ms test,1
+css,nunit,1
+css,object-oriented design,1
+css,relational databases,1
+css,restful api,1
+css,sql,1
+css,sql server,1
+css,threading,1
+css,troubleshooting,1
+css,unit testing,1
+css,web services,1
+css,windows,1
+docker,inter-operability,1
+docker,maintenance,1
+docker,mentoring,1
+docker,ms test,1
+docker,nunit,1
+docker,object-oriented design,1
+docker,relational databases,1
+docker,restful api,1
+docker,sql server,1
+docker,threading,1
+docker,unit testing,1
+docker,web services,1
+git,inter-operability,1
+git,mentoring,1
+git,ms test,1
+git,nunit,1
+git,object-oriented design,1
+git,relational databases,1
+git,restful api,1
+git,sql server,1
+git,threading,1
+git,unit testing,1
+git,web services,1
+git,windows,1
+inter-operability,linux,1
+inter-operability,maintenance,1
+inter-operability,mentoring,1
+inter-operability,ms test,1
+inter-operability,mysql,1
+inter-operability,nunit,1
+inter-operability,object-oriented design,1
+inter-operability,python,1
+inter-operability,relational databases,1
+inter-operability,restful api,1
+inter-operability,sql,1
+inter-operability,sql server,1
+inter-operability,threading,1
+inter-operability,troubleshooting,1
+inter-operability,unit testing,1
+inter-operability,web services,1
+inter-operability,windows,1
+linux,mentoring,1
+linux,ms test,1
+linux,mysql,1
+linux,nunit,1
+linux,object-oriented design,1
+linux,relational databases,1
+linux,restful api,1
+linux,sql server,1
+linux,threading,1
+linux,troubleshooting,1
+linux,unit testing,1
+linux,web services,1
+maintenance,mentoring,2
+maintenance,ms test,1
+maintenance,mysql,1
+maintenance,nunit,1
+maintenance,object-oriented design,1
+maintenance,relational databases,1
+maintenance,restful api,1
+maintenance,sql server,1
+maintenance,threading,1
+maintenance,troubleshooting,1
+maintenance,unit testing,2
+maintenance,web services,1
+maintenance,windows,1
+mentoring,ms test,1
+mentoring,mysql,1
+mentoring,nunit,1
+mentoring,object-oriented design,1
+mentoring,python,1
+mentoring,relational databases,1
+mentoring,restful api,1
+mentoring,sql,2
+mentoring,sql server,1
+mentoring,threading,1
+mentoring,troubleshooting,1
+mentoring,unit testing,2
+mentoring,web services,1
+mentoring,windows,1
+ms test,mysql,1
+ms test,nunit,1
+ms test,object-oriented design,1
+ms test,python,1
+ms test,relational databases,1
+ms test,restful api,1
+ms test,sql,1
+ms test,sql server,1
+ms test,threading,1
+ms test,troubleshooting,1
+ms test,unit testing,1
+ms test,web services,1
+ms test,windows,1
+mysql,nunit,1
+mysql,object-oriented design,1
+mysql,relational databases,1
+mysql,restful api,1
+mysql,sql server,1
+mysql,threading,1
+mysql,troubleshooting,1
+mysql,unit testing,1
+mysql,web services,1
+mysql,windows,1
+nunit,object-oriented design,1
+nunit,python,1
+nunit,relational databases,1
+nunit,restful api,1
+nunit,sql,1
+nunit,sql server,1
+nunit,threading,1
+nunit,troubleshooting,1
+nunit,unit testing,1
+nunit,web services,1
+nunit,windows,1
+object-oriented design,python,1
+object-oriented design,relational databases,1
+object-oriented design,restful api,1
+object-oriented design,sql,1
+object-oriented design,sql server,1
+object-oriented design,threading,1
+object-oriented design,troubleshooting,1
+object-oriented design,unit testing,1
+object-oriented design,web services,1
+object-oriented design,windows,1
+python,relational databases,1
+python,restful api,1
+python,sql server,1
+python,threading,1
+python,unit testing,1
+python,web services,1
+relational databases,restful api,1
+relational databases,sql,1
+relational databases,sql server,1
+relational databases,threading,1
+relational databases,troubleshooting,1
+relational databases,unit testing,1
+relational databases,web services,1
+relational databases,windows,1
+restful api,sql,1
+restful api,sql server,1
+restful api,threading,1
+restful api,troubleshooting,1
+restful api,unit testing,1
+restful api,web services,1
+restful api,windows,1
+sql,sql server,1
+sql,threading,1
+sql,unit testing,2
+sql,web services,1
+sql,windows,1
+sql server,threading,1
+sql server,troubleshooting,1
+sql server,unit testing,1
+sql server,web services,1
+sql server,windows,1
+threading,troubleshooting,1
+threading,unit testing,1
+threading,web services,1
+threading,windows,1
+troubleshooting,unit testing,1
+troubleshooting,web services,1
+troubleshooting,windows,1
+unit testing,web services,1
+unit testing,windows,1
+web services,windows,1
+c,rendering,1
+c,rtos,1
+c++,rendering,1
+c++,rtos,1
+linux,rendering,1
+linux,rtos,1
+rendering,rtos,1
+code reviews,mentoring,2
+full stack,mentoring,1
+java,mentoring,2
+mentoring,microservices,1
+.net,aws,1
+.net,azure,1
+.net,azure devops,1
+.net,ci/cd pipelines,1
+.net,code reviews,1
+.net,design patterns,2
+.net,java,2
+.net,kubernetes,1
+.net,llms,1
+.net,nosql,1
+.net,postgresql,1
+.net,r,1
+.net,serverless,1
+angular,azure,1
+angular,azure devops,1
+angular,ci/cd pipelines,1
+angular,code reviews,1
+angular,design patterns,1
+angular,kubernetes,1
+angular,llms,1
+angular,postgresql,1
+angular,r,1
+angular,serverless,1
+aws,azure devops,1
+aws,mentoring,1
+aws,serverless,1
+aws,unit testing,1
+azure,azure devops,1
+azure,maintenance,1
+azure,mentoring,1
+azure,serverless,1
+azure devops,c,1
+azure devops,c#,1
+azure devops,ci/cd pipelines,1
+azure devops,code reviews,1
+azure devops,design patterns,1
+azure devops,java,1
+azure devops,kubernetes,1
+azure devops,llms,1
+azure devops,maintenance,1
+azure devops,mentoring,1
+azure devops,nosql,1
+azure devops,postgresql,1
+azure devops,r,1
+azure devops,serverless,1
+azure devops,sql,1
+azure devops,unit testing,1
+c,design patterns,2
+c,postgresql,1
+c,r,1
+c#,ci/cd pipelines,1
+c#,code reviews,1
+c#,design patterns,2
+c#,kubernetes,1
+c#,llms,1
+c#,postgresql,1
+c#,r,1
+c#,serverless,1
+ci/cd pipelines,mentoring,1
+ci/cd pipelines,unit testing,1
+code reviews,design patterns,1
+code reviews,unit testing,1
+design patterns,java,2
+design patterns,llms,1
+design patterns,maintenance,1
+design patterns,mentoring,1
+design patterns,nosql,1
+design patterns,r,1
+design patterns,serverless,1
+design patterns,sql,1
+design patterns,unit testing,1
+java,llms,1
+kubernetes,maintenance,1
+kubernetes,mentoring,1
+kubernetes,nosql,1
+kubernetes,serverless,1
+kubernetes,unit testing,1
+llms,maintenance,1
+llms,mentoring,1
+llms,nosql,1
+llms,r,1
+llms,serverless,1
+llms,sql,1
+llms,unit testing,1
+maintenance,nosql,1
+maintenance,postgresql,1
+maintenance,r,1
+mentoring,nosql,1
+mentoring,postgresql,1
+mentoring,r,1
+mentoring,serverless,1
+nosql,r,1
+nosql,serverless,1
+nosql,unit testing,1
+postgresql,r,1
+postgresql,serverless,1
+r,serverless,1
+r,unit testing,1
+serverless,unit testing,1
+.net,agile,1
+.net,angularjs,1
+.net,communication,1
+.net,design thinking,1
+.net,golang,1
+.net,reactjs,1
+.net,scala,1
+agile,angularjs,1
+agile,design thinking,1
+agile,reactjs,1
+agile,scala,1
+angularjs,c,1
+angularjs,c#,1
+angularjs,communication,1
+angularjs,design patterns,1
+angularjs,design thinking,1
+angularjs,golang,1
+angularjs,java,1
+angularjs,python,1
+angularjs,reactjs,1
+angularjs,scala,1
+c,design thinking,1
+c,reactjs,1
+c,scala,1
+c#,design thinking,1
+c#,golang,1
+c#,reactjs,1
+c#,scala,1
+communication,design patterns,1
+communication,design thinking,1
+communication,reactjs,1
+communication,scala,1
+design patterns,design thinking,1
+design patterns,golang,1
+design patterns,python,1
+design patterns,reactjs,1
+design patterns,scala,1
+design thinking,golang,1
+design thinking,java,1
+design thinking,python,1
+design thinking,reactjs,1
+design thinking,scala,1
+golang,reactjs,1
+golang,scala,1
+java,reactjs,1
+java,scala,1
+python,reactjs,1
+python,scala,1
+reactjs,scala,1
