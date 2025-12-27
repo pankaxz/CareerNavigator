@@ -1,6 +1,7 @@
 using CareerNavigator.Core.Models.Schema;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using System.Threading;
 
 namespace CareerNavigator.Core.Engines;
 
@@ -10,7 +11,7 @@ public class UniverseProvider : IUniverseProvider, IDisposable
     private readonly string _filePath;
     private readonly FileSystemWatcher? _watcher;
     private readonly ILogger<UniverseProvider> _logger;
-    private readonly object _lock = new();
+    private readonly Lock _lock = new();
 
     public UniverseProvider(IWebHostEnvironment env, ILogger<UniverseProvider> logger)
     {

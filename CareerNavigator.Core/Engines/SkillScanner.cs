@@ -127,7 +127,7 @@ public class SkillScanner
         return $"{startBoundary}{escaped}{endBoundary}";
     }
 
-
+    //TODO : add consideration for more than one YOE, like management YOE of 4 years and Work YOE of 10 years.
     private int ExtractYearsOfExperience(string text)
     {
         int maxYears = 0;
