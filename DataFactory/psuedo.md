@@ -6,23 +6,26 @@ This file explains the inner workings of the DataFactory engine in the simplest 
 
 ## 1. processor.py (The Orchestrator)
 **What it does:**  
-This is the main script that runs the factory. It iterates through all the loaded Job Descriptions (JDs), uses the other utilities to extract data, and aggregates the results into a massive graph.
+This is the main script that runs the factory. It acts as a "General Contractor," delegating specific work to the specialized utility classes below. It loads data, calls the builders, and saves the results.
 
-**Data Structures Used:**
-- **Dictionary (Hash Map):** `node_stats` maps every skill to its statistics (Total Count, Senior Count). Fast lookups O(1).
-- **Dictionary:** `edge_counts` maps a pair of skills `("React", "Next.js")` to their connection frequency.
-- **Set:** Used implicitly to store unique skills found in a single JD.
-
-**Algorithms Used:**
-- **Nested Loops:** 
-    1. Loop through every JD.
-    2. Loop through every skill found in that JD.
-- **Combinations:** Uses `itertools.combinations(skills, 2)` to create every possible pair of skills (nodes) to form links (edges). If a JD has 5 skills, it creates 10 links.
-- **Aggregation:** Sums up counts as it goes.
+**Key Functions:**
+- `process_data()`: The main entry point.
 
 ---
 
-## 2. utils/text_processor.py (The Miner / NLP Engine)
+## 2. utils/graph_builder.py (The Builder)
+**What it does:**  
+Manages the construction of the knowledge graph. It handles the raw counting and statistical aggregation.
+
+**Key Functions:**
+- `initialize_stats()`: Prepares empty counters.
+- `update_metrics()`: Adds a single JD's data to the global graph.
+- `prepare_nodes_list()`: Transforms raw counts into the final list of nodes.
+- `filter_edges()`: Applies the threshold to connections.
+
+---
+
+## 3. utils/text_processor.py (The Miner / NLP Engine)
 **What it does:**  
 This is the "Smart" part of the system. It takes raw, messy text and extracts structured data (Skills and Seniority).
 
@@ -51,6 +54,15 @@ Handles all File Input and Output. It ensures the data leaving the system is cle
 
 **Data Structures Used:**
 - **JSON Object:** The final structure for `universe.json`.
+    - Threshold Filtering mechanism:
+
+    Threshold: Set to 3. This means a skill must appear in at least 3 Job Descriptions to be included in the 
+    universe.json
+     output.
+    Filtering Logic:
+    Nodes: Only skills with total count >= 3 are added.
+    Edges: Only links between two valid (filtered) nodes with co-occurrence count >= 3 are added.
+    Seniority Scores: The system now calculates and includes seniorityScore and isSenior status for every node in the output.
 - **Lists of Dictionaries:** Used to prepare rows for CSV writing.
 
 **Algorithms Used:**
@@ -87,4 +99,15 @@ The database for the frontend.
 **Data Structures Used:**
 - **Graph (Network):**
     - `nodes`: The dots (Skills).
+      - id (string): The unique identifier for the skill (e.g., "python", "kubernetes"). This matches the exact string found in the text processing stage.
+      - group (string): The category to which the skill belongs (e.g., "Languages", "Frameworks"). This is used for styling and filtering in the frontend.
+      - val (number): The total count of occurrences of the skill across all Job Descriptions. This is used for sizing the node in the frontend.
+      - seniorityScore (number): The ratio of "Senior" occurrences vs. total occurrences. This is used for coloring the node in the frontend.
+      - isSenior (boolean): True if the seniorityScore is > 0.6. This is used for filtering in the frontend.
+  
     - `links`: The lines connecting them (Co-occurrences).
+      - source (string): The id of the starting node.
+      - target (string): The id of the ending node.
+      - value (int): The strength of the connection. It represents the number of JDs where both skills appeared together. In the visualization, this determines the thickness or pull of the line connecting the stars.
+      - seniorityScore (number): The ratio of "Senior" occurrences vs. total occurrences. This is used for coloring the node in the frontend.
+      - isSenior (boolean): True if the seniorityScore is > 0.6. This is used for filtering in the frontend.

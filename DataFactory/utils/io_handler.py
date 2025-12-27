@@ -1,33 +1,42 @@
+from pdb import line_prefix
 import json
 import csv
 import os
+from typing import List, Dict, Any, Tuple
 
 class IOHandler:
     @staticmethod
-    def load_raw_jds(file_path="raw_jds.txt", delimiter="###END###"):
+    def load_raw_jds(file_path: str = "raw_jds.txt", delimiter: str = "###END###") -> List[str]:
         try:
             with open(file_path, "r", encoding="utf-8") as f:
-                content = f.read()
+                content: str = f.read()
                 # Split and clean
-                jds = [jd.strip() for jd in content.split(delimiter) if jd.strip()]
+                # Original: jds = [jd.strip() for jd in content.split(delimiter) if jd.strip()]
+                raw_segments: List[str] = content.split(delimiter)
+                jds: List[str] = []
+                for segment in raw_segments:
+                    cleaned_segment: str = segment.strip()
+                    if cleaned_segment:
+                        jds.append(cleaned_segment)
                 return jds
+                
         except FileNotFoundError:
             print(f"❌ Error: {file_path} not found!")
             return []
 
     @staticmethod
-    def ensure_output_dir(output_dir):
+    def ensure_output_dir(output_dir: str) -> None:
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
 
     @staticmethod
-    def save_universe(nodes_list, edge_counts, output_dir="output"):
+    def save_universe(nodes_list: List[Dict[str, Any]], edge_counts: Dict[Tuple[str, str], Dict[str, int]], meta: Dict[str, Any] = None, output_dir: str = "output") -> None:
         IOHandler.ensure_output_dir(output_dir)
         
-        links_list = []
+        links_list: List[Dict[str, Any]] = []
         for (src, tgt), stats in edge_counts.items():
             if stats["total"] > 0:
-                seniority_score = round(stats["senior_count"] / stats["total"], 2)
+                seniority_score: float = round(stats["senior_count"] / stats["total"], 2)
                 links_list.append({
                     "source": src,
                     "target": tgt,
@@ -37,22 +46,24 @@ class IOHandler:
                 })
 
         # Structure matches the C# Model expectations
-        universe_json = {
+        universe_json: Dict[str, Any] = {
+            "meta": meta if meta else {},
             "nodes": nodes_list,
             "links": links_list
         }
 
-        output_path = os.path.join(output_dir, "universe.json")
+        output_path: str = os.path.join(output_dir, "universe.json")
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(universe_json, f, indent=4)
         print(f"✅ Created {output_path}")
 
+
     @staticmethod
-    def save_cosmograph_files(node_stats, edge_counts, skill_to_group, output_dir="output"):
+    def save_cosmograph_files(node_stats: Dict[str, Dict[str, int]], edge_counts: Dict[Tuple[str, str], Dict[str, int]], skill_to_group: Dict[str, str], output_dir: str = "output") -> None:
         IOHandler.ensure_output_dir(output_dir)
 
         # Nodes CSV
-        nodes_path = os.path.join(output_dir, "nodes.csv")
+        nodes_path: str = os.path.join(output_dir, "nodes.csv")
         with open(nodes_path, "w", encoding="utf-8", newline='') as f:
             writer = csv.writer(f)
             writer.writerow(["id", "group", "val"]) # Header
@@ -62,7 +73,7 @@ class IOHandler:
         print(f"✅ Created {nodes_path}")
 
         # Edges CSV
-        edges_path = os.path.join(output_dir, "edges.csv")
+        edges_path: str = os.path.join(output_dir, "edges.csv")
         with open(edges_path, "w", encoding="utf-8", newline='') as f:
             writer = csv.writer(f)
             writer.writerow(["source", "target", "value"]) # Header

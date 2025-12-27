@@ -20,6 +20,10 @@ public class NavigatorController : ControllerBase
     [HttpPost("analyze")]
     public IActionResult Analyze([FromBody] AnalysisRequest request)
     {
+        if (request == null || string.IsNullOrWhiteSpace(request.Text))
+        {
+            return BadRequest("Resume text is required.");
+        }
         var userProfile = _scanner.AnalyzeProfile(request.Text);
 
         // Get the graph logic

@@ -2,10 +2,11 @@
 # match "Google" and "C" doesn't match "Cloud."
 
 import re
+from typing import List, Dict, Any, Set
 
 class TextProcessor:
     @staticmethod
-    def clean_text(text):
+    def clean_text(text: str) -> str:
         text = text.lower()
         
         # --- Regex: URL Removal ---
@@ -23,18 +24,31 @@ class TextProcessor:
         return text
 
     @staticmethod
-    def detect_seniority(title, description):
-        score = 0.0
-        desc_lower = description.lower()
-        title_lower = title.lower()
+    def detect_seniority(title: str, description: str) -> Dict[str, Any]:
+        score: float = 0.0
+        desc_lower: str = description.lower()
+        title_lower: str = title.lower()
 
         # 1. Base Score: Title Check (Max 3.0)
-        senior_titles = ["senior", "sr", "lead", "principal", "staff", "architect", "head", "manager", "vp", "director"]
-        junior_titles = ["junior", "jr", "entry", "associate", "intern", "trainee"]
+        senior_titles: List[str] = ["senior", "sr", "lead", "principal", "staff", "architect", "head", "manager", "vp", "director"]
+        junior_titles: List[str] = ["junior", "jr", "entry", "associate", "intern", "trainee"]
         
-        if any(word in title_lower for word in senior_titles):
+        # Explicit loop for senior title check
+        has_senior_title: bool = False
+        for word in senior_titles:
+            if word in title_lower:
+                has_senior_title = True
+                break
+        
+        has_junior_title: bool = False
+        for word in junior_titles:
+            if word in title_lower:
+                has_junior_title = True
+                break
+
+        if has_senior_title:
             score += 3.0
-        elif not any(word in title_lower for word in junior_titles):
+        elif not has_junior_title:
             score += 1.5
 
         # 2. Base Score: Years of Experience (Max 3.0)
@@ -44,12 +58,12 @@ class TextProcessor:
         # - (5\+|[5-9]|1[0-9]): Matches '5+', individual digits 5-9, or teen numbers 10-19.
         # - \s*: Matches zero or more whitespace characters.
         # - (years|yrs|year): Matches any of the common experience suffixes.
-        senior_exp_pattern = r"(5\+|[5-9]|1[0-9])\s*(years|yrs|year)"
+        senior_exp_pattern: str = r"(5\+|[5-9]|1[0-9])\s*(years|yrs|year)"
 
         # --- Regex: Mid-Level Experience Detection ---
         # Pattern: (3|4)\s*(years|yrs|year)
         # - (3|4): Matches the digit 3 or 4.
-        mid_exp_pattern = r"(3|4)\s*(years|yrs|year)"
+        mid_exp_pattern: str = r"(3|4)\s*(years|yrs|year)"
         
         if re.search(senior_exp_pattern, desc_lower):
             score += 3.0
@@ -57,52 +71,67 @@ class TextProcessor:
             score += 1.5
 
         # 3. Action Verbs (Max 1.5)
-        senior_verbs = [
+        senior_verbs: List[str] = [
             "architect", "design", "lead", "mentor", "optimize", "strategize", "audit", "oversee", 
             "scale", "drive", "define", "innovate", "standardize", "champion", "modernize", 
             "orchestrate", "refactor", "pioneer", "transform", "evangelize", "govern"
         ]
-        verb_count = sum(1 for verb in senior_verbs if verb in desc_lower)
+        verb_count: int = 0
+        for verb in senior_verbs:
+            if verb in desc_lower:
+                verb_count += 1
         score += min(1.5, verb_count * 0.3)
 
         # 4. Scope of Impact (Max 1.0)
-        scope_keywords = [
+        scope_keywords: List[str] = [
             "distributed systems", "architecture", "microservices", "scalability", "high availability", 
             "infrastructure", "security compliance", "legacy migration", "cross-functional", 
             "cloud infrastructure", "system integration", "end-to-end", "enterprise-scale"
         ]
-        scope_count = sum(1 for keyword in scope_keywords if keyword in desc_lower)
+        scope_count: int = 0
+        for keyword in scope_keywords:
+            if keyword in desc_lower:
+                scope_count += 1
         score += min(1.0, scope_count * 0.33)
 
         # 5. Mentorship and Leadership (Max 0.5)
-        leadership_keywords = [
+        leadership_keywords: List[str] = [
             "code review", "mentoring", "technical vision", "hiring", "onboarding", 
             "stakeholder management", "roadmap", "standardization", "team lead", 
             "technical leadership", "guiding", "facilitating"
         ]
-        leadership_count = sum(1 for keyword in leadership_keywords if keyword in desc_lower)
+        leadership_count: int = 0
+        for keyword in leadership_keywords:
+            if keyword in desc_lower:
+                leadership_count += 1
         score += min(0.5, leadership_count * 0.25)
 
         # 6. Non-Functional Requirements (Max 0.5)
-        nfr_keywords = [
+        nfr_keywords: List[str] = [
             "observability", "monitoring", "throughput", "latency", "disaster recovery", 
             "performance tuning", "cost optimization", "security audits", "reliability engineering", 
             "fault tolerance", "capacity planning"
         ]
-        nfr_count = sum(1 for keyword in nfr_keywords if keyword in desc_lower)
+        nfr_count: int = 0
+        for keyword in nfr_keywords:
+            if keyword in desc_lower:
+                nfr_count += 1
         score += min(0.5, nfr_count * 0.25)
 
         # 7. Tooling Paradigms (Max 0.5)
-        paradigm_keywords = [
+        paradigm_keywords: List[str] = [
             "design patterns", "solid principles", "event-driven architecture", "serverless", 
             "cloud-native", "language agnostic", "functional programming", "object-oriented design", 
             "tdd", "ci/cd pipeline", "infrastructure as code"
         ]
-        paradigm_count = sum(1 for keyword in paradigm_keywords if keyword in desc_lower)
+        paradigm_count: int = 0
+        for keyword in paradigm_keywords:
+            if keyword in desc_lower:
+                paradigm_count += 1
         score += min(0.5, paradigm_count * 0.25)
 
         # Final Classification
-        level = "Junior"
+        level: str = "Junior"
         if score >= 6.0:
             level = "Senior"
         elif score >= 3.0:
@@ -115,15 +144,17 @@ class TextProcessor:
         }
 
     @staticmethod
-    def extract_skills(text, skill_list):
-        found = set()
-        clean_jd = TextProcessor.clean_text(text)
+    def extract_skills(text: str, skill_list: List[str]) -> List[str]:
+        found: Set[str] = set()
+        clean_jd: str = TextProcessor.clean_text(text)
         for skill in skill_list:
-            # --- Regex: Whole Word Skill Matching ---
-            # Pattern: \b + Escaped Skill + \b
-            # - \b: Word boundary anchor. Ensures we don't match substrings (e.g., 'C' inside 'Cloud').
-            # - re.escape(skill): Safely handles skills with special regex characters (e.g., 'C++', '.NET').
-            pattern = r'\b' + re.escape(skill) + r'\b'
+            # --- Regex: Improved Skill Matching ---
+            # Replaced \b with lookarounds (?<!\w) and (?!\w) to handle skills with symbols (e.g., C++, .NET, C#)
+            # - (?<!\w): Negative lookbehind. Ensures the character BEFORE the skill is NOT a word char.
+            # - re.escape(skill): Safely handles skills with special regex characters.
+            # - (?!\w): Negative lookahead. Ensures the character AFTER the skill is NOT a word char.
+            # This works for "C++" (next char is space/punctuation, not a word char) whereas \b failed because '+' is a non-word char.
+            pattern: str = r'(?<!\w)' + re.escape(skill) + r'(?!\w)'
             
             if re.search(pattern, clean_jd):
                 found.add(skill)

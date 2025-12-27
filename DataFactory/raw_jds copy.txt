@@ -1,0 +1,62 @@
+Project Role :AI / ML Engineer
+
+
+Project Role Description :Develops applications and systems that utilize AI tools, Cloud AI services, with proper cloud or on-prem application pipeline with production ready quality. Be able to apply GenAI models as part of the solution. Could also include but not limited to deep learning, neural networks, chatbots, image processing.
+
+
+Must have skills :Computer Vision
+
+
+
+Good to have skills :NA
+Minimum
+
+3 year(s) of experience is required
+
+
+
+Educational Qualification :15 years full time education
+
+
+
+Summary:As an AI / ML Engineer, you will engage in the development of applications and systems that leverage artificial intelligence tools and cloud AI services. Your typical day will involve designing and implementing production-ready solutions, ensuring that they meet quality standards. You will also explore the integration of generative AI models into your projects, while working with various technologies such as deep learning, neural networks, chatbots, and image processing. Collaboration with team members and stakeholders will be essential as you contribute to innovative solutions that address complex challenges in the field of AI and machine learning.
+
+Roles & Responsibilities:
+Expected to perform independently and become an SME.
+Required active participation/contribution in team discussions.
+Contribute in providing solutions to work related problems.
+Collaborate with cross-functional teams to gather requirements and deliver effective AI solutions.
+Conduct research and stay updated on the latest advancements in AI and machine learning technologies.
+
+Professional & Technical
+
+Skills:
+
+Must To Have
+
+Skills:
+
+Proficiency in Computer Vision.
+Good To Have
+
+Skills:
+Experience with image processing techniques.
+Strong understanding of deep learning frameworks such as TensorFlow or PyTorch.
+Familiarity with cloud platforms and services for deploying AI applications.
+Experience in developing and optimizing algorithms for real-time image analysis.
+
+Additional Information:
+The candidate should have minimum 3 years of experience in Computer Vision.
+This position is based at our Bengaluru office.
+A 15 years full time education is required.
+
+ Qualification 15 years full time education
+Role: Machine Learning Engineer
+Industry Type: IT Services & Consulting
+Department: Data Science & Analytics
+Employment Type: Full Time, Permanent
+Role Category: Data Science & Machine Learning
+Education
+UG: Any Graduate
+PG: Any Postgraduate
+###END###

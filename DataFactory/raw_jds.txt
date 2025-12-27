@@ -1311,3 +1311,231 @@ UG: Any Graduate
 
 ###END###
 
+About the job
+WHAT YOU DO AT AMD CHANGES EVERYTHING
+
+At AMD, our mission is to build great products that accelerate next-generation computing experiences—from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you’ll discover the real differentiator is our culture. We push the limits of innovation to solve the world’s most important challenges—striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond. Together, we advance your career. 
+
+SENIOR SOFTWARE SYSTEMS DESIGNER
+
+ 
+
+THE ROLE: 
+
+We are looking for a dynamic, energetic Software Systems Design Engineer to join our growing team. As a key contributor to the success of AMD’s products, you will be part of a leading team to drive and improve AMD’s abilities to deliver the highest quality, industry-leading technologies to market. The Software Systems Design Engineering team fosters and encourages continuous technical innovation to showcase successes as well as facilitate continuous career development. 
+
+ 
+
+THE PERSON: 
+
+As a Software Systems Design Engineer, you will deliver our next generation of products in the computer graphics industry - 3D Gaming, Display Technologies, Compute, Virtual Reality, etc. In this high visibility position, your systems engineering expertise will be necessary to define products, develop solutions, assess root causes, and produce solution resolutions. As a senior member of the team, taking initiative in mentoring to achieve the team’s goal of on time delivery is expected.
+
+ 
+
+Responsibilities
+
+Software application development
+
+
+Skills
+
+Strong object-oriented design concepts
+Hands-on experience in .Net , C#, Angular, CSS, Python, and Relational Databases
+Understand requirements, Design, Develop, Code review, Write test-cases
+Experienced in RESTful API & Web Services, Threading concepts, Inter-operability
+Prior experience in any of the unit testing framework such as MS Test, NUnit etc.
+Front-end development experience using Angular, CSS is must have
+Good Problem-solving skills
+Developed application for Windows and Linux
+Good understanding and/or work exposure on GIT, Docker etc.
+Excellent troubleshooting skills
+Good interpersonal and organizational skills
+Work under minimal supervision
+
+
+Nice To Have Skills
+
+C++ experience
+Configuration and managing databases such as SQL Server, MySQL
+Experience in deployment, management, and maintenance of web applications
+
+
+Education And Experience
+
+MS / M Tech / BE/ B.Sc. in Computer Science /Computer Engineering/Electronics/Electrical Engineering
+Should have relevant work experience of about 5 years.
+
+
+Benefits offered are described: AMD benefits at a glance.
+
+AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law. We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process.
+
+###END###
+
+Qualcomm India Bangalore Development Center is expanding its Connected Infotainment team as part of a global Qualcomm Automotive initiative. This role offers a unique opportunity to work on cutting-edge display technologies integrated into next-generation vehicles. As part of Qualcomm’s mission to redefine the digital cockpit experience, you will contribute to the development of high-performance display systems that enhance safety, usability, and entertainment for drivers and passengers. From multi-display rendering to real-time graphics optimization, your work will help shape the visual interface of tomorrow’s connected cars. 
+
+
+
+Minimum Qualifications 
+
+Experience: 8-18 years of hands-on experience in embedded software and/or driver development. 
+
+Programming Skills: Strong proficiency in C/C++ is mandatory. 
+
+System Knowledge: Practical experience with device driver programming in Linux or RTOS environments such as QNX, LRH. 
+
+Debugging & Analysis: Excellent analytical and debugging skills, with a detail-oriented approach to problem-solving. 
+
+Areas of Expertise - Audio, Video, Display, Camera & Grafics
+
+###END###
+
+About the job
+Job Details:
+
+Position : Engineering Lead- Full Stack & Mobile Platform
+
+Experience : 8 + Years
+
+Location : Bengaluru
+
+
+
+Lead engineering strategy, architecture, and technical direction
+Manage a 15-member cross-functional team across backend and mobile platforms
+Oversee development of Java Spring Boot microservices
+Guide mobile app development using Flutter, Android, and iOS
+Ensure performance, security, and engineering best practices
+Conduct code reviews, mentoring, and technical evaluations
+Manage sprints, releases, and end-to-end delivery
+Collaborate closely with product and leadership teams
+Requires 10+ years of experience with 3+ years in engineering leadership
+
+###END###
+About the job
+AVEVA is creating software trusted by over 90% of leading industrial companies.
+
+Job Title: R&D Principal Technologist
+
+Location: Hyderabad/Bangalore, India
+
+Employment Type: Full-time, regular, hybrid work arrangement
+
+The job 
+
+A Principal Technologist will be responsible for translating software requirements into workable programming code and build scalable web & cloud applications with a full understanding of the area of specialization; resolves a wide range of issues in creative ways. Designs and develops complex software systems or subsystems, with involvement at all stages, from the initial concept through the detailed design and release to production. This role will also be involved in architectural decisions and leverage technical knowledge to build solutions.
+
+Key Responsibilities
+
+Use a variety of programming languages and development tools to build, test, implement, and support the development of web/cloud software applications.
+Performs design architecture activities as needed.
+Collaborate with other technology experts and develop the technology framework.
+Participate and provide technical perspective to the Product Owners and/or R&D Management during project phases such as in the defining of product requirements and features. Assist in clarifying stakeholder requirements; communicate questions and address concerns; provide relevant and detailed updates and feedback on time.
+Actively contributes to establishing delivery timelines within a project during release planning meetings as well as assists junior staff in providing their timeline recommendations.
+Actively involved in sprint execution on looking for any scope deviations and backlog growth. Proactively identifies technical and procedural areas of concern to avoid gaps and problems.
+Analyses and defines requirements for data, workflow and logical processes, hardware and operating system environments and interfaces with other systems.
+Performs highly complex or specialized development activities involving coding in adherence to cybersecurity standards, code reviews, unit testing, debugging, and document creation and maintenance.
+Provides coaching and mentoring to junior staff and peer group.
+
+Essential Requirements
+
+Demonstrated ability to articulate and implement object-oriented concepts, design patterns and design principles
+Technical proficiency in writing software using C#, .NET 8, Web API, REST API and database technologies like SQL, NoSQL or PostgreSQL
+Experienced in developing web applications with Java Script, jQuery and Angular
+Experience with the cloud technologies like Azure or AWS
+Proven expertise with Azure OpenAI Service and Azure Cognitive Services
+Experience building AI solutions using Semantic Kernel or similar .NET frameworks
+Hands-on experience with Azure Kubernetes Service, Azure Functions, App Services, and Container Apps for AI deployment
+Working experience with LLMs and AI agents
+Familiarity with serverless architecture and microservice architecture
+Designed and developed frameworks considering security aspects
+Experienced in migrating projects from legacy to latest technologies
+Demonstrated ability to build automated unit/integration tests that proves the quality of code
+Good exposure to software configuration, build deployment and release management, infrastructure and DevOps areas.
+Ability to set up and maintain CI/CD pipelines using Azure DevOps
+Proficient to convey a message (written or verbal) in a logical and meaningful manner to influence the awareness, understanding, attitudes and behaviors of the audience
+Work experience in Industry digitalization products would be an added advantage
+
+Desired Skills And Competencies
+
+C#, .NET, Web API
+Azure, AWS
+LLMs, AI agents, Azure OpenAI Service
+Kubernetes
+Angular
+
+###END###
+
+About the job
+Position: C#.Net Developer
+
+
+
+
+
+Location: Mumbai/Bangalore/Hyderabad/Pune (Hybrid)
+
+
+
+
+
+About us:
+
+
+
+Zemoso Technologies is a Software Product Market Fit Studio that brings silicon valley style rapid prototyping and rapid application builds to Entrepreneurs and Corporate innovation. We offer Innovation as a service and work on ideas from scratch and take it to the Product Market Fit stage using Design Thinking->Lean Execution->Agile Methodology.
+
+
+We were featured as one of Deloitte Fastest 50 growing tech companies from India thrice (2016,
+2018 and 2019). We were also featured in Deloitte Technology Fast 500 Asia Pacific both in 2016 and 2018.
+
+
+We are located in Hyderabad, India, and Dallas, US. We have recently incorporated another office in Waterloo, Canada.
+
+
+Our founders have had past successes - founded a decision management company acquired by SAP AG (now part of Hana Big data stack & NetWeaver BPM), early engineering team of Zoho
+(leading billion $ SaaS player) & some Private Equity experience. Marquee customers along with some exciting start-ups are part of our clientele.
+
+
+What You will do:
+
+
+
+● Create beautiful software experiences for our clients using design thinking, lean and agile methodology.
+● Work on software products designed from scratch using the latest cutting edge technologies, platforms and languages such as JAVA, .NET, python, Javascript, GoLang and Scala.
+● Work in a dynamic, collaborative, transparent, non-hierarchical culture.
+● Work in collaborative, fast-paced and value-driven teams to build innovative customer experiences for our clients.
+● Help to grow the next generation of developers and have a positive impact on the industry.
+
+
+Basic Qualifications:
+
+
+
+● Experience: 8+ years on C#.NET Technologies
+● UI development experience in ReactJS or AngularJS are good to have.
+● Experience in working in Agile process with fully automated CI/CD processes.
+● Passion for software engineering and follow the best coding concepts.
+● Good to great problem solving and communication skills.
+
+
+Nice to have Qualifications:
+
+
+
+● Product and customer-centric mindset.
+● Great OO skills, including design patterns.
+● Tech enthusiast aware of the latest happenings in the tech landscape.
+
+
+Benefits :
+
+
+
+● Competitive salary.
+● Hybrid work model.
+● Learning and gaining experience rapidly.
+● Reimbursement for basic working set up at home.
+● Insurance (including a top up insurance for COVID).
+
+###END###

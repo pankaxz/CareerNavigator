@@ -1,83 +1,77 @@
-import json
-import itertools
-import csv
+from typing import List, Dict, Tuple, Any
 from collections import Counter
-import re
-from output.taxonomy import TAXONOMY
 from utils.text_processor import TextProcessor
 from utils.io_handler import IOHandler
+from utils.taxonomy_manager import TaxonomyManager
+from utils.graph_builder import GraphBuilder
+from utils.analytics_engine import AnalyticsEngine
 
-# Flatten for fast searching
-ALL_SKILLS = [skill for sublist in TAXONOMY.values() for skill in sublist]
-SKILL_TO_GROUP = {skill: group for group, skills in TAXONOMY.items() for skill in skills}
+# --- Global Constants (Configuration) ---
+ALL_SKILLS: List[str] = TaxonomyManager.get_all_skills()
+SKILL_TO_GROUP: Dict[str, str] = TaxonomyManager.get_skill_to_group_map()
+THRESHOLD: int = 1
 
-def process_data():
-    # Use a dictionary to track stats per skill
-    # Structure: { "skill_name": { "total": 0, "senior_count": 0 } }
-    node_stats = {skill: {"total": 0, "senior_count": 0} for skill in ALL_SKILLS}
-    # Structure: { ("skill_a", "skill_b"): { "total": 0, "senior_count": 0 } }
-    edge_counts = {}
-    seniority_dist = Counter()
-
-    print("🚀 Starting Data Factory...")
+# --- Core Logic Step 1: Analyze Single JD ---
+def analyze_jd_content(jd_text: str) -> Tuple[List[str], bool, str]:
+    # 1. Detect Seniority
+    lines: List[str] = jd_text.split('\n')
+    title: str = lines[0] if lines else ""
+    seniority_info: Dict[str, Any] = TextProcessor.detect_seniority(title, jd_text)
     
-    # 1. Load Raw JDs
-    jds = IOHandler.load_raw_jds()
-    if not jds:
-        return
+    # 2. Extract Skills
+    found_skills: List[str] = TextProcessor.extract_skills(jd_text, ALL_SKILLS)
+    
+    return found_skills, seniority_info['is_senior'], seniority_info['level']
 
-    print(f"📖 Found {len(jds)} Job Descriptions. Analyzing...")
-
-    # 2. Extract Skills and Co-occurrences
-    for jd in jds:
-        # Detect Seniority
-        lines = jd.split('\n')
-        title = lines[0] if lines else ""
-        seniority_info = TextProcessor.detect_seniority(title, jd)
-        is_senior_jd = seniority_info['is_senior']
-        seniority_dist[seniority_info['level']] += 1
-
-        # Extract Skills using TextProcessor    
-        found_in_jd = TextProcessor.extract_skills(jd, ALL_SKILLS)
-        
-        # Update node stats
-        for skill in found_in_jd:
-            node_stats[skill]["total"] += 1
-            if is_senior_jd:
-                node_stats[skill]["senior_count"] += 1
-        
-        # Unique skills only per JD to avoid double-counting links
-        if len(found_in_jd) > 1:
-            for pair in itertools.combinations(sorted(found_in_jd), 2):
-                if pair not in edge_counts:
-                    edge_counts[pair] = {"total": 0, "senior_count": 0}
-                
-                edge_counts[pair]["total"] += 1
-                if is_senior_jd:
-                    edge_counts[pair]["senior_count"] += 1
-
-    # 3. Create the JSON Object (For React/C#)
-    nodes_list = []
-    for skill, stats in node_stats.items():
-        if stats["total"] > 0:
-            seniority_score = round(stats["senior_count"] / stats["total"], 2)
-            nodes_list.append({
-                "id": skill,
-                "group": SKILL_TO_GROUP[skill],
-                "val": stats["total"],
-                "seniorityScore": seniority_score,
-                "isSenior": seniority_score > 0.6
-            })
-
-    # 4. Use IOHandler for Exports
-    IOHandler.save_universe(nodes_list, edge_counts)
-    IOHandler.save_cosmograph_files(node_stats, edge_counts, SKILL_TO_GROUP)
-
-    print(f"\n✨ Done! Processed {len(jds)} JDs.")
-    print(f"Found {len(nodes_list)} skills and {len(edge_counts)}")
-    print("� Starting Data Factory...")
+# --- Reporting ---
+def print_execution_summary(
+    jds_count: int, 
+    nodes_count: int, 
+    edges_count: int, 
+    seniority_dist: Counter
+) -> None:
+    print(f"\n✨ Done! Processed {jds_count} JDs.")
+    print(f"Found {nodes_count} filtered skills (Threshold: {THRESHOLD}) and {edges_count} filtered edges")
+    print("📊 Seniority Distribution:")
     for level, count in seniority_dist.items():
         print(f"  - {level}: {count}")
+
+# --- Orchestrator ---
+def process_data() -> None:
+    print("🚀 Starting Data Factory...")
+
+    debug: bool = True
+    # 1. Load Data
+    jds: List[str] = IOHandler.load_raw_jds() if debug == False else IOHandler.load_raw_jds(file_path="raw_jds copy.txt")
+    if not jds:
+        return
+    print(f"📖 Found {len(jds)} Job Descriptions. Analyzing...")
+
+    # 2. Initialize
+    node_stats, edge_counts, seniority_dist = GraphBuilder.initialize_stats(ALL_SKILLS)
+
+    # 3. Main Processing Loop
+    for jd in jds:
+        found_skills, is_senior, level = analyze_jd_content(jd)
+        
+        seniority_dist[level] += 1
+        GraphBuilder.update_metrics(node_stats, edge_counts, found_skills, is_senior)
+
+    # 4. Final Transformation
+    final_nodes_list, active_node_ids, seniority_scores = GraphBuilder.prepare_nodes_list(node_stats, SKILL_TO_GROUP, THRESHOLD)
+    filtered_edge_counts = GraphBuilder.filter_edges(edge_counts, active_node_ids, THRESHOLD)
+    meta = AnalyticsEngine.calculate_seniority_distribution(seniority_scores, len(final_nodes_list))
+
+    # 5. Export
+    IOHandler.save_universe(final_nodes_list, filtered_edge_counts, meta=meta)
+    
+    # For cosmograph, we can pass the filtered sets or full. 
+    # Usually cosmograph is for exploration, let's keep consistent with filtering.
+    filtered_node_stats = {k: v for k, v in node_stats.items() if k in active_node_ids}
+    IOHandler.save_cosmograph_files(filtered_node_stats, filtered_edge_counts, SKILL_TO_GROUP)
+
+    # 6. Summary
+    print_execution_summary(len(jds), len(final_nodes_list), len(filtered_edge_counts), seniority_dist)
 
 if __name__ == "__main__":
     process_data()
