@@ -1,6 +1,6 @@
 namespace CareerNavigator.Core.Models.DTOs;
 
-public class JobProfile
+public class AnalysisResult
 {
     public List<string> Skills { get; set; } = new();
     public int YearsOfExperience { get; set; }

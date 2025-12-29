@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Register CareerNavigator Engines
 builder.Services.AddSingleton<IUniverseProvider, UniverseProvider>();
+builder.Services.AddSingleton<SkillParser>();
 builder.Services.AddSingleton<SkillScanner>();
 // Registered the new BridgeEngine
 builder.Services.AddSingleton<BridgeEngine>();

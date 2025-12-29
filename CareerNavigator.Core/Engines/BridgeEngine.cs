@@ -11,7 +11,7 @@ public class BridgeEngine
         _universeProvider = universeProvider;
     }
 
-    public List<string> SuggestBridges(JobProfile profile)
+    public List<string> SuggestBridges(AnalysisResult profile)
     {
         var universe = _universeProvider.GetUniverse();
         var candidateSkills = new Dictionary<string, double>();

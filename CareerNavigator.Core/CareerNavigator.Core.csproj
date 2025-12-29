@@ -22,7 +22,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="Data\" />
     <Folder Include="Insfracture\" />
-    <Folder Include="Models\DTOs\" />    
     <None Update="Data\universe.json">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
   </None>
