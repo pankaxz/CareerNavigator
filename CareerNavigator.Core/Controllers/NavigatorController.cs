@@ -10,11 +10,13 @@ public class NavigatorController : ControllerBase
 {
     private readonly SkillScanner _scanner;
     private readonly BridgeEngine _bridgeEngine;
+    private readonly GapAnalyzer _gapAnalyzer;
 
-    public NavigatorController(SkillScanner scanner, BridgeEngine bridgeEngine)
+    public NavigatorController(SkillScanner scanner, BridgeEngine bridgeEngine, GapAnalyzer gapAnalyzer)
     {
         _scanner = scanner;
         _bridgeEngine = bridgeEngine;
+        _gapAnalyzer = gapAnalyzer;
     }
 
     [HttpPost("analyze/profile")]
@@ -26,16 +28,10 @@ public class NavigatorController : ControllerBase
         AnalysisResult profile = _scanner.AnalyzeProfile(request);
 
         // 2. Suggest Bridges (Only relevant for users)
-        var bridgeSkills = _bridgeEngine.SuggestBridges(profile);
+        profile.BridgeSkills = _bridgeEngine.SuggestBridges(profile);
+        profile.Type = "User Profile";
 
-        return Ok(new
-        {
-            type = "User Profile",
-            skills = profile.Skills,
-            yearsOfExperience = profile.YearsOfExperience,
-            level = profile.Level,
-            bridgeSkills
-        });
+        return Ok(profile);
     }
 
     [HttpPost("analyze/job")]
@@ -48,12 +44,16 @@ public class NavigatorController : ControllerBase
         // We assume the text itself is the job description.
         AnalysisResult result = _scanner.AnalyzeJob(request);
 
-        return Ok(new
-        {
-            type = "Job Description",
-            skills = result.Skills,
-            level = result.Level,
-            // Gap analysis isn't relevant for a JD on its own, so no bridge skills.
-        });
+        // Gap analysis isn't relevant for a JD on its own, so no bridge skills.
+        result.Type = "Job Description";
+
+        return Ok(result);
+    }
+
+    [HttpPost("analyze/gap")]
+    public IActionResult AnalyzeGap([FromBody] GapAnalysisRequest request)
+    {
+        var result = _gapAnalyzer.AnalyzeGap(request.UserProfile, request.JobDescription);
+        return Ok(result);
     }
 }

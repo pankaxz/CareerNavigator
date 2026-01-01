@@ -8,7 +8,6 @@ public class SkillScanner
 {
     private readonly SkillParser _parser;
     private readonly IUniverseProvider _universeProvider;
-
     private readonly IAnalysisStrategy _userStrategy = new UserAnalysisStrategy();
     private readonly IAnalysisStrategy _jobStrategy = new JobDescriptionAnalysisStrategy();
 

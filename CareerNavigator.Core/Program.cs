@@ -8,6 +8,7 @@ builder.Services.AddSingleton<SkillParser>();
 builder.Services.AddSingleton<SkillScanner>();
 // Registered the new BridgeEngine
 builder.Services.AddSingleton<BridgeEngine>();
+builder.Services.AddSingleton<GapAnalyzer>();
 
 builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddCors(opt => opt.AddPolicy("NavGui", p =>

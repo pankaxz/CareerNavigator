@@ -67,6 +67,32 @@ public class UniverseProvider : IUniverseProvider, IDisposable
                     NullValueHandling = NullValueHandling.Ignore
                 };
                 _universe = JsonConvert.DeserializeObject<Universe>(json, settings) ?? new Universe();
+
+                // Build Performance Indices
+                _universe.NodeIndex = _universe.Nodes.ToDictionary(n => n.Id, StringComparer.OrdinalIgnoreCase);
+
+                // Build AdjacencyList (Bidirectional) - O(E)
+                // We manually iterate to ensure A->B also registers B->A in a single pass.
+
+                _universe.AdjacencyList = new Dictionary<string, List<Link>>(StringComparer.OrdinalIgnoreCase);
+
+                foreach (var link in _universe.Links)
+                {
+                    if (!_universe.AdjacencyList.TryGetValue(link.Source, out var sourceLinks))
+                    {
+                        sourceLinks = new List<Link>();
+                        _universe.AdjacencyList[link.Source] = sourceLinks;
+                    }
+                    sourceLinks.Add(link);
+
+                    if (!_universe.AdjacencyList.TryGetValue(link.Target, out var targetLinks))
+                    {
+                        targetLinks = new List<Link>();
+                        _universe.AdjacencyList[link.Target] = targetLinks;
+                    }
+                    targetLinks.Add(link);
+                }
+
                 _logger.LogInformation("✅ Universe Loaded: {NodeCount} Nodes, {LinkCount} Links",
                     _universe.Nodes.Count, _universe.Links.Count);
             }

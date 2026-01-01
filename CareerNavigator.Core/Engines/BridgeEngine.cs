@@ -15,19 +15,21 @@ public class BridgeEngine
     {
         var universe = _universeProvider.GetUniverse();
         var candidateSkills = new Dictionary<string, double>();
+        var mySkillsSet = new HashSet<string>(profile.Skills, StringComparer.OrdinalIgnoreCase);
 
+        //Traverse through the skills detected from the profile.
         foreach (var mySkill in profile.Skills)
         {
-            var links = universe.Links.Where(l => l.Source == mySkill || l.Target == mySkill);
+            if (!universe.AdjacencyList.TryGetValue(mySkill, out var links)) continue;
 
             foreach (var link in links)
             {
-                var neighborId = link.Source == mySkill ? link.Target : link.Source;
+                var neighborId = link.Source.Equals(mySkill, StringComparison.OrdinalIgnoreCase) ? link.Target : link.Source;
 
-                if (profile.Skills.Contains(neighborId)) continue;
+                if (mySkillsSet.Contains(neighborId)) continue;
 
-                var neighborNode = universe.Nodes.FirstOrDefault(n => n.Id == neighborId);
-                if (neighborNode == null) continue;
+                // O(1) Lookup for Node properties
+                if (!universe.NodeIndex.TryGetValue(neighborId, out var neighborNode)) continue;
 
                 double relevance = link.Value;
 
