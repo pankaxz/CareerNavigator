@@ -24,7 +24,7 @@ public class SkillParser
 
         // 1. Breake the JD/Resume into individual words
         List<string> tokens = Tokenize(text);
-
+        Console.WriteLine($"Tokens: {string.Join(", ", tokens)} Count: {tokens.Count}");
 
         // 2. N-Gram Greedy Lookup
         for (int i = 0; i < tokens.Count;)
@@ -90,8 +90,14 @@ public class SkillParser
     {
         if (length == 1) return tokens[start];
 
-        // Join with space
-        // Optimization: Use StringBuilder or String.Join
-        return string.Join(" ", tokens.Skip(start).Take(length));
+        // Optimization: Avoid LINQ Skip() which is O(start).
+        // Use StringBuilder for O(length) speed.
+        var sb = new StringBuilder();
+        for (int i = 0; i < length; i++)
+        {
+            if (i > 0) sb.Append(' ');
+            sb.Append(tokens[start + i]);
+        }
+        return sb.ToString();
     }
 }

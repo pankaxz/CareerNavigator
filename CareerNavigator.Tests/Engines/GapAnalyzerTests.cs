@@ -32,6 +32,18 @@ public class GapAnalyzerTests
                 new Link { Source = "C#", Target = "Azure", Value = 10 }
             }
         };
+        // Populate Indices
+        _mockUniverse.NodeIndex = _mockUniverse.Nodes.ToDictionary(n => n.Id, StringComparer.OrdinalIgnoreCase);
+
+        // Populate AdjacencyList (Bidirectional manually for test)
+        foreach (var link in _mockUniverse.Links)
+        {
+            if (!_mockUniverse.AdjacencyList.ContainsKey(link.Source)) _mockUniverse.AdjacencyList[link.Source] = new List<Link>();
+            if (!_mockUniverse.AdjacencyList.ContainsKey(link.Target)) _mockUniverse.AdjacencyList[link.Target] = new List<Link>();
+
+            _mockUniverse.AdjacencyList[link.Source].Add(link);
+            _mockUniverse.AdjacencyList[link.Target].Add(link);
+        }
 
         _mockProvider = new Mock<IUniverseProvider>();
         _mockProvider.Setup(p => p.GetUniverse()).Returns(_mockUniverse);

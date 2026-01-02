@@ -3,6 +3,7 @@ using CareerNavigator.Core.Models.Schema;
 using CareerNavigator.Core.Models.DTOs;
 using Moq;
 using Xunit;
+using Microsoft.Extensions.Logging;
 
 namespace CareerNavigator.Tests;
 
@@ -32,7 +33,8 @@ public class SkillScannerTests
         _mockUniverse.Setup(u => u.GetUniverse()).Returns(fakeUniverse);
 
         // Use real parser for tests to verify e2e logic
-        var parser = new SkillParser(_mockUniverse.Object);
+        var mockLogger = new Mock<ILogger<SkillParser>>();
+        var parser = new SkillParser(_mockUniverse.Object, mockLogger.Object);
         _scanner = new SkillScanner(parser, _mockUniverse.Object);
     }
 
