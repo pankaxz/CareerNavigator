@@ -27,6 +27,7 @@ public class SkillScannerTests
                 new Node { Id = "Java" }
             }
         };
+        fakeUniverse.NodeIndex = fakeUniverse.Nodes.ToDictionary(n => n.Id, StringComparer.OrdinalIgnoreCase);
 
         _mockUniverse.Setup(u => u.GetUniverse()).Returns(fakeUniverse);
 

@@ -52,10 +52,16 @@ public abstract class BaseAnalysisStrategy : IAnalysisStrategy
 
     protected virtual double CalculateSeniorityScore(List<string> skillIds, string text, IUniverseProvider universeProvider)
     {
-        // Default: Average of skill seniorities
-        var matchedNodes = universeProvider.GetUniverse().Nodes
-            .Where(n => skillIds.Contains(n.Id))
-            .ToList();
+        var universe = universeProvider.GetUniverse();
+        var matchedNodes = new List<Node>();
+
+        foreach (var skillId in skillIds)
+        {
+            if (universe.NodeIndex.TryGetValue(skillId, out var node))
+            {
+                matchedNodes.Add(node);
+            }
+        }
 
         if (!matchedNodes.Any()) return 0.0;
 

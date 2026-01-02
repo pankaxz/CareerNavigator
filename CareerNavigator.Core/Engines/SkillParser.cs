@@ -1,5 +1,4 @@
-using System.Collections.Concurrent;
-using System.Text.RegularExpressions;
+using System.Text;
 using CareerNavigator.Core.Models.Schema;
 
 namespace CareerNavigator.Core.Engines;
@@ -7,68 +6,92 @@ namespace CareerNavigator.Core.Engines;
 public class SkillParser
 {
     private readonly IUniverseProvider _universeProvider;
-    private ConcurrentDictionary<string, Regex> _regexCache = new ConcurrentDictionary<string, Regex>();
-    private Universe? _lastUniverse;
+    private readonly ILogger<SkillParser> _logger;
 
-    public SkillParser(IUniverseProvider universeProvider)
+    public SkillParser(IUniverseProvider universeProvider, ILogger<SkillParser> logger)
     {
         _universeProvider = universeProvider;
+        _logger = logger;
     }
 
     public List<string> ParseSkills(string text)
     {
-        var matchedIds = new List<string>();
-        var currentUniverse = _universeProvider.GetUniverse();
+        if (string.IsNullOrWhiteSpace(text)) return new List<string>();
 
-        // 1. Invalidation: If the universe changed, wipe the slate clean
-        if (currentUniverse != _lastUniverse)
+        HashSet<string> matchedIds = new(StringComparer.OrdinalIgnoreCase);
+        Universe universe = _universeProvider.GetUniverse();
+        int maxPhraseLength = universe.MaxSkillPhraseLength;
+
+        // 1. Breake the JD/Resume into individual words
+        List<string> tokens = Tokenize(text);
+
+
+        // 2. N-Gram Greedy Lookup
+        for (int i = 0; i < tokens.Count;)
         {
-            _regexCache.Clear();
-            _lastUniverse = currentUniverse;
-        }
+            bool matched = false;
+            // Try longest phrases first (Greedy)
+            int maxCheck = Math.Min(maxPhraseLength, tokens.Count - i);
 
-        // Optimisation: Cache loop
-        foreach (var node in currentUniverse.Nodes)
-        {
-            var patternRegex = _regexCache.GetOrAdd(node.Id, id =>
+            for (int len = maxCheck; len >= 1; len--)
             {
-                var pattern = GenerateSkillRegex(id);
-                return new Regex(pattern, RegexOptions.IgnoreCase);
-            });
+                string phrase = GetPhrase(tokens, i, len);
 
-            if (patternRegex.IsMatch(text))
+                // O(1) Lookup
+                if (universe.NodeIndex.ContainsKey(phrase))
+                {
+                    matchedIds.Add(universe.NodeIndex[phrase].Id);
+                    i += len; // Consume tokens
+                    matched = true;
+                    break;
+                }
+            }
+
+            if (!matched)
             {
-                matchedIds.Add(node.Id);
+                i++;
             }
         }
-        return matchedIds;
+
+        return matchedIds.ToList();
     }
 
-    private string GenerateSkillRegex(string skillId)
+    private List<string> Tokenize(string text)
     {
-        var escaped = Regex.Escape(skillId);
+        // Split by whitespace
+        var rawTokens = text.Split(new[] { ' ', '\r', '\n', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+        var cleanTokens = new List<string>(rawTokens.Length);
 
-        // Start Boundary
-        // Use standard regex lookbehind for word boundary
-        var startBoundary = @"(?<!\w)";
+        // Standard punctuation to strip, BUT keep:
+        // '.' for tokens starting with it (.NET) or inside it (Node.js)
+        // '+' (C++)
+        // '#' (C#)
+        char[] trimChars = { ',', ';', ':', '!', '?', '(', ')', '[', ']', '{', '}', '"', '\'', '/', '\\' };
 
-        // End Boundary
-        // Critical for "C" vs "C++" vs "C#"
-        // If skill ends in a word char (e.g. "C"), we must ensure next char is NOT a word char AND not a special skill char (#, +).
-        string endBoundary;
-
-        char lastChar = skillId.Last();
-        if (char.IsLetterOrDigit(lastChar) || lastChar == '_')
+        foreach (var t in rawTokens)
         {
-            // Ends in word char: Ensure next is NOT \w AND NOT [#+]
-            endBoundary = @"(?![a-zA-Z0-9_+#])";
-        }
-        else
-        {
-            // Ends in symbol: Just standard boundary ensures we don't merge into a word
-            endBoundary = @"(?!\w)";
-        }
+            var token = t.Trim(trimChars);
 
-        return $"{startBoundary}{escaped}{endBoundary}";
+            // Only trim trailing dot (sentence end), not leading dot (.NET)
+            if (token.EndsWith("."))
+            {
+                token = token.TrimEnd('.');
+            }
+
+            if (token.Length > 0)
+            {
+                cleanTokens.Add(token);
+            }
+        }
+        return cleanTokens;
+    }
+
+    private string GetPhrase(List<string> tokens, int start, int length)
+    {
+        if (length == 1) return tokens[start];
+
+        // Join with space
+        // Optimization: Use StringBuilder or String.Join
+        return string.Join(" ", tokens.Skip(start).Take(length));
     }
 }

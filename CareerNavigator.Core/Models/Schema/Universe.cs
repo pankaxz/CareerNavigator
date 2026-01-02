@@ -11,4 +11,7 @@ public class Universe
 
     [Newtonsoft.Json.JsonIgnore]
     public Dictionary<string, List<Link>> AdjacencyList { get; set; } = new();
+
+    [Newtonsoft.Json.JsonIgnore]
+    public int MaxSkillPhraseLength { get; set; } = 1;
 }

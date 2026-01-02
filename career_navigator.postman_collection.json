@@ -1,0 +1,81 @@
+{
+  "info": {
+    "_postman_id": "career-navigator-api",
+    "name": "CareerNavigator API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Analyze Profile",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"text\": \"I have 5 years of experience in Python, Django and Machine Learning. I led a team of 3 developers.\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5128/api/Navigator/analyze/profile",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5128",
+          "path": ["api", "Navigator", "analyze", "profile"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyze Job",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"text\": \"We are looking for a Senior Software Engineer with C#, .NET, and Azure experience.\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5128/api/Navigator/analyze/job",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5128",
+          "path": ["api", "Navigator", "analyze", "job"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Analyze Gap",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"userProfile\": {\n        \"skills\": [\"Python\", \"Django\"],\n        \"yearsOfExperience\": 3,\n        \"level\": \"Mid\"\n    },\n    \"jobDescription\": {\n        \"skills\": [\"Python\", \"Django\", \"React\", \"TypeScript\"],\n        \"level\": \"Senior\"\n    }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5128/api/Navigator/analyze/gap",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5128",
+          "path": ["api", "Navigator", "analyze", "gap"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

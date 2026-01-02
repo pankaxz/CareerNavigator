@@ -36,6 +36,8 @@ public class SkillScanner
         return _userStrategy.Analyze(request, skills, _universeProvider);
     }
 
+
+    //Job Description
     public AnalysisResult AnalyzeJob(string text)
     {
         return AnalyzeJob(new AnalysisRequest { Text = text });

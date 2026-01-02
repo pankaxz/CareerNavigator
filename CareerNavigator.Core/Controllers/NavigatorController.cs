@@ -44,7 +44,6 @@ public class NavigatorController : ControllerBase
         // We assume the text itself is the job description.
         AnalysisResult result = _scanner.AnalyzeJob(request);
 
-        // Gap analysis isn't relevant for a JD on its own, so no bridge skills.
         result.Type = "Job Description";
 
         return Ok(result);

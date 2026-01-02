@@ -1,0 +1,86 @@
+{
+  "Nodes": [
+    {
+      "Id": "Python",
+      "Group": "Language",
+      "Val": 10,
+      "SeniorityScore": 0.5,
+      "IsSenior": false
+    },
+    {
+      "Id": "Django",
+      "Group": "Framework",
+      "Val": 8,
+      "SeniorityScore": 0.6,
+      "IsSenior": false
+    },
+    {
+      "Id": "Machine Learning",
+      "Group": "Skill",
+      "Val": 15,
+      "SeniorityScore": 0.9,
+      "IsSenior": true
+    },
+    {
+      "Id": "JavaScript",
+      "Group": "Language",
+      "Val": 10,
+      "SeniorityScore": 0.5,
+      "IsSenior": false
+    },
+    {
+      "Id": "React",
+      "Group": "Library",
+      "Val": 9,
+      "SeniorityScore": 0.6,
+      "IsSenior": false
+    },
+    {
+      "Id": "TypeScript",
+      "Group": "Language",
+      "Val": 9,
+      "SeniorityScore": 0.7,
+      "IsSenior": false
+    },
+    {
+      "Id": "HTML",
+      "Group": "Core",
+      "Val": 5,
+      "SeniorityScore": 0.1,
+      "IsSenior": false
+    },
+    {
+      "Id": "CSS",
+      "Group": "Core",
+      "Val": 5,
+      "SeniorityScore": 0.1,
+      "IsSenior": false
+    },
+    {
+      "Id": "SQL",
+      "Group": "Database",
+      "Val": 8,
+      "SeniorityScore": 0.4,
+      "IsSenior": false
+    },
+    {
+      "Id": "PostgreSQL",
+      "Group": "Database",
+      "Val": 8,
+      "SeniorityScore": 0.6,
+      "IsSenior": false
+    }
+  ],
+  "Links": [
+    { "Source": "Python", "Target": "Django", "Value": 5 },
+    { "Source": "Python", "Target": "Machine Learning", "Value": 8 },
+    { "Source": "JavaScript", "Target": "React", "Value": 7 },
+    { "Source": "JavaScript", "Target": "TypeScript", "Value": 6 },
+    { "Source": "HTML", "Target": "CSS", "Value": 10 },
+    { "Source": "HTML", "Target": "JavaScript", "Value": 5 },
+    { "Source": "React", "Target": "TypeScript", "Value": 4 },
+    { "Source": "SQL", "Target": "PostgreSQL", "Value": 9 },
+    { "Source": "Python", "Target": "SQL", "Value": 3 },
+    { "Source": "Django", "Target": "PostgreSQL", "Value": 5 }
+  ]
+}

@@ -12,11 +12,15 @@ public class UniverseProvider : IUniverseProvider, IDisposable
     private readonly FileSystemWatcher? _watcher;
     private readonly ILogger<UniverseProvider> _logger;
     private readonly Lock _lock = new();
-
     public UniverseProvider(IWebHostEnvironment env, ILogger<UniverseProvider> logger)
     {
         _logger = logger;
-        _filePath = Path.Combine(env.ContentRootPath, "Data", "universe.json");
+
+        string fileName = Environment.GetEnvironmentVariable("USE_TEST_UNIVERSE") == "true"
+            ? "test_universe.json"
+            : "universe.json";
+
+        _filePath = Path.Combine(env.ContentRootPath, "Data", fileName);
 
         LoadUniverse();
 
@@ -26,7 +30,7 @@ public class UniverseProvider : IUniverseProvider, IDisposable
             var directory = Path.GetDirectoryName(_filePath);
             if (directory != null && Directory.Exists(directory))
             {
-                _watcher = new FileSystemWatcher(directory, "universe.json");
+                _watcher = new FileSystemWatcher(directory, fileName);
                 _watcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.Size;
                 _watcher.Changed += OnFileChanged;
                 _watcher.Created += OnFileChanged;
@@ -70,6 +74,12 @@ public class UniverseProvider : IUniverseProvider, IDisposable
 
                 // Build Performance Indices
                 _universe.NodeIndex = _universe.Nodes.ToDictionary(n => n.Id, StringComparer.OrdinalIgnoreCase);
+
+                // Calculate Max Phrase Length for N-Gram Parser. Checks for the longest {id} in the Nodes array with empty spaces.
+                if (_universe.Nodes.Any())
+                {
+                    _universe.MaxSkillPhraseLength = _universe.Nodes.Max(n => n.Id.Split(' ').Length);
+                }
 
                 // Build AdjacencyList (Bidirectional) - O(E)
                 // We manually iterate to ensure A->B also registers B->A in a single pass.
