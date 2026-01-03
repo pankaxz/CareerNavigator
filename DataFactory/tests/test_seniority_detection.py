@@ -55,6 +55,16 @@ def test_seniority():
             "title": "Senior Backend Architect",
             "desc": "Lead the design of our distributed systems. 8 years of experience. Mentor junior engineers and define the technical vision. Optimize for high availability and scalability.",
             "expected_level": "Senior"
+        },
+        {
+            "title": "Engineering Manager",
+            "desc": "Manage a team of 10 engineers. Hire and onboard new staff. Drive the roadmap and ensure delivery. 10 years of experience.",
+            "expected_level": "Managerial"
+        },
+        {
+            "title": "Head of Product",
+            "desc": "Define product strategy and vision. Lead cross-functional teams.",
+            "expected_level": "Managerial"
         }
     ]
 
