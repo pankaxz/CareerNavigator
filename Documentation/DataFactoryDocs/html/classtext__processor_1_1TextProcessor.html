@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,28 +93,31 @@ $(function(){initNavTree('classtext__processor_1_1TextProcessor.html','','classt
   <div class="headertitle"><div class="title">text_processor.TextProcessor Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Utilities for processing raw text from Job Descriptions and Resumes.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for text_processor.TextProcessor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classtext__processor_1_1TextProcessor__coll__graph.png" border="0" usemap="#atext__processor_8TextProcessor_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="atext__processor_8TextProcessor_coll__map" id="atext__processor_8TextProcessor_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,208,111"/>
+<area shape="rect" title="Utilities for processing raw text from Job Descriptions and Resumes." alt="" coords="5,5,208,111"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a89b65e7aa6b72a276b39a52c16f1a19e" id="r_a89b65e7aa6b72a276b39a52c16f1a19e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89b65e7aa6b72a276b39a52c16f1a19e">clean_text</a> (str text)</td></tr>
+<tr class="memdesc:a89b65e7aa6b72a276b39a52c16f1a19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes and sanitizes input text for processing.  <br /></td></tr>
 <tr class="memitem:a6a19c5ccaa6e53077a4b18a6627d1cda" id="r_a6a19c5ccaa6e53077a4b18a6627d1cda"><td class="memItemLeft" align="right" valign="top">Dict[str, Any]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a19c5ccaa6e53077a4b18a6627d1cda">detect_seniority</a> (str title, str description)</td></tr>
+<tr class="memdesc:a6a19c5ccaa6e53077a4b18a6627d1cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyzes a Job Description to determine the required seniority level.  <br /></td></tr>
 <tr class="memitem:ab3c3f88a48853d5ce4ad8a3b9a476897" id="r_ab3c3f88a48853d5ce4ad8a3b9a476897"><td class="memItemLeft" align="right" valign="top">List[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3c3f88a48853d5ce4ad8a3b9a476897">extract_skills</a> (str text, List[str] skill_list)</td></tr>
+<tr class="memdesc:ab3c3f88a48853d5ce4ad8a3b9a476897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans text for known skills from a taxonomy list using boundary-aware regex.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">@brief Utilities for processing raw text from Job Descriptions and Resumes.
-
-@details
-This class provides static methods to clean text, extract keywords, and analyze seniority levels based on heuristic scoring.
-It serves as the core linguistic engine for the DataFactory pipeline, transforming unstructured text into structured metrics.
-</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Utilities for processing raw text from Job Descriptions and Resumes. </p>
+<p>This class provides static methods to clean text, extract keywords, and analyze seniority levels based on heuristic scoring. It serves as the core linguistic engine for the DataFactory pipeline, transforming unstructured text into structured metrics. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a89b65e7aa6b72a276b39a52c16f1a19e" name="a89b65e7aa6b72a276b39a52c16f1a19e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89b65e7aa6b72a276b39a52c16f1a19e">&#9670;&#160;</a></span>clean_text()</h2>
 
@@ -136,17 +140,21 @@ It serves as the core linguistic engine for the DataFactory pipeline, transformi
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Normalizes and sanitizes input text for processing.
 
-@details
-Performs the following operations:
-1. Converts all text to lowercase.
-2. Removes URLs to prevent false positive matches (e.g., 'go' in 'google.com').
-3. Normalizes whitespace, replacing sequences of tabs/newlines with single spaces.
+<p>Normalizes and sanitizes input text for processing. </p>
+<p>Performs the following operations:</p><ol type="1">
+<li>Converts all text to lowercase.</li>
+<li>Removes URLs to prevent false positive matches (e.g., 'go' in 'google.com').</li>
+<li>Normalizes whitespace, replacing sequences of tabs/newlines with single spaces.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The raw input string to clean. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A normalized, lower-case string ready for regex analysis. </dd></dl>
 
-@param text The raw input string to clean.
-@return A normalized, lower-case string ready for regex analysis.
-</pre> 
 </div>
 </div>
 <a id="a6a19c5ccaa6e53077a4b18a6627d1cda" name="a6a19c5ccaa6e53077a4b18a6627d1cda"></a>
@@ -175,33 +183,38 @@ Performs the following operations:
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Analyzes a Job Description to determine the required seniority level.
 
-@details
-Uses a weighted scoring system (max score ~17.5) to classify roles into 'Junior', 'Mid', 'Senior', or 'Managerial'.
+<p>Analyzes a Job Description to determine the required seniority level. </p>
+<p>Uses a weighted scoring system (max score ~17.5) to classify roles into 'Junior', 'Mid', 'Senior', or 'Managerial'.</p>
+<p><b>Scoring Categories:</b></p><ul>
+<li><b>Title Analysis (Max 5.0):</b> Checks for keywords like 'Senior', 'Manager', 'Head'. Managerial titles get the highest boost.</li>
+<li><b>Experience (Max 5.0):</b> Regex extraction of year requirements (e.g., "5+ years").</li>
+<li><b>Action Verbs (Max 2.0):</b> Counts strong leadership verbs (e.g., 'architect', 'orchestrate').</li>
+<li><b>Scope of Impact (Max 1.5):</b> Keywords indicating system-wide responsibility (e.g., 'distributed systems', 'scalability').</li>
+<li><b>Leadership (Max 1.5):</b> Keywords related to people management and mentorship.</li>
+<li><b>NFRs (Max 1.0):</b> Non-functional requirements like 'security', 'observability'.</li>
+<li><b>Paradigms (Max 1.0):</b> Advanced concepts like 'event-driven', 'cloud-native'.</li>
+</ul>
+<p><b>Thresholds:</b></p><ul>
+<li><b>Managerial</b>: Explicit title match.</li>
+<li><b>Senior</b>: Score &ge; 9.0</li>
+<li><b>Mid</b>: Score &ge; 5.0</li>
+<li><b>Junior</b>: Below 5.0</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>The job title (e.g., "Senior Backend Engineer"). </td></tr>
+    <tr><td class="paramname">description</td><td>The full text of the job description. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A dictionary containing:<ul>
+<li><span class="tt">score</span> (float): The calculated seniority score.</li>
+<li><span class="tt">level</span> (str): 'Junior', 'Mid', 'Senior', or 'Managerial'.</li>
+<li><span class="tt">is_senior</span> (bool): True if level is Senior or Managerial. </li>
+</ul>
+</dd></dl>
 
-&lt;b&gt;Scoring Categories:&lt;/b&gt;
-- &lt;b&gt;Title Analysis (Max 5.0):&lt;/b&gt; Checks for keywords like 'Senior', 'Manager', 'Head'. Managerial titles get the highest boost.
-- &lt;b&gt;Experience (Max 5.0):&lt;/b&gt; Regex extraction of year requirements (e.g., "5+ years").
-- &lt;b&gt;Action Verbs (Max 2.0):&lt;/b&gt; Counts strong leadership verbs (e.g., 'architect', 'orchestrate').
-- &lt;b&gt;Scope of Impact (Max 1.5):&lt;/b&gt; Keywords indicating system-wide responsibility (e.g., 'distributed systems', 'scalability').
-- &lt;b&gt;Leadership (Max 1.5):&lt;/b&gt; Keywords related to people management and mentorship.
-- &lt;b&gt;NFRs (Max 1.0):&lt;/b&gt; Non-functional requirements like 'security', 'observability'.
-- &lt;b&gt;Paradigms (Max 1.0):&lt;/b&gt; Advanced concepts like 'event-driven', 'cloud-native'.
-
-&lt;b&gt;Thresholds:&lt;/b&gt;
-- **Managerial**: Explicit title match.
-- **Senior**: Score &gt;= 9.0
-- **Mid**: Score &gt;= 5.0
-- **Junior**: Below 5.0
-
-@param title The job title (e.g., "Senior Backend Engineer").
-@param description The full text of the job description.
-@return A dictionary containing:
-    - `score` (float): The calculated seniority score.
-    - `level` (str): 'Junior', 'Mid', 'Senior', or 'Managerial'.
-    - `is_senior` (bool): True if level is Senior or Managerial.
-</pre> 
 </div>
 </div>
 <a id="ab3c3f88a48853d5ce4ad8a3b9a476897" name="ab3c3f88a48853d5ce4ad8a3b9a476897"></a>
@@ -230,16 +243,18 @@ Uses a weighted scoring system (max score ~17.5) to classify roles into 'Junior'
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Scans text for known skills from a taxonomy list using boundary-aware regex.
 
-@details
-Iterates through the provided `skill_list` and checks for their presence in the `text`.
-Crucially uses Regex Lookarounds to support skills with special characters (like 'C++' or '.NET') which standard word boundaries (`\\b`) fail to catch.
+<p>Scans text for known skills from a taxonomy list using boundary-aware regex. </p>
+<p>Iterates through the provided <span class="tt">skill_list</span> and checks for their presence in the <span class="tt">text</span>. Crucially uses Regex Lookarounds to support skills with special characters (like 'C++' or '.NET') which standard word boundaries (<span class="tt">\\b</span>) fail to catch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The cleaned job description text. </td></tr>
+    <tr><td class="paramname">skill_list</td><td>A list of skill keywords (the taxonomy universe). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A unique list of skills found in the text. </dd></dl>
 
-@param text The cleaned job description text.
-@param skill_list A list of skill keywords (the taxonomy universe).
-@return A unique list of skills found in the text.
-</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

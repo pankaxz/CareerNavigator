@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,12 +93,12 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
   <div class="headertitle"><div class="title">DataFactory: Deep Dive Documentation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md12"></a></p>
 <p>This document explains the <b>DataFactory</b> repository in extremely explicit detail. It covers <b>what</b> every file does, <b>why</b> it exists, and <b>how</b> the logic works step-by-step.</p>
 <dl class="section note"><dt>Note</dt><dd><b>Goal of this System:</b> <br  />
  To take hundreds of raw, messy Job Descriptions (text) and turn them into a structured "Universe" of skills (Graph) where we can see which skills are related and which are senior/junior.</dd></dl>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 1. Visual File Structure</h1>
 <p>Here is the anatomy of the project folder:</p>
 <div class="fragment"><div class="line">DataFactory/</div>
@@ -118,13 +119,13 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
 <div class="line">    ├── nodes.csv            &lt;-- Raw Data (for Cosmograh/Excel).</div>
 <div class="line">    └── edges.csv            &lt;-- Raw Connections (for Cosmograph/Excel).</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 2. Detailed Logic Breakdown</h1>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 Phase 1: Input &amp; Cleaning (The Fuel)</h2>
 <p><b>File:</b> <span class="tt">raw_jds.txt</span> and <span class="tt"><a class="el" href="io__handler_8py.html">utils/io_handler.py</a></span> -&gt; <span class="tt">load_raw_jds()</span></p>
 <p>The system needs to ingest raw text and prepare it for processing.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 1. Input Source</h3>
 <p>Instead of a database, we paste Job Descriptions (JDs) into <span class="tt">raw_jds.txt</span> separated by <span class="tt">###END###</span>.</p><ul>
 <li><b>Reason:</b> Fastest way to copy-paste from LinkedIn/Glassdoor.</li>
@@ -134,7 +135,7 @@ Phase 1: Input &amp; Cleaning (The Fuel)</h2>
 <div class="line">###END###</div>
 </div><!-- fragment --></li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 2. Splitting Logic (IOHandler)</h3>
 <div class="fragment"><div class="line"><span class="comment"># Pseudo-Code for load_raw_jds()</span></div>
 <div class="line">FUNCTION load_raw_jds(file_path):</div>
@@ -145,7 +146,7 @@ Phase 1: Input &amp; Cleaning (The Fuel)</h2>
 <div class="line">       b. IF segment <span class="keywordflow">is</span> <span class="keywordflow">not</span> empty:</div>
 <div class="line">          ADD to list</div>
 <div class="line">    4. RETURN list of cleaned JDs</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
 3. Text Cleaning Logic (TextProcessor)</h3>
 <p><b>File:</b> <span class="tt"><a class="el" href="text__processor_8py.html">utils/text_processor.py</a></span> -&gt; <span class="tt">clean_text()</span> Before searching for skills, we must "sanitize" the text.</p>
 <div class="fragment"><div class="line"><span class="comment"># Pseudo-Code for clean_text(text)</span></div>
@@ -164,7 +165,7 @@ Phase 1: Input &amp; Cleaning (The Fuel)</h2>
 <div class="line">       <span class="stringliteral">&quot;python    \n developer&quot;</span> -&gt; <span class="stringliteral">&quot;python developer&quot;</span></div>
 <div class="line">       </div>
 <div class="line">    4. RETURN sanitized_text</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Phase 2: Configuration (The Map)</h2>
 <p><b>File:</b> <span class="tt"><a class="el" href="taxonomy_8py.html">output/taxonomy.py</a></span></p>
 <p>This is our "Dictionary of Truth". If a skill is NOT in this file, the system will ignore it completely.</p><ul>
@@ -175,11 +176,11 @@ Phase 2: Configuration (The Map)</h2>
 </li>
 <li><b>Reasoning:</b> We want to curate the universe. We don't want "Team Player" or "Hard Worker" showing up as technical skills, so we whitelist <em>only</em> what we want.</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 Phase 3: The Brain (Seniority Scoring)</h2>
 <p><b>File:</b> <span class="tt"><a class="el" href="text__processor_8py.html">utils/text_processor.py</a></span> -&gt; <span class="tt">detect_seniority()</span></p>
 <p>We classify each JD into <b>Junior</b>, <b>Mid</b>, or <b>Senior</b> based on a weighted point system. We look for "signals" in the text.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 The Scoring Algorithm (Detailed)</h3>
 <p><b>Start:</b> <span class="tt">SCORE = 0</span></p>
 <p><b>Step 1: Title Analysis (The strongest signal)</b></p><ul>
@@ -227,11 +228,11 @@ The Scoring Algorithm (Detailed)</h3>
 <div class="line">    RETURN <span class="stringliteral">&quot;Mid&quot;</span></div>
 <div class="line">ELSE:</div>
 <div class="line">    RETURN <span class="stringliteral">&quot;Junior&quot;</span></div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
 Phase 4: Building the Graph (Counting Logic)</h2>
 <p><b>File:</b> <span class="tt"><a class="el" href="graph__builder_8py.html">utils/graph_builder.py</a></span></p>
 <p>This is where we compile the statistics.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
 Logic A: Initialization (Setting up Buckets)</h3>
 <p>Before processing any JDs, we create "Zero Counters" for every single skill in our taxonomy. </p><div class="fragment"><div class="line"><span class="comment"># node_stats structure</span></div>
 <div class="line">{</div>
@@ -239,7 +240,7 @@ Logic A: Initialization (Setting up Buckets)</h3>
 <div class="line">    <span class="stringliteral">&quot;java&quot;</span>:   { <span class="stringliteral">&quot;total&quot;</span>: 0, <span class="stringliteral">&quot;senior_count&quot;</span>: 0 },</div>
 <div class="line">    ... <span class="keywordflow">for</span> all 500+ skills</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
 Logic B: incremental Updates (The Loop)</h3>
 <p>For <b>ONE</b> Job Description that contains <span class="tt">["python", "aws"]</span> and is rated <span class="tt">Senior</span>:</p>
 <p><b>1. Update Nodes (Skills):</b></p><ul>
@@ -257,7 +258,7 @@ Logic B: incremental Updates (The Loop)</h3>
 <li><span class="tt">edge_counts[("python", "aws")]["senior_count"]</span> += 1.</li>
 </ul>
 <p><em>This process repeats for every single JD, slowly building up massive numbers.</em></p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 Phase 5: The Output</h2>
 <p><b>File:</b> <span class="tt"><a class="el" href="io__handler_8py.html">utils/io_handler.py</a></span> -&gt; <span class="tt">save_universe()</span></p>
 <p>We format the internal math into JSON for the website.</p><ul>
@@ -277,10 +278,10 @@ Phase 5: The Output</h2>
 </div><!-- fragment --></li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
 Summary of execution flow</h1>
 <ol type="1">
-<li><b>START</b>: <span class="tt"><a class="el" href="processor_8py.html">processor.py</a></span> is called.</li>
+<li><b>START</b>: <span class="tt"><a class="el" href="processor_8py.html" title="The Main Entry Point for the CareerNavigator DataFactory Pipeline.">processor.py</a></span> is called.</li>
 <li><b>LOAD</b>: <span class="tt">IOHandler</span> reads <span class="tt">raw_jds.txt</span> and gives back a list of strings (Logic Phase 1).</li>
 <li><b>INIT</b>: <span class="tt">GraphBuilder</span> creates empty buckets for every skill in the Taxonomy (Logic Phase 4A).</li>
 <li><b>LOOP</b>: For every Job Description in the list:<ul>

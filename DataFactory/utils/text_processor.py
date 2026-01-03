@@ -5,7 +5,7 @@ import re
 from typing import List, Dict, Any, Set
 
 class TextProcessor:
-    """
+    """!
     @brief Utilities for processing raw text from Job Descriptions and Resumes.
     
     @details
@@ -15,7 +15,7 @@ class TextProcessor:
 
     @staticmethod
     def clean_text(text: str) -> str:
-        """
+        """!
         @brief Normalizes and sanitizes input text for processing.
         
         @details
@@ -45,7 +45,7 @@ class TextProcessor:
 
     @staticmethod
     def detect_seniority(title: str, description: str) -> Dict[str, Any]:
-        """
+        """!
         @brief Analyzes a Job Description to determine the required seniority level.
         
         @details
@@ -62,8 +62,8 @@ class TextProcessor:
         
         <b>Thresholds:</b>
         - **Managerial**: Explicit title match.
-        - **Senior**: Score >= 9.0
-        - **Mid**: Score >= 5.0
+        - **Senior**: Score &ge; 9.0
+        - **Mid**: Score &ge; 5.0
         - **Junior**: Below 5.0
         
         @param title The job title (e.g., "Senior Backend Engineer").
@@ -193,7 +193,7 @@ class TextProcessor:
 
     @staticmethod
     def extract_skills(text: str, skill_list: List[str]) -> List[str]:
-        """
+        """!
         @brief Scans text for known skills from a taxonomy list using boundary-aware regex.
         
         @details

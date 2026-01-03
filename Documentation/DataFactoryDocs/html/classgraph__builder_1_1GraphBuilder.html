@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,31 +93,36 @@ $(function(){initNavTree('classgraph__builder_1_1GraphBuilder.html','','classgra
   <div class="headertitle"><div class="title">graph_builder.GraphBuilder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Aggregates raw skill occurrences into a statistical graph structure.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for graph_builder.GraphBuilder:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgraph__builder_1_1GraphBuilder__coll__graph.png" border="0" usemap="#agraph__builder_8GraphBuilder_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="agraph__builder_8GraphBuilder_coll__map" id="agraph__builder_8GraphBuilder_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,196,131"/>
+<area shape="rect" title="Aggregates raw skill occurrences into a statistical graph structure." alt="" coords="5,5,196,131"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab41b295e13d341cd00df99db457d6ed5" id="r_ab41b295e13d341cd00df99db457d6ed5"><td class="memItemLeft" align="right" valign="top">Tuple[Dict[str, Dict[str, int]], Dict[Tuple[str, str], Dict[str, int]], Counter]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab41b295e13d341cd00df99db457d6ed5">initialize_stats</a> (List[str] all_skills)</td></tr>
+<tr class="memdesc:ab41b295e13d341cd00df99db457d6ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the data structures required for graph construction.  <br /></td></tr>
 <tr class="memitem:a76ab75ef90a5e9badae56c747d655cc2" id="r_a76ab75ef90a5e9badae56c747d655cc2"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76ab75ef90a5e9badae56c747d655cc2">update_metrics</a> (Dict[str, Dict[str, int]] node_stats, Dict[Tuple[str, str], Dict[str, int]] edge_counts, List[str] found_skills, str level)</td></tr>
+<tr class="memdesc:a76ab75ef90a5e9badae56c747d655cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the graph statistics with data from a single Job Description.  <br /></td></tr>
 <tr class="memitem:adae1c92841997472b91ce96ea9f0f98b" id="r_adae1c92841997472b91ce96ea9f0f98b"><td class="memItemLeft" align="right" valign="top">Tuple[List[Dict[str, Any]], List[str], List[float]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adae1c92841997472b91ce96ea9f0f98b">prepare_nodes_list</a> (Dict[str, Dict[str, int]] node_stats, Dict[str, str] skill_to_group, int threshold)</td></tr>
+<tr class="memdesc:adae1c92841997472b91ce96ea9f0f98b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms raw node statistics into the final list of node objects.  <br /></td></tr>
 <tr class="memitem:a378d8b8290ce8fecbf405c8153f35207" id="r_a378d8b8290ce8fecbf405c8153f35207"><td class="memItemLeft" align="right" valign="top">Dict[Tuple[str, str], Dict[str, int]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a378d8b8290ce8fecbf405c8153f35207">filter_edges</a> (Dict[Tuple[str, str], Dict[str, int]] edge_counts, List[str] active_node_ids, int threshold)</td></tr>
+<tr class="memdesc:a378d8b8290ce8fecbf405c8153f35207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prunes edges that connect to culled nodes or do not meet the weight threshold.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">@brief Aggregates raw skill occurrences into a statistical graph structure.
-
-@details
-Responsible for maintaining the in-memory state of the graph during processing.
-It tracks:
--   **Nodes**: Counts of individual skills, separated by seniority contexts (Senior, Managerial).
--   **Edges**: Co-occurrence counts between pairs of skills found in the same JD.
-</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Aggregates raw skill occurrences into a statistical graph structure. </p>
+<p>Responsible for maintaining the in-memory state of the graph during processing. It tracks:</p><ul>
+<li><b>Nodes</b>: Counts of individual skills, separated by seniority contexts (Senior, Managerial).</li>
+<li><b>Edges</b>: Co-occurrence counts between pairs of skills found in the same JD. </li>
+</ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a378d8b8290ce8fecbf405c8153f35207" name="a378d8b8290ce8fecbf405c8153f35207"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a378d8b8290ce8fecbf405c8153f35207">&#9670;&#160;</a></span>filter_edges()</h2>
 
@@ -149,16 +155,19 @@ It tracks:
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Prunes edges that connect to culled nodes or do not meet the weight threshold.
 
-@details
-Ensures strict referential integrity; an edge cannot exist if one of its nodes has been filtered out.
+<p>Prunes edges that connect to culled nodes or do not meet the weight threshold. </p>
+<p>Ensures strict referential integrity; an edge cannot exist if one of its nodes has been filtered out.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">edge_counts</td><td>The raw edge statistics. </td></tr>
+    <tr><td class="paramname">active_node_ids</td><td>List of valid node IDs that survived filtering. </td></tr>
+    <tr><td class="paramname">threshold</td><td>Minimum edge weight to survive filtering. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A filtered dictionary of edges. </dd></dl>
 
-@param edge_counts The raw edge statistics.
-@param active_node_ids List of valid node IDs that survived filtering.
-@param threshold Minimum edge weight to survive filtering.
-@return A filtered dictionary of edges.
-</pre> 
 </div>
 </div>
 <a id="ab41b295e13d341cd00df99db457d6ed5" name="ab41b295e13d341cd00df99db457d6ed5"></a>
@@ -183,17 +192,22 @@ Ensures strict referential integrity; an edge cannot exist if one of its nodes h
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Initializes the data structures required for graph construction.
 
-@details
-Pre-populates the `node_stats` dictionary for every skill in the taxonomy to ensure O(1) lookups.
+<p>Initializes the data structures required for graph construction. </p>
+<p>Pre-populates the <span class="tt">node_stats</span> dictionary for every skill in the taxonomy to ensure O(1) lookups.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">all_skills</td><td>List of all valid skill identifiers. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A tuple containing:<ul>
+<li><span class="tt">node_stats</span> (Dict): Storage for node metrics. Structure: <span class="tt">{ "skill": { "total": 0, "senior_count": 0, "managerial_count": 0 } }</span></li>
+<li><span class="tt">edge_counts</span> (Dict): Storage for edge metrics. Structure: <span class="tt">{ ("skill_a", "skill_b"): { ... } }</span></li>
+<li><span class="tt">seniority_dist</span> (Counter): A counter for tracking job distribution by level. </li>
+</ul>
+</dd></dl>
 
-@param all_skills List of all valid skill identifiers.
-@return A tuple containing:
-    - `node_stats` (Dict): Storage for node metrics. Structure: `{ "skill": { "total": 0, "senior_count": 0, "managerial_count": 0 } }`
-    - `edge_counts` (Dict): Storage for edge metrics. Structure: `{ ("skill_a", "skill_b"): { ... } }`
-    - `seniority_dist` (Counter): A counter for tracking job distribution by level.
-</pre> 
 </div>
 </div>
 <a id="adae1c92841997472b91ce96ea9f0f98b" name="adae1c92841997472b91ce96ea9f0f98b"></a>
@@ -228,20 +242,24 @@ Pre-populates the `node_stats` dictionary for every skill in the taxonomy to ens
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Transforms raw node statistics into the final list of node objects.
 
-@details
-Filters out skills that appeared fewer times than the threshold.
-Calculates derived metrics like `seniorityScore` (senior_count / total) and `managerialScore`.
+<p>Transforms raw node statistics into the final list of node objects. </p>
+<p>Filters out skills that appeared fewer times than the threshold. Calculates derived metrics like <span class="tt">seniorityScore</span> (senior_count / total) and <span class="tt">managerialScore</span>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node_stats</td><td>The raw statistical data. </td></tr>
+    <tr><td class="paramname">skill_to_group</td><td>Mapping for assigning group categories to nodes. </td></tr>
+    <tr><td class="paramname">threshold</td><td>Minimum number of appearances to survive filtration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A tuple of:<ul>
+<li><span class="tt">nodes_list</span>: List of final node dictionaries ready for JSON serialization.</li>
+<li><span class="tt">active_node_ids</span>: List of IDs of nodes that survived filtering.</li>
+<li><span class="tt">seniority_scores</span>: List of all seniority scores (used for global distribution calculation). </li>
+</ul>
+</dd></dl>
 
-@param node_stats The raw statistical data.
-@param skill_to_group Mapping for assigning group categories to nodes.
-@param threshold Minimum number of appearances to survive filtration.
-@return A tuple of:
-    - `nodes_list`: List of final node dictionaries ready for JSON serialization.
-    - `active_node_ids`: List of IDs of nodes that survived filtering.
-    - `seniority_scores`: List of all seniority scores (used for global distribution calculation).
-</pre> 
 </div>
 </div>
 <a id="a76ab75ef90a5e9badae56c747d655cc2" name="a76ab75ef90a5e9badae56c747d655cc2"></a>
@@ -281,18 +299,22 @@ Calculates derived metrics like `seniorityScore` (senior_count / total) and `man
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Updates the graph statistics with data from a single Job Description.
 
-@details
-This is the core aggregation logic. It performs two main tasks:
-1.  **Node Updates**: Increments the total count for each found skill. If the JD is Senior/Managerial, increments those specific counters too.
-2.  **Edge Updates**: Generating a complete subgraph (clique) for the found skills. Every unique pair of skills increments an edge weight.
+<p>Updates the graph statistics with data from a single Job Description. </p>
+<p>This is the core aggregation logic. It performs two main tasks:</p><ol type="1">
+<li><b>Node Updates</b>: Increments the total count for each found skill. If the JD is Senior/Managerial, increments those specific counters too.</li>
+<li><b>Edge Updates</b>: Generating a complete subgraph (clique) for the found skills. Every unique pair of skills increments an edge weight.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node_stats</td><td>Mutable dictionary of node statistics. </td></tr>
+    <tr><td class="paramname">edge_counts</td><td>Mutable dictionary of edge statistics. </td></tr>
+    <tr><td class="paramname">found_skills</td><td>List of skills found in the current JD. </td></tr>
+    <tr><td class="paramname">level</td><td>The seniority level of the current JD (e.g., 'Senior', 'Managerial', 'Junior'). </td></tr>
+  </table>
+  </dd>
+</dl>
 
-@param node_stats Mutable dictionary of node statistics.
-@param edge_counts Mutable dictionary of edge statistics.
-@param found_skills List of skills found in the current JD.
-@param level The seniority level of the current JD (e.g., 'Senior', 'Managerial', 'Junior').
-</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

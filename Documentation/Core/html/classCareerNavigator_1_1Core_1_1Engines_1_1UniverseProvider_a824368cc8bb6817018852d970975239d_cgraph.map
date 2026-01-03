@@ -1,0 +1,8 @@
+<map id="CareerNavigator.Core.Engines.UniverseProvider.UniverseProvider" name="CareerNavigator.Core.Engines.UniverseProvider.UniverseProvider">
+<area shape="rect" id="Node000001" title="Initializes a new instance of the UniverseProvider class." alt="" coords="5,5,255,45"/>
+<area shape="rect" id="Node000002" href="$classCareerNavigator_1_1Core_1_1Engines_1_1UniverseProvider.html#a68d01221edebd56d00f53fc8db8dd75c" title=" " alt="" coords="585,5,812,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,19,303,19,537,19,572,19,571,25,537,24,303,24,255,25"/>
+<area shape="rect" id="Node000003" href="$classCareerNavigator_1_1Core_1_1Engines_1_1UniverseProvider.html#ad1368980539adacf6cb84e1e27465498" title=" " alt="" coords="303,33,537,73"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,35,289,38,289,43,255,40"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="537,39,572,35,572,41,538,44"/>
+</map>

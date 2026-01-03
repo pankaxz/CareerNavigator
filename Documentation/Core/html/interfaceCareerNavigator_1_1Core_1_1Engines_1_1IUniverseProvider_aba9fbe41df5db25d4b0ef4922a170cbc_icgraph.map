@@ -1,0 +1,9 @@
+<map id="CareerNavigator.Core.Engines.IUniverseProvider.GetUniverse" name="CareerNavigator.Core.Engines.IUniverseProvider.GetUniverse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="573,53,796,93"/>
+<area shape="rect" id="Node000002" href="$classCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1BaseAnalysisStrategy.html#af9f0658870f5e108049abd5b0592c70f" title=" " alt="" coords="289,5,525,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,57,525,52,526,47,560,52"/>
+<area shape="rect" id="Node000004" href="$classCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1UserAnalysisStrategy.html#ae79ccb6a733a79aba27a83472f51ace7" title=" " alt="" coords="290,84,525,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="560,93,525,98,524,92,559,87"/>
+<area shape="rect" id="Node000003" href="$classCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1BaseAnalysisStrategy.html#a2e4036e7a5f693c6dbe7a56c3c961b47" title=" " alt="" coords="5,5,241,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,35,242,35,242,30,275,30"/>
+</map>

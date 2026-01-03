@@ -1,0 +1,7 @@
+<map id="CareerNavigator.Core.Engines.Strategies.JobDescriptionAnalysisStrategy" name="CareerNavigator.Core.Engines.Strategies.JobDescriptionAnalysisStrategy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,321,239,416"/>
+<area shape="rect" id="Node000002" href="$classCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1BaseAnalysisStrategy.html" title=" " alt="" coords="9,133,235,273"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,287,125,321,119,321,119,287"/>
+<area shape="rect" id="Node000003" href="$interfaceCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1IAnalysisStrategy.html" title=" " alt="" coords="15,5,229,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,99,125,133,119,133,119,99"/>
+</map>

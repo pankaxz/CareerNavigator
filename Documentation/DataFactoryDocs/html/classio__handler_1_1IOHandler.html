@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,32 +93,38 @@ $(function(){initNavTree('classio__handler_1_1IOHandler.html','','classio__handl
   <div class="headertitle"><div class="title">io_handler.IOHandler Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstraction layer for File Input/Output operations.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for io_handler.IOHandler:</div>
 <div class="dyncontent">
 <div class="center"><img src="classio__handler_1_1IOHandler__coll__graph.png" border="0" usemap="#aio__handler_8IOHandler_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aio__handler_8IOHandler_coll__map" id="aio__handler_8IOHandler_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,196,131"/>
+<area shape="rect" title="Abstraction layer for File Input/Output operations." alt="" coords="5,5,196,131"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a800fa71ea6f8809db3049f2f5016de85" id="r_a800fa71ea6f8809db3049f2f5016de85"><td class="memItemLeft" align="right" valign="top">List[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800fa71ea6f8809db3049f2f5016de85">load_raw_jds</a> (str file_path=&quot;raw_jds.txt&quot;, str delimiter=&quot;###END###&quot;)</td></tr>
+<tr class="memdesc:a800fa71ea6f8809db3049f2f5016de85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads and segments raw job description data.  <br /></td></tr>
 <tr class="memitem:a2b0867d860425ea98022ffdc3cd0003e" id="r_a2b0867d860425ea98022ffdc3cd0003e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0867d860425ea98022ffdc3cd0003e">ensure_output_dir</a> (str output_dir)</td></tr>
+<tr class="memdesc:a2b0867d860425ea98022ffdc3cd0003e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures the target output directory exists.  <br /></td></tr>
 <tr class="memitem:a55dd9e9e1a5802c65cb821926a9ff869" id="r_a55dd9e9e1a5802c65cb821926a9ff869"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55dd9e9e1a5802c65cb821926a9ff869">save_universe</a> (List[Dict[str, Any]] nodes_list, Dict[Tuple[str, str], Dict[str, int]] edge_counts, Dict[str, Any] meta=None, str output_dir=&quot;output&quot;)</td></tr>
+<tr class="memdesc:a55dd9e9e1a5802c65cb821926a9ff869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the graph data into the canonical <span class="tt">universe.json</span> format.  <br /></td></tr>
 <tr class="memitem:a5744c3878c636443f73dafbf76da07a4" id="r_a5744c3878c636443f73dafbf76da07a4"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5744c3878c636443f73dafbf76da07a4">save_cosmograph_files</a> (Dict[str, Dict[str, int]] node_stats, Dict[Tuple[str, str], Dict[str, int]] edge_counts, Dict[str, str] skill_to_group, str output_dir=&quot;output&quot;)</td></tr>
+<tr class="memdesc:a5744c3878c636443f73dafbf76da07a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports graph data to CSV format optimized for Cosmograph.app.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">@brief Abstraction layer for File Input/Output operations.
-
-@details
-Centralizes all disk operations including:
-- Reading raw job descriptions from text files.
-- Saving the structural graph data to JSON (for the application).
-- Saving CSV exports (for visualization tools like Cosmograph).
-- Managing directory creation.
-</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Abstraction layer for File Input/Output operations. </p>
+<p>Centralizes all disk operations including:</p><ul>
+<li>Reading raw job descriptions from text files.</li>
+<li>Saving the structural graph data to JSON (for the application).</li>
+<li>Saving CSV exports (for visualization tools like Cosmograph).</li>
+<li>Managing directory creation. </li>
+</ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a2b0867d860425ea98022ffdc3cd0003e" name="a2b0867d860425ea98022ffdc3cd0003e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b0867d860425ea98022ffdc3cd0003e">&#9670;&#160;</a></span>ensure_output_dir()</h2>
 
@@ -140,13 +147,16 @@ Centralizes all disk operations including:
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Ensures the target output directory exists.
 
-@details
-Idempotent operation: creates the directory if missing, does nothing if it exists.
+<p>Ensures the target output directory exists. </p>
+<p>Idempotent operation: creates the directory if missing, does nothing if it exists.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_dir</td><td>Path to the directory. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-@param output_dir Path to the directory.
-</pre> 
 </div>
 </div>
 <a id="a800fa71ea6f8809db3049f2f5016de85" name="a800fa71ea6f8809db3049f2f5016de85"></a>
@@ -175,16 +185,18 @@ Idempotent operation: creates the directory if missing, does nothing if it exist
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Loads and segments raw job description data.
 
-@details
-Reads a single large text file containing multiple JDs separated by a custom delimiter.
-Robustly handles empty segments and whitespace.
+<p>Loads and segments raw job description data. </p>
+<p>Reads a single large text file containing multiple JDs separated by a custom delimiter. Robustly handles empty segments and whitespace.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>Path to the raw text file (default: "raw_jds.txt"). </td></tr>
+    <tr><td class="paramname">delimiter</td><td>The string marker used to separate distinct JDs (default: "###END###"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of strings, where each string is one full job description. Returns empty list on error. </dd></dl>
 
-@param file_path Path to the raw text file (default: "raw_jds.txt").
-@param delimiter The string marker used to separate distinct JDs (default: "###END###").
-@return A list of strings, where each string is one full job description. Returns empty list on error.
-</pre> 
 </div>
 </div>
 <a id="a5744c3878c636443f73dafbf76da07a4" name="a5744c3878c636443f73dafbf76da07a4"></a>
@@ -223,18 +235,22 @@ Robustly handles empty segments and whitespace.
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Exports graph data to CSV format optimized for Cosmograph.app.
 
-@details
-Generates two files:
-1.  `nodes.csv`: Columns `id`, `group`, `val` (weight).
-2.  `edges.csv`: Columns `source`, `target`, `value` (weight).
+<p>Exports graph data to CSV format optimized for Cosmograph.app. </p>
+<p>Generates two files:</p><ol type="1">
+<li><span class="tt">nodes.csv</span>: Columns <span class="tt">id</span>, <span class="tt">group</span>, <span class="tt">val</span> (weight).</li>
+<li><span class="tt">edges.csv</span>: Columns <span class="tt">source</span>, <span class="tt">target</span>, <span class="tt">value</span> (weight).</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node_stats</td><td>Dictionary of raw node stats. </td></tr>
+    <tr><td class="paramname">edge_counts</td><td>Dictionary of raw edge stats. </td></tr>
+    <tr><td class="paramname">skill_to_group</td><td>Taxonomy mapping for group column. </td></tr>
+    <tr><td class="paramname">output_dir</td><td>Target directory. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-@param node_stats Dictionary of raw node stats.
-@param edge_counts Dictionary of raw edge stats.
-@param skill_to_group Taxonomy mapping for group column.
-@param output_dir Target directory.
-</pre> 
 </div>
 </div>
 <a id="a55dd9e9e1a5802c65cb821926a9ff869" name="a55dd9e9e1a5802c65cb821926a9ff869"></a>
@@ -273,17 +289,19 @@ Generates two files:
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Serializes the graph data into the canonical `universe.json` format.
 
-@details
-This is the primary output of the DataFactory. The JSON structure is designed to be directly consumable by the C# `UniverseProvider`.
-It transforms the internal edge dictionary map into a list of link objects containing calculated metadata (seniority score, managerial score).
+<p>Serializes the graph data into the canonical <span class="tt">universe.json</span> format. </p>
+<p>This is the primary output of the DataFactory. The JSON structure is designed to be directly consumable by the C# <span class="tt">UniverseProvider</span>. It transforms the internal edge dictionary map into a list of link objects containing calculated metadata (seniority score, managerial score).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes_list</td><td>List of node objects. </td></tr>
+    <tr><td class="paramname">edge_counts</td><td>Dictionary of edge statistics. </td></tr>
+    <tr><td class="paramname">meta</td><td>Optional dictionary of global metadata (e.g., seniority distribution histograms). </td></tr>
+    <tr><td class="paramname">output_dir</td><td>Target directory for saving the file. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-@param nodes_list List of node objects.
-@param edge_counts Dictionary of edge statistics.
-@param meta Optional dictionary of global metadata (e.g., seniority distribution histograms).
-@param output_dir Target directory for saving the file.
-</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

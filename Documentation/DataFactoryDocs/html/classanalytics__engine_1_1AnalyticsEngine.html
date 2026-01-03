@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,26 +93,27 @@ $(function(){initNavTree('classanalytics__engine_1_1AnalyticsEngine.html','','cl
   <div class="headertitle"><div class="title">analytics_engine.AnalyticsEngine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Pure functional engine for calculating derived statistical metadata.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for analytics_engine.AnalyticsEngine:</div>
 <div class="dyncontent">
 <div class="center"><img src="classanalytics__engine_1_1AnalyticsEngine__coll__graph.png" border="0" usemap="#aanalytics__engine_8AnalyticsEngine_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aanalytics__engine_8AnalyticsEngine_coll__map" id="aanalytics__engine_8AnalyticsEngine_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,193,100"/>
+<area shape="rect" title="Pure functional engine for calculating derived statistical metadata." alt="" coords="5,5,193,100"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:adb9ad11f88befd6c69c85b471887d0a2" id="r_adb9ad11f88befd6c69c85b471887d0a2"><td class="memItemLeft" align="right" valign="top">Dict[str, Any]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb9ad11f88befd6c69c85b471887d0a2">calculate_seniority_distribution</a> (List[float] seniority_scores, int total_skills)</td></tr>
+<tr class="memdesc:adb9ad11f88befd6c69c85b471887d0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a histogram of skill seniority scores.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">@brief Pure functional engine for calculating derived statistical metadata.
-
-@details
-Unlike `GraphBuilder`, which manages state, this class performs stateless mathematical transformations 
-on the data to produce insights (e.g., histograms, percentiles).
-</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Pure functional engine for calculating derived statistical metadata. </p>
+<p>Unlike <span class="tt">GraphBuilder</span>, which manages state, this class performs stateless mathematical transformations on the data to produce insights (e.g., histograms, percentiles). </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="adb9ad11f88befd6c69c85b471887d0a2" name="adb9ad11f88befd6c69c85b471887d0a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb9ad11f88befd6c69c85b471887d0a2">&#9670;&#160;</a></span>calculate_seniority_distribution()</h2>
 
@@ -138,16 +140,18 @@ on the data to produce insights (e.g., histograms, percentiles).
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Computes a histogram of skill seniority scores.
 
-@details
-Buckets skills into ten distinct bins ranging from 0.0 to 1.0 (e.g., "0.0-0.1", "0.9-1.0").
-This is used by the frontend to visualize the "Seniority Spread" of the entire technology universe.
+<p>Computes a histogram of skill seniority scores. </p>
+<p>Buckets skills into ten distinct bins ranging from 0.0 to 1.0 (e.g., "0.0-0.1", "0.9-1.0"). This is used by the frontend to visualize the "Seniority Spread" of the entire technology universe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seniority_scores</td><td>A list of float scores (0.0 to 1.0) derived from skill analysis. </td></tr>
+    <tr><td class="paramname">total_skills</td><td>The total count of skills analyzed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A dictionary containing the histogram bucket map and total count. </dd></dl>
 
-@param seniority_scores A list of float scores (0.0 to 1.0) derived from skill analysis.
-@param total_skills The total count of skills analyzed.
-@return A dictionary containing the histogram bucket map and total count.
-</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

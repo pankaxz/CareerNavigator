@@ -11,16 +11,9 @@ var namespaces_dup =
       [ "SKILL_TO_GROUP", "namespaceprocessor.html#a30da5d62a84a821ca708d1f77ab028e8", null ],
       [ "THRESHOLD", "namespaceprocessor.html#aa7a9b8e3b788399f239720c5acc2e263", null ]
     ] ],
-    [ "reproduce_cpp", "namespacereproduce__cpp.html", [
-      [ "test_cpp_detection", "namespacereproduce__cpp.html#a33af371ea202908be6dd942362abb815", null ]
-    ] ],
     [ "taxonomy", "namespacetaxonomy.html", [
       [ "TAXONOMY", "namespacetaxonomy.html#ab181f07740d9c44de4a9fc2f54413e5f", null ]
     ] ],
     [ "taxonomy_manager", "namespacetaxonomy__manager.html", "namespacetaxonomy__manager" ],
-    [ "test_seniority_detection", "namespacetest__seniority__detection.html", [
-      [ "parse_raw_jds", "namespacetest__seniority__detection.html#a4e350aaac5b3a6a14561a9b0d2e1d99a", null ],
-      [ "test_seniority", "namespacetest__seniority__detection.html#a22e31fb59168842b0646a87a3826f87d", null ]
-    ] ],
     [ "text_processor", "namespacetext__processor.html", "namespacetext__processor" ]
 ];

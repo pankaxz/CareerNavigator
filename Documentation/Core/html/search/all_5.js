@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['addcontrollers_0',['AddControllers',['../Program_8cs.html#af6dc74547d00fc4207a1dd87d313e9c4',1,'Program.cs']]],
+  ['addcors_1',['AddCors',['../Program_8cs.html#a3581c08d89269442d1171db9480bc0d5',1,'Program.cs']]],
+  ['additionaldetails_2',['AdditionalDetails',['../classCareerNavigator_1_1Core_1_1Models_1_1DTOs_1_1AnalysisRequest.html#a17c5c4129ddd2ced5ba0645ca4342f79',1,'CareerNavigator::Core::Models::DTOs::AnalysisRequest']]],
+  ['addsingleton_3c_20bridgeengine_20_3e_3',['AddSingleton&lt; BridgeEngine &gt;',['../Program_8cs.html#a594aee12c0ea92de41fbfb8f3c9bb065',1,'Program.cs']]],
+  ['addsingleton_3c_20gapanalyzer_20_3e_4',['AddSingleton&lt; GapAnalyzer &gt;',['../Program_8cs.html#a9a02920a6473b93c5685096d75a6e568',1,'Program.cs']]],
+  ['addsingleton_3c_20iuniverseprovider_2c_20universeprovider_20_3e_5',['AddSingleton&lt; IUniverseProvider, UniverseProvider &gt;',['../Program_8cs.html#a4f416588df1c071b406fb0bdc7f41ebf',1,'Program.cs']]],
+  ['addsingleton_3c_20skillparser_20_3e_6',['AddSingleton&lt; SkillParser &gt;',['../Program_8cs.html#ab3fb30623016b393f061d36683fa493b',1,'Program.cs']]],
+  ['addsingleton_3c_20skillscanner_20_3e_7',['AddSingleton&lt; SkillScanner &gt;',['../Program_8cs.html#a2375057c764ae5d320b1c7770a80cc7c',1,'Program.cs']]],
+  ['adjacencylist_8',['AdjacencyList',['../classCareerNavigator_1_1Core_1_1Models_1_1Schema_1_1Universe.html#a5886b83a6dc1b6cce8a12a74569e6cc5',1,'CareerNavigator::Core::Models::Schema::Universe']]],
+  ['analysisrequest_9',['AnalysisRequest',['../classCareerNavigator_1_1Core_1_1Models_1_1DTOs_1_1AnalysisRequest.html',1,'CareerNavigator::Core::Models::DTOs']]],
+  ['analysisrequest_20cs_10',['Models/DTOs/AnalysisRequest.cs',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md17',1,'']]],
+  ['analysisrequest_2ecs_11',['AnalysisRequest.cs',['../AnalysisRequest_8cs.html',1,'']]],
+  ['analysisresult_12',['AnalysisResult',['../classCareerNavigator_1_1Core_1_1Models_1_1DTOs_1_1AnalysisResult.html',1,'CareerNavigator::Core::Models::DTOs']]],
+  ['analysisresult_2ecs_13',['AnalysisResult.cs',['../AnalysisResult_8cs.html',1,'']]],
+  ['analyze_14',['Analyze',['../classCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1BaseAnalysisStrategy.html#a2e4036e7a5f693c6dbe7a56c3c961b47',1,'CareerNavigator.Core.Engines.Strategies.BaseAnalysisStrategy.Analyze()'],['../interfaceCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1IAnalysisStrategy.html#acba5cec1a19c0b5f9dc90e0e911c12a6',1,'CareerNavigator.Core.Engines.Strategies.IAnalysisStrategy.Analyze()']]],
+  ['analyzegap_15',['AnalyzeGap',['../classCareerNavigator_1_1Core_1_1Controllers_1_1NavigatorController.html#a017a7441c29cacb91ec0ed35cc2ff692',1,'CareerNavigator.Core.Controllers.NavigatorController.AnalyzeGap()'],['../classCareerNavigator_1_1Core_1_1Engines_1_1GapAnalyzer.html#a8c4b536274ee57b83f8767ed805ca6ad',1,'CareerNavigator.Core.Engines.GapAnalyzer.AnalyzeGap()']]],
+  ['analyzejob_16',['AnalyzeJob',['../classCareerNavigator_1_1Core_1_1Controllers_1_1NavigatorController.html#a25608c487ef151ff4c2dbbb6f83e3cc1',1,'CareerNavigator.Core.Controllers.NavigatorController.AnalyzeJob()'],['../classCareerNavigator_1_1Core_1_1Engines_1_1SkillScanner.html#a217d7f70438665c354ee8b76c486e74c',1,'CareerNavigator.Core.Engines.SkillScanner.AnalyzeJob(string text)'],['../classCareerNavigator_1_1Core_1_1Engines_1_1SkillScanner.html#a28c910c24586a8c627d2012cad0e6520',1,'CareerNavigator.Core.Engines.SkillScanner.AnalyzeJob(AnalysisRequest request)']]],
+  ['analyzeprofile_17',['AnalyzeProfile',['../classCareerNavigator_1_1Core_1_1Controllers_1_1NavigatorController.html#a823a5d316ed705225c0e84b591edcfe7',1,'CareerNavigator.Core.Controllers.NavigatorController.AnalyzeProfile()'],['../classCareerNavigator_1_1Core_1_1Engines_1_1SkillScanner.html#a64792f52d6c104b235acdf4715eef8f9',1,'CareerNavigator.Core.Engines.SkillScanner.AnalyzeProfile(string text)'],['../classCareerNavigator_1_1Core_1_1Engines_1_1SkillScanner.html#a7ff0cabb1ad0788c2e81ed6bddd9342a',1,'CareerNavigator.Core.Engines.SkillScanner.AnalyzeProfile(AnalysisRequest request)']]],
+  ['api_20endpoints_18',['4. Controllers (API Endpoints)',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md23',1,'']]],
+  ['app_19',['app',['../Program_8cs.html#a7b225fcb720e4d5ed2bbf60e28a25e6d',1,'Program.cs']]],
+  ['architecture_20',['🏗 Architecture',['../index.html#autotoc_md2',1,'']]]
+];

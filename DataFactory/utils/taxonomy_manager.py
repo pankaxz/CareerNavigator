@@ -2,7 +2,7 @@ from typing import List, Dict
 from output.taxonomy import TAXONOMY
 
 class TaxonomyManager:
-    """
+    """!
     @brief Manages the valid set of skills (taxonomy) that the system recognizes.
     
     @details
@@ -15,7 +15,7 @@ class TaxonomyManager:
 
     @staticmethod
     def get_all_skills() -> List[str]:
-        """
+        """!
         @brief Retrieves a flat list of all skill keywords.
         
         @return A list of strings representing every skill in the known universe.
@@ -30,7 +30,7 @@ class TaxonomyManager:
 
     @staticmethod
     def get_skill_to_group_map() -> Dict[str, str]:
-        """
+        """!
         @brief Creates a reverse-lookup map to find the category of a given skill.
         
         @details

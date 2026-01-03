@@ -3,7 +3,7 @@ from collections import Counter
 import itertools
 
 class GraphBuilder:
-    """
+    """!
     @brief Aggregates raw skill occurrences into a statistical graph structure.
     
     @details
@@ -15,7 +15,7 @@ class GraphBuilder:
 
     @staticmethod
     def initialize_stats(all_skills: List[str]) -> Tuple[Dict[str, Dict[str, int]], Dict[Tuple[str, str], Dict[str, int]], Counter]:
-        """
+        """!
         @brief Initializes the data structures required for graph construction.
         
         @details
@@ -46,7 +46,7 @@ class GraphBuilder:
         found_skills: List[str], 
         level: str
     ) -> None:
-        """
+        """!
         @brief Updates the graph statistics with data from a single Job Description.
         
         @details
@@ -91,7 +91,7 @@ class GraphBuilder:
         skill_to_group: Dict[str, str], 
         threshold: int
     ) -> Tuple[List[Dict[str, Any]], List[str], List[float]]:
-        """
+        """!
         @brief Transforms raw node statistics into the final list of node objects.
         
         @details
@@ -136,7 +136,7 @@ class GraphBuilder:
         active_node_ids: List[str],
         threshold: int
     ) -> Dict[Tuple[str, str], Dict[str, int]]:
-        """
+        """!
         @brief Prunes edges that connect to culled nodes or do not meet the weight threshold.
         
         @details

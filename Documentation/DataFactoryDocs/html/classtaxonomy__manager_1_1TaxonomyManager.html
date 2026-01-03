@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,30 +93,33 @@ $(function(){initNavTree('classtaxonomy__manager_1_1TaxonomyManager.html','','cl
   <div class="headertitle"><div class="title">taxonomy_manager.TaxonomyManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages the valid set of skills (taxonomy) that the system recognizes.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for taxonomy_manager.TaxonomyManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classtaxonomy__manager_1_1TaxonomyManager__coll__graph.png" border="0" usemap="#ataxonomy__manager_8TaxonomyManager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="ataxonomy__manager_8TaxonomyManager_coll__map" id="ataxonomy__manager_8TaxonomyManager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,219,120"/>
+<area shape="rect" title="Manages the valid set of skills (taxonomy) that the system recognizes." alt="" coords="5,5,219,120"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ea978a7f19f39a960eaf62903136975" id="r_a4ea978a7f19f39a960eaf62903136975"><td class="memItemLeft" align="right" valign="top">List[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ea978a7f19f39a960eaf62903136975">get_all_skills</a> ()</td></tr>
+<tr class="memdesc:a4ea978a7f19f39a960eaf62903136975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a flat list of all skill keywords.  <br /></td></tr>
 <tr class="memitem:af11ed8bbed72bf3ac523520eda516c32" id="r_af11ed8bbed72bf3ac523520eda516c32"><td class="memItemLeft" align="right" valign="top">Dict[str, str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af11ed8bbed72bf3ac523520eda516c32">get_skill_to_group_map</a> ()</td></tr>
+<tr class="memdesc:af11ed8bbed72bf3ac523520eda516c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a reverse-lookup map to find the category of a given skill.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">@brief Manages the valid set of skills (taxonomy) that the system recognizes.
-
-@details
-Serves as the Single Source of Truth for:
-1.  &lt;b&gt;Skill Dictionary&lt;/b&gt;: What keywords constitute a "skill" (e.g., "Python", "Kubernetes").
-2.  &lt;b&gt;Grouping&lt;/b&gt;: Which category a skill belongs to (e.g., "Languages", "Cloud_Platforms").
-
-This abstractions allows the underlying JSON/Python taxonomy file to change structure without breaking the rest of the pipeline.
-</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Manages the valid set of skills (taxonomy) that the system recognizes. </p>
+<p>Serves as the Single Source of Truth for:</p><ol type="1">
+<li><b>Skill Dictionary</b>: What keywords constitute a "skill" (e.g., "Python", "Kubernetes").</li>
+<li><b>Grouping</b>: Which category a skill belongs to (e.g., "Languages", "Cloud_Platforms").</li>
+</ol>
+<p>This abstractions allows the underlying JSON/Python taxonomy file to change structure without breaking the rest of the pipeline. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a4ea978a7f19f39a960eaf62903136975" name="a4ea978a7f19f39a960eaf62903136975"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ea978a7f19f39a960eaf62903136975">&#9670;&#160;</a></span>get_all_skills()</h2>
 
@@ -138,10 +142,10 @@ This abstractions allows the underlying JSON/Python taxonomy file to change stru
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Retrieves a flat list of all skill keywords.
 
-@return A list of strings representing every skill in the known universe.
-</pre> 
+<p>Retrieves a flat list of all skill keywords. </p>
+<dl class="section return"><dt>Returns</dt><dd>A list of strings representing every skill in the known universe. </dd></dl>
+
 </div>
 </div>
 <a id="af11ed8bbed72bf3ac523520eda516c32" name="af11ed8bbed72bf3ac523520eda516c32"></a>
@@ -166,15 +170,11 @@ This abstractions allows the underlying JSON/Python taxonomy file to change stru
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">@brief Creates a reverse-lookup map to find the category of a given skill.
 
-@details
-Iterates through the hierarchical `TAXONOMY` to build a flat dictionary:
-`{ "python": "Languages", "aws": "Cloud_Platforms", ... }`
-This is essential for the `GraphBuilder` to assign group attributes to nodes.
+<p>Creates a reverse-lookup map to find the category of a given skill. </p>
+<p>Iterates through the hierarchical <span class="tt">TAXONOMY</span> to build a flat dictionary: <span class="tt">{ "python": "Languages", "aws": "Cloud_Platforms", ... }</span> This is essential for the <span class="tt">GraphBuilder</span> to assign group attributes to nodes.</p>
+<dl class="section return"><dt>Returns</dt><dd>A dictionary mapping 'skill_name' -&gt; 'group_name'. </dd></dl>
 
-@return A dictionary mapping 'skill_name' -&gt; 'group_name'.
-</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

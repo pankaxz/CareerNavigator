@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -92,10 +93,10 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
   <div class="headertitle"><div class="title">Career Navigator DataFactory - System Documentation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md18"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md30"></a></p>
 <p>This file explains the inner workings of the DataFactory engine in the simplest terms possible.</p>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
 1. processor.py (The Orchestrator)</h1>
 <p><b>What it does:</b> <br  />
  This is the main script that runs the factory. It acts as a "General Contractor," delegating specific work to the specialized utility classes below. It loads data, calls the builders, and saves the results.</p>
@@ -103,7 +104,7 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
 <li><span class="tt">process_data()</span>: The main entry point.</li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
 2. utils/graph_builder.py (The Builder)</h1>
 <p><b>What it does:</b> <br  />
  Manages the construction of the knowledge graph. It handles the raw counting and statistical aggregation.</p>
@@ -114,7 +115,7 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
 <li><span class="tt">filter_edges()</span>: Applies the threshold to connections.</li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md36"></a>
 3. utils/text_processor.py (The Miner / NLP Engine)</h1>
 <p><b>What it does:</b> <br  />
  This is the "Smart" part of the system. It takes raw, messy text and extracts structured data (Skills and Seniority).</p>
@@ -143,7 +144,7 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
 </li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md38"></a>
 3. utils/io_handler.py (The Logistics Manager)</h1>
 <p><b>What it does:</b> <br  />
  Handles all File Input and Output. It ensures the data leaving the system is cleaner than the data entering it.</p>
@@ -164,7 +165,7 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
 </li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md40"></a>
 4. output/taxonomy.py (The Map)</h1>
 <p><b>What it does:</b> <br  />
  The configuration file. It defines the "World" we are looking for. If a skill isn't here, the system doesn't see it.</p>
@@ -173,15 +174,15 @@ $(function(){initNavTree('md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator
 <li><b>List:</b> A flat list of strings for each category.</li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
 5. raw_jds.txt (The Raw Material)</h1>
 <p><b>What it does:</b> <br  />
  The source fuel. Contains hundreds of raw Job Descriptions pasted from LinkedIn/Glassdoor.</p>
 <p><b>Separators:</b></p><ul>
-<li>Uses <span class="tt">###END###</span> as a delimiter to separate different JDs so the <span class="tt"><a class="el" href="processor_8py.html">processor.py</a></span> knows where one ends and the next begins.</li>
+<li>Uses <span class="tt">###END###</span> as a delimiter to separate different JDs so the <span class="tt"><a class="el" href="processor_8py.html" title="The Main Entry Point for the CareerNavigator DataFactory Pipeline.">processor.py</a></span> knows where one ends and the next begins.</li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
 6. output/universe.json (The Final Product)</h1>
 <p><b>What it does:</b> <br  />
  The database for the frontend.</p>

@@ -1,4 +1,4 @@
-"""
+"""!
 @file processor.py
 @brief The Main Entry Point for the CareerNavigator DataFactory Pipeline.
 
@@ -37,7 +37,7 @@ THRESHOLD: int = 1
 
 # --- Core Logic Step 1: Analyze Single JD ---
 def analyze_jd_content(jd_text: str) -> Tuple[List[str], bool, str]:
-    """
+    """!
     @brief Analyzes a single Job Description to extract skills and determine seniority.
     
     @details
@@ -66,7 +66,7 @@ def print_execution_summary(
     edges_count: int, 
     seniority_dist: Counter
 ) -> None:
-    """
+    """!
     @brief Prints a human-readable summary of the pipeline execution to the console.
     
     @param jds_count Total number of JDs processed.
@@ -82,7 +82,7 @@ def print_execution_summary(
 
 # --- Orchestrator ---
 def process_data() -> None:
-    """
+    """!
     @brief The main orchestrator function.
     
     @details

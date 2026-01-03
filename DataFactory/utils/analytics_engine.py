@@ -1,7 +1,7 @@
 from typing import List, Dict, Any
 
 class AnalyticsEngine:
-    """
+    """!
     @brief Pure functional engine for calculating derived statistical metadata.
     
     @details
@@ -11,7 +11,7 @@ class AnalyticsEngine:
 
     @staticmethod
     def calculate_seniority_distribution(seniority_scores: List[float], total_skills: int) -> Dict[str, Any]:
-        """
+        """!
         @brief Computes a histogram of skill seniority scores.
         
         @details

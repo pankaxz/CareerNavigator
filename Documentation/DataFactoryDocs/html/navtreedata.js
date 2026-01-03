@@ -25,34 +25,35 @@
 var NAVTREE =
 [
   [ "CareerNavigator DataFactory", "index.html", [
+    [ "CareerNavigator DataFactory Documentation", "index.html", "index" ],
     [ "DataFactory: Deep Dive Documentation", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html", [
-      [ "1. Visual File Structure", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md2", null ],
-      [ "2. Detailed Logic Breakdown", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md4", [
-        [ "Phase 1: Input &amp; Cleaning (The Fuel)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md5", [
-          [ "1. Input Source", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md6", null ],
-          [ "2. Splitting Logic (IOHandler)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md7", null ],
-          [ "3. Text Cleaning Logic (TextProcessor)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md8", null ]
+      [ "1. Visual File Structure", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md14", null ],
+      [ "2. Detailed Logic Breakdown", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md16", [
+        [ "Phase 1: Input &amp; Cleaning (The Fuel)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md17", [
+          [ "1. Input Source", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md18", null ],
+          [ "2. Splitting Logic (IOHandler)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md19", null ],
+          [ "3. Text Cleaning Logic (TextProcessor)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md20", null ]
         ] ],
-        [ "Phase 2: Configuration (The Map)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md9", null ],
-        [ "Phase 3: The Brain (Seniority Scoring)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md10", [
-          [ "The Scoring Algorithm (Detailed)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md11", null ]
+        [ "Phase 2: Configuration (The Map)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md21", null ],
+        [ "Phase 3: The Brain (Seniority Scoring)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md22", [
+          [ "The Scoring Algorithm (Detailed)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md23", null ]
         ] ],
-        [ "Phase 4: Building the Graph (Counting Logic)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md12", [
-          [ "Logic A: Initialization (Setting up Buckets)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md13", null ],
-          [ "Logic B: incremental Updates (The Loop)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md14", null ]
+        [ "Phase 4: Building the Graph (Counting Logic)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md24", [
+          [ "Logic A: Initialization (Setting up Buckets)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md25", null ],
+          [ "Logic B: incremental Updates (The Loop)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md26", null ]
         ] ],
-        [ "Phase 5: The Output", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md15", null ]
+        [ "Phase 5: The Output", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md27", null ]
       ] ],
-      [ "Summary of execution flow", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md17", null ]
+      [ "Summary of execution flow", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2DeepDive.html#autotoc_md29", null ]
     ] ],
     [ "Career Navigator DataFactory - System Documentation", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html", [
-      [ "1. processor.py (The Orchestrator)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md20", null ],
-      [ "2. utils/graph_builder.py (The Builder)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md22", null ],
-      [ "3. utils/text_processor.py (The Miner / NLP Engine)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md24", null ],
-      [ "3. utils/io_handler.py (The Logistics Manager)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md26", null ],
-      [ "4. output/taxonomy.py (The Map)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md28", null ],
-      [ "5. raw_jds.txt (The Raw Material)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md30", null ],
-      [ "6. output/universe.json (The Final Product)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md32", null ]
+      [ "1. processor.py (The Orchestrator)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md32", null ],
+      [ "2. utils/graph_builder.py (The Builder)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md34", null ],
+      [ "3. utils/text_processor.py (The Miner / NLP Engine)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md36", null ],
+      [ "3. utils/io_handler.py (The Logistics Manager)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md38", null ],
+      [ "4. output/taxonomy.py (The Map)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md40", null ],
+      [ "5. raw_jds.txt (The Raw Material)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md42", null ],
+      [ "6. output/universe.json (The Final Product)", "md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2DataFactory_2psuedo.html#autotoc_md44", null ]
     ] ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],

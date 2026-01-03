@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CareerNavigator.Core.Controllers;
 
+/// <summary>
+/// The primary API Controller for CareerNavigator. Exposes endpoints for analysis and gap detection.
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class NavigatorController : ControllerBase
@@ -12,6 +15,12 @@ public class NavigatorController : ControllerBase
     private readonly BridgeEngine _bridgeEngine;
     private readonly GapAnalyzer _gapAnalyzer;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="NavigatorController"/> class.
+    /// </summary>
+    /// <param name="scanner">Engine for text analysis.</param>
+    /// <param name="bridgeEngine">Engine for finding skill bridges.</param>
+    /// <param name="gapAnalyzer">Engine for comparing profiles.</param>
     public NavigatorController(SkillScanner scanner, BridgeEngine bridgeEngine, GapAnalyzer gapAnalyzer)
     {
         _scanner = scanner;
@@ -19,6 +28,11 @@ public class NavigatorController : ControllerBase
         _gapAnalyzer = gapAnalyzer;
     }
 
+    /// <summary>
+    /// Analyzes a user profile text (resume/bio) to extract skills and seniority.
+    /// </summary>
+    /// <param name="request">The input text and optional manual overrides.</param>
+    /// <returns>A detailed analysis including detected skills, seniority level, and suggested bridge skills.</returns>
     [HttpPost("analyze/profile")]
     public IActionResult AnalyzeProfile([FromBody] AnalysisRequest request)
     {
@@ -34,6 +48,11 @@ public class NavigatorController : ControllerBase
         return Ok(profile);
     }
 
+    /// <summary>
+    /// Analyzes a job description to extract required skills and seniority.
+    /// </summary>
+    /// <param name="request">The job description text.</param>
+    /// <returns>A detailed analysis of the job requirements.</returns>
     [HttpPost("analyze/job")]
     public IActionResult AnalyzeJob([FromBody] AnalysisRequest request)
     {
@@ -49,6 +68,11 @@ public class NavigatorController : ControllerBase
         return Ok(result);
     }
 
+    /// <summary>
+    /// Calculates the skill and seniority gap between a user profile and a job description.
+    /// </summary>
+    /// <param name="request">Contains both the User Profile and Job Description analysis results.</param>
+    /// <returns>A report detailing missing skills, implicit dependencies, and seniority alignment.</returns>
     [HttpPost("analyze/gap")]
     public IActionResult AnalyzeGap([FromBody] GapAnalysisRequest request)
     {

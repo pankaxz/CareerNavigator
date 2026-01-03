@@ -2,15 +2,36 @@ using CareerNavigator.Core.Models.DTOs;
 
 namespace CareerNavigator.Core.Engines;
 
+/// <summary>
+/// Domain engine responsible for comparing User Profiles against Job Descriptions.
+/// </summary>
 public class GapAnalyzer
 {
     private readonly IUniverseProvider _universeProvider;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="GapAnalyzer"/> class.
+    /// </summary>
+    /// <param name="universeProvider">The singleton provider for accessing the graph universe.</param>
     public GapAnalyzer(IUniverseProvider universeProvider)
     {
         _universeProvider = universeProvider;
     }
 
+    /// <summary>
+    /// Performs a comprehensive gap analysis between a user profile and a target job.
+    /// </summary>
+    /// <remarks>
+    /// The analysis involves three phases:
+    /// <list type="number">
+    /// <item><description><b>Direct Skills Gap:</b> Identifies skills explicitly required by the job but missing from the user.</description></item>
+    /// <item><description><b>Implicit Dependency mapping:</b> Uses the `Universe` graph to find related skills (neighbors) that might bridge the gap.</description></item>
+    /// <item><description><b>Seniority/Authority Scaling:</b> Compares the structural seniority (<c>Senior</c>, <c>Managerial</c>) of the roles.</description></item>
+    /// </list>
+    /// </remarks>
+    /// <param name="user">The user's analyzed profile.</param>
+    /// <param name="job">The job's analyzed requirements.</param>
+    /// <returns>A detailed <see cref="GapAnalysisResult"/> highlighting missing skills and seniority mismatches.</returns>
     public GapAnalysisResult AnalyzeGap(AnalysisResult user, AnalysisResult job)
     {
         var result = new GapAnalysisResult();
