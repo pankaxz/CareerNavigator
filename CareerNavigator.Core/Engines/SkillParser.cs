@@ -24,7 +24,7 @@ public class SkillParser
 
         // 1. Breake the JD/Resume into individual words
         List<string> tokens = Tokenize(text);
-        Console.WriteLine($"Tokens: {string.Join(", ", tokens)} Count: {tokens.Count}");
+        _logger.LogInformation($"Tokens: {string.Join(", ", tokens)} Count: {tokens.Count}");
 
         // 2. N-Gram Greedy Lookup
         for (int i = 0; i < tokens.Count;)

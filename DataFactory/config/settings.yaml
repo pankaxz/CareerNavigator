@@ -1,0 +1,16 @@
+paths:
+  input: "data/input/raw_jds.txt"
+  test_input: "data/input/RoleDetectionAnomalyJD.txt"
+  output_dir: "data/output"
+  taxonomy_json: "data/reference/canonical_data.json"
+  alias_json: "data/input/alias_data.json"
+  seniority_json: "data/reference/seniority_keywords.json"
+
+pipeline:
+  threshold: 1
+  seniority_threshold: 0.6
+  managerial_threshold: 0.4
+
+logging:
+  level: "DEBUG"
+  file: "logs/app.log"

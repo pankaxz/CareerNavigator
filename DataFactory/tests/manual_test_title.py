@@ -1,27 +1,15 @@
-Firmware Engineer-4
-Dexcom Inc
-Company Logo
-8 - 13 years
-35-40 Lacs P.A.
-Bengaluru( Manayata Tech Park )
-Send me jobs like this
-Posted: 1 week ago
-Openings: 1
-Applicants: 100+
-Save
-Apply
-Follow Dexcom Inc as you apply to stay updated
-Job highlights
-BS in Electrical Engineering or Computer Science with 8-13 years of experience in embedded firmware development
-Design and implement firmware for wearable devices, lead Embedded Firmware team projects, ensure on-time delivery of technology cycles
-Job match score
-Early Applicant
-Keyskills
-Location
-Work Experience
-Job description
 
-Meet the team:
+import sys
+import os
+
+# Ensure src is in path
+sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
+
+from utils.text_processor import TextProcessor
+from utils.seniority_analyzer import SeniorityAnalyzer
+
+def test_title_extraction():
+    jd_text = """Meet the team:
 
 The Firmware team is responsible for designing and implementation of wearable and handheld receiver firmware and embedded software at Dexcom. This includes from early research through to product manufacturing. The FW team is embarking on transformational improvements in deploying best in class agile methodologies, AI implementations, Telemetry Data Analysis, and new build frameworks. The Staff Firmware Engineer will work closely with Electrical Engineering, Systems Engineering, V&V test team, and SW development teams.
 
@@ -58,8 +46,51 @@ Employment Type: Full Time, Permanent
 Role Category: Quality Assurance and Testing
 Education
 UG: B.Tech/B.E. in Any Specialization
-PG: MCA in Any Specialization, MS/M.Sc(Science) in Any Specialization, M.Tech in Any Specialization
-Key Skills
-Skills highlighted with ‘‘ are preferred keyskills
-Embedded C Microcontroller Firmware Testing Ble Bluetooth Low Energy
-Bluetooth Embedded Systems WiFi Firmware Development
+PG: M.Tech in Any Specialization, MCA in Any Specialization, MS/M.Sc(Science) in Any Specialization"""
+
+    print("--- JD Text (First 10 lines) ---")
+    lines = [l.strip() for l in jd_text.split('\n') if l.strip()]
+    for i, l in enumerate(lines[:10]):
+        print(f"{i}: {l[:60]}...")
+    print("-------------------------------\n")
+    
+    # 1. Standard Extraction
+    print("Running extract_title_candidate (default params)...")
+    title = TextProcessor.extract_title_candidate(jd_text)
+    print(f"✅ Extracted Title Candidate: '{title}'")
+    
+    # Debug Analysis
+    print("\n--- Detailed Scoring Analysis ---")
+    role_indicators = SeniorityAnalyzer.get_role_indicators()
+    
+    for i, line in enumerate(lines[:15]): # Check first 15 lines
+        words = line.split()
+        wc = len(words)
+        line_lower = line.lower()
+        
+        has_kw = any(k in line_lower for k in role_indicators)
+        valid = 2 <= wc <= 8
+        
+        score = 0.0
+        if valid:
+            score = 1.0 / (i + 1)
+            if has_kw:
+                score += 2.0
+                
+        print(f"Line {i} (Words={wc}): '{line[:40]}...'")
+        print(f"   -> Valid: {valid}, HasKeyword: {has_kw} ('{list(k for k in role_indicators if k in line_lower)}'), Score: {score:.4f}")
+
+    # Check for the explicit "Role:" pattern at the end
+    print("\n--- Searching for Explicit 'Role:' Pattern ---")
+    role_line = next((l for l in lines if l.lower().startswith("role:")), None)
+    print(f"Explicit Role Line Found: '{role_line}'")
+
+    if "Automation Test Engineer" in title:
+        print("❌ FAILED: Picked 'Automation Test Engineer' (Explicit) over 'Firmware Engineer' (Heuristic)")
+    elif "Firmware" in title:
+        print("✅ SUCCESS: Picked 'Firmware Engineer' (Heuristic) due to higher density.")
+    else:
+        print(f"❓ UNKNOWN: Picked '{title}'")
+
+if __name__ == "__main__":
+    test_title_extraction()

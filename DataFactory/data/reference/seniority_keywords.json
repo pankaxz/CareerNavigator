@@ -1,0 +1,132 @@
+{
+    "titles": {
+        "managerial": [
+            "manager",
+            "director",
+            "head",
+            "vp",
+            "chief",
+            "leadership",
+            "cto",
+            "cio",
+            "ciso"
+        ],
+        "senior": [
+            "senior",
+            "sr",
+            "lead",
+            "principal",
+            "staff",
+            "architect"
+        ],
+        "junior": [
+            "junior",
+            "jr",
+            "entry",
+            "associate",
+            "intern",
+            "trainee"
+        ]
+    },
+    "action_verbs": [
+        "architect",
+        "design",
+        "lead",
+        "mentor",
+        "optimize",
+        "strategize",
+        "audit",
+        "oversee",
+        "scale",
+        "drive",
+        "define",
+        "innovate",
+        "standardize",
+        "champion",
+        "modernize",
+        "orchestrate",
+        "refactor",
+        "pioneer",
+        "transform",
+        "evangelize",
+        "govern"
+    ],
+    "scope_keywords": [
+        "distributed systems",
+        "architecture",
+        "microservices",
+        "scalability",
+        "high availability",
+        "infrastructure",
+        "security compliance",
+        "legacy migration",
+        "cross-functional",
+        "cloud infrastructure",
+        "system integration",
+        "end-to-end",
+        "enterprise-scale"
+    ],
+    "leadership_keywords": [
+        "code review",
+        "mentoring",
+        "technical vision",
+        "hiring",
+        "onboarding",
+        "stakeholder management",
+        "roadmap",
+        "standardization",
+        "team lead",
+        "technical leadership",
+        "guiding",
+        "facilitating"
+    ],
+    "nfr_keywords": [
+        "observability",
+        "monitoring",
+        "throughput",
+        "latency",
+        "disaster recovery",
+        "performance tuning",
+        "cost optimization",
+        "security audits",
+        "reliability engineering",
+        "fault tolerance",
+        "capacity planning"
+    ],
+    "paradigm_keywords": [
+        "design patterns",
+        "solid principles",
+        "event-driven architecture",
+        "serverless",
+        "cloud-native",
+        "language agnostic",
+        "functional programming",
+        "object-oriented design",
+        "tdd",
+        "ci/cd pipeline",
+        "infrastructure as code"
+    ],
+    "role_indicators": [
+        "engineer",
+        "developer",
+        "architect",
+        "manager",
+        "lead",
+        "director",
+        "vp",
+        "head",
+        "scientist",
+        "analyst",
+        "specialist",
+        "administrator",
+        "consultant",
+        "sde",
+        "programmer",
+        "designer",
+        "tester"
+    ],
+    "stopwords" : [
+    "role", "job", "title", "position", "senior", "staff", "engineer", "lead", "manager",
+    "sr", "jr", "ii", "iii", "team", "meet", "description"
+    ]
+}

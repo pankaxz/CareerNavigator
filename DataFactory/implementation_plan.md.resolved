@@ -1,0 +1,96 @@
+# Implementation Plan - DataFactory Restructuring
+
+## Goal Description
+Refactor the existing `DataFactory` module into a production-ready, scalable, and maintainable Python package. The current structure is flat and mixes data, configuration, and business logic, making it hard to test and extend.
+
+The new structure aims to:
+1.  **Separate Concerns**: Isolate Code, Configuration, and Data.
+2.  **Standardize Packaging**: Use a `src/` layout for better distribution and import handling.
+3.  **Clean Up Root**: Remove noise from the root directory.
+4.  **Modularize Logic**: specialized modules for Taxyonomy, Graph, and IO.
+
+## User Review Required
+> [!IMPORTANT]
+> This is a structural change only. No functional logic changes are intended, but **imports will need to be updated** across all files to match the new paths.
+> **Action Required**: Review the folder structure below to ensure it aligns with your preferences before we proceed with moving files.
+
+## Proposed Folder Structure
+
+```text
+DataFactory/
+├── config/                     # [NEW] Configuration management
+│   ├── settings.yaml           # Global constants (THRESHOLD, paths)
+│   └── taxonomy_config.yaml    # Taxonomy specific settings
+├── data/                       # [NEW] Data directory (add to .gitignore)
+│   ├── input/
+│   │   ├── raw_jds.txt         # Moved from root
+│   │   └── taxonomy_alias.json # Moved from root
+│   └── output/                 # Generated artifacts
+│       └── universe.json
+├── src/                        # [NEW] Source code root
+│   └── data_factory/           # Main Package
+│       ├── __init__.py         # Exposes key classes
+│       ├── main.py             # Entry point (formerly processor.py, simplified)
+│       ├── core/               # Domain logic
+│       │   ├── __init__.py
+│       │   ├── graph_engine.py # (formerly utils/graph_builder.py)
+│       │   └── taxonomy.py     # (formerly utils/taxonomy_manager.py)
+│       ├── ingestion/          # Data Input/Output
+│       │   ├── __init__.py
+│       │   ├── reader.py       # Part of io_handler.py
+│       │   └── writer.py       # Part of io_handler.py
+│       ├── processing/         # Data transformation
+│       │   ├── __init__.py
+│       │   └── text_parser.py  # (formerly utils/text_processor.py)
+│       └── utils/              # Generic utilities
+│           ├── __init__.py
+│           └── analytics.py
+├── tests/                      # Test suite
+│   ├── __init__.py
+│   ├── unit/
+│   └── integration/
+├── docs/                       # Documentation
+│   ├── deep_dive.md
+│   └── pseudo.md
+├── .env.example                # [NEW] Environment variables template
+├── .gitignore                  # [NEW] Git ignore rules
+├── pyproject.toml              # [NEW] Python project metadata & dependencies
+├── requirements.txt
+└── README.md
+```
+
+## Migration Steps
+
+### 1. Preparation
+- Create the directory tree defined above.
+- Initialize `pyproject.toml` for modern packaging.
+
+### 2. File Relocation & Renaming
+#### Config & Data
+- [MOVE] [raw_jds.txt](file:///mnt/workspace/CareerNavigator/DataFactory/raw_jds.txt) -> `data/input/raw_jds.txt`
+- [MOVE] [taxonomyAlias.json](file:///mnt/workspace/CareerNavigator/DataFactory/taxonomyAlias.json) -> `data/input/taxonomy_alias.json`
+- [EXTRACT] [taxonomy.py](file:///mnt/workspace/CareerNavigator/DataFactory/taxonomy.py) (the big list) -> `data/reference/taxonomy_data.json` (Convert to JSON/YAML for cleanliness)
+
+#### Source Code
+- [MOVE] [processor.py](file:///mnt/workspace/CareerNavigator/DataFactory/processor.py) -> `src/data_factory/main.py`
+- [MOVE] [utils/taxonomy_manager.py](file:///mnt/workspace/CareerNavigator/DataFactory/utils/taxonomy_manager.py) -> `src/data_factory/core/taxonomy.py`
+- [MOVE] [utils/graph_builder.py](file:///mnt/workspace/CareerNavigator/DataFactory/utils/graph_builder.py) -> `src/data_factory/core/graph_engine.py`
+- [MOVE] [utils/text_processor.py](file:///mnt/workspace/CareerNavigator/DataFactory/utils/text_processor.py) -> `src/data_factory/processing/text_parser.py`
+- [MOVE] [utils/analytics_engine.py](file:///mnt/workspace/CareerNavigator/DataFactory/utils/analytics_engine.py) -> `src/data_factory/utils/analytics.py`
+- [SPLIT] [utils/io_handler.py](file:///mnt/workspace/CareerNavigator/DataFactory/utils/io_handler.py) -> `src/data_factory/ingestion/reader.py` & `writer.py`
+
+### 3. Code Adjustments (Refactoring)
+- **Update Imports**: Change all `from utils.xyz` to `from data_factory.core.xyz`, etc.
+- **Config Loading**: Replace global constants in [main.py](file:///mnt/workspace/CareerNavigator/DataFactory/debug_jd_main.py) with a config loader that reads `config/settings.yaml`.
+- **Path Handling**: Update file paths to use `pathlib` relative to the project root or configured data dir.
+
+## Verification Plan
+
+### Automated Tests
+- Run existing tests (adjusted for imports) to ensure no regression.
+`pytest tests/`
+- Run the full pipeline on a small subset of data.
+`python -m data_factory.main --debug`
+
+### Manual Verification
+- Check if `output/universe.json` is generated and identical in structure to the previous version.

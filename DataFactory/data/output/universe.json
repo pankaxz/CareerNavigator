@@ -1,0 +1,426 @@
+{
+    "meta": {
+        "seniorityDistribution": {
+            "0.0-0.1": 0,
+            "0.1-0.2": 0,
+            "0.2-0.3": 0,
+            "0.3-0.4": 0,
+            "0.4-0.5": 0,
+            "0.5-0.6": 0,
+            "0.6-0.7": 0,
+            "0.7-0.8": 0,
+            "0.8-0.9": 0,
+            "0.9-1.0": 9
+        },
+        "totalSkills": 9
+    },
+    "nodes": [
+        {
+            "id": "model_deployment",
+            "group": "AI_OPS_TECHNIQUES",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "cpp",
+            "group": "Languages",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "c",
+            "group": "Languages",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "rtos",
+            "group": "Hardware_Embedded",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "reliability",
+            "group": "Hardware_Embedded",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "github",
+            "group": "Developer_Tools",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "jira",
+            "group": "Developer_Tools",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "agile",
+            "group": "Methodologies_Vibe",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "id": "kanban",
+            "group": "Methodologies_Vibe",
+            "val": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        }
+    ],
+    "links": [
+        {
+            "source": "agile",
+            "target": "c",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "agile",
+            "target": "cpp",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "agile",
+            "target": "github",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "agile",
+            "target": "jira",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "agile",
+            "target": "kanban",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "agile",
+            "target": "model_deployment",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "agile",
+            "target": "reliability",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "agile",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "c",
+            "target": "cpp",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "c",
+            "target": "github",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "c",
+            "target": "jira",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "c",
+            "target": "kanban",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "c",
+            "target": "model_deployment",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "c",
+            "target": "reliability",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "c",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "cpp",
+            "target": "github",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "cpp",
+            "target": "jira",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "cpp",
+            "target": "kanban",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "cpp",
+            "target": "model_deployment",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "cpp",
+            "target": "reliability",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "cpp",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "github",
+            "target": "jira",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "github",
+            "target": "kanban",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "github",
+            "target": "model_deployment",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "github",
+            "target": "reliability",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "github",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "jira",
+            "target": "kanban",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "jira",
+            "target": "model_deployment",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "jira",
+            "target": "reliability",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "jira",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "kanban",
+            "target": "model_deployment",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "kanban",
+            "target": "reliability",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "kanban",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "model_deployment",
+            "target": "reliability",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "model_deployment",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        },
+        {
+            "source": "reliability",
+            "target": "rtos",
+            "value": 1,
+            "seniorityScore": 1.0,
+            "managerialScore": 0.0,
+            "isSenior": true,
+            "isManagerial": false
+        }
+    ]
+}
