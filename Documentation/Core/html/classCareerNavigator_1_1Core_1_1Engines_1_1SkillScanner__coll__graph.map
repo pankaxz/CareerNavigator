@@ -1,0 +1,10 @@
+<map id="CareerNavigator.Core.Engines.SkillScanner" name="CareerNavigator.Core.Engines.SkillScanner">
+<area shape="rect" id="Node000001" title="Orchestrates the process of analyzing text to extract skill and seniority metadata." alt="" coords="245,427,459,587"/>
+<area shape="rect" id="Node000002" href="$classCareerNavigator_1_1Core_1_1Engines_1_1SkillParser.html" title=" " alt="" coords="245,196,459,336"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="355,336,355,411,349,411,349,336"/>
+<area shape="rect" id="Node000003" href="$interfaceCareerNavigator_1_1Core_1_1Engines_1_1IUniverseProvider.html" title=" " alt="" coords="5,5,219,125"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="96,126,87,174,83,228,87,283,94,310,105,335,129,371,160,402,195,429,232,452,229,457,192,434,157,406,125,374,100,337,89,311,82,284,77,228,82,173,91,125"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,123,258,184,254,188,182,128"/>
+<area shape="rect" id="Node000004" href="$interfaceCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1IAnalysisStrategy.html" title=" " alt="" coords="483,226,696,306"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="553,308,444,417,440,413,549,304"/>
+</map>

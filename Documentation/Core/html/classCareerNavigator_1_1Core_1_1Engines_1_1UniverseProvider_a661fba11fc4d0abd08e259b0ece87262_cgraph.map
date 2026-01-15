@@ -1,0 +1,5 @@
+<map id="CareerNavigator.Core.Engines.UniverseProvider.GetShortestPath" name="CareerNavigator.Core.Engines.UniverseProvider.GetShortestPath">
+<area shape="rect" id="Node000001" title="Finds the shortest path between two skills using Breadth&#45;First Search (BFS)." alt="" coords="5,5,248,45"/>
+<area shape="rect" id="Node000002" href="$classCareerNavigator_1_1Core_1_1Engines_1_1UniverseProvider.html#ad8134506a39ae6ef68b422724246e565" title="Returns a list of Node IDs directly connected to the specified node." alt="" coords="296,5,523,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,23,282,23,282,28,248,28"/>
+</map>

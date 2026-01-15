@@ -1,0 +1,8 @@
+<map id="processor.process_data" name="processor.process_data">
+<area shape="rect" id="Node000001" title="The main orchestrator function." alt="" coords="5,45,180,70"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="55,46,47,36,51,26,67,20,93,18,125,22,137,31,134,36,123,27,93,23,68,25,55,30,52,36,59,43"/>
+<area shape="rect" id="Node000002" href="$namespaceprocessor.html#a2e47e2ced72cd518fd9423c42bab31b3" title="Analyzes a single Job Description to extract skills and determine seniority." alt="" coords="243,5,401,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,43,229,36,229,41,181,48"/>
+<area shape="rect" id="Node000003" href="$namespaceprocessor.html#af640de1a0e36a7a3c67a56b8087ffce4" title="Prints a human&#45;readable summary of the pipeline execution to the console." alt="" coords="228,69,416,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,67,215,72,214,77,180,72"/>
+</map>

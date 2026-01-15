@@ -1,0 +1,5 @@
+<map id="CareerNavigator.Core.Engines.IUniverseProvider" name="CareerNavigator.Core.Engines.IUniverseProvider">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,219,125"/>
+<area shape="rect" id="Node000002" href="$classCareerNavigator_1_1Core_1_1Engines_1_1UniverseProvider.html" title="Singleton service responsible for managing the in&#45;memory graph Universe." alt="" coords="5,173,219,453"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,139,115,173,109,173,109,139"/>
+</map>

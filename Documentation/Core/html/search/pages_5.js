@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['careernavigator_20core_20documentation_0',['CareerNavigator Core Documentation',['../index.html',1,'']]],
+  ['careernavigator_20core_20simple_20documentation_1',['CareerNavigator Core - Simple Documentation',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html',1,'']]],
+  ['components_2',['🧩 Key Components',['../index.html#autotoc_md3',1,'']]],
+  ['controllers_3',['1. Controllers',['../index.html#autotoc_md4',1,'']]],
+  ['controllers_20api_20endpoints_4',['4. Controllers (API Endpoints)',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md23',1,'']]],
+  ['controllers_20mapcontroller_20cs_5',['Controllers/MapController.cs',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md24',1,'']]],
+  ['controllers_20navigatorcontroller_20cs_6',['Controllers/NavigatorController.cs',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md25',1,'']]],
+  ['core_20documentation_7',['CareerNavigator Core Documentation',['../index.html',1,'']]],
+  ['core_20simple_20documentation_8',['CareerNavigator Core - Simple Documentation',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html',1,'']]],
+  ['cs_9',['cs',['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md11',1,'1. Program.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md24',1,'Controllers/MapController.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md25',1,'Controllers/NavigatorController.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md21',1,'Engines/SkillScanner.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md20',1,'Engines/UniverseProvider.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md17',1,'Models/DTOs/AnalysisRequest.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md15',1,'Models/Schema/Link.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md14',1,'Models/Schema/Node.cs'],['../md__2mnt_294D09184D0916D6C_2WORKSPACE_2CareerNavigator_2CareerNavigator_8Core_2DOCUMENTATION.html#autotoc_md16',1,'Models/Schema/Universe.cs']]]
+];

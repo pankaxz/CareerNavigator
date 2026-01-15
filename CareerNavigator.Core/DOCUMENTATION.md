@@ -51,10 +51,10 @@ Run App
 - `Links` (List<Link>): All connections
 
 ### Models/DTOs/AnalysisRequest.cs
-**Purpose:** Data Transfer Object for receiving resume text.
+**Purpose:** Data Transfer Object for receiving Job Description (JD) text.
 **Data Structure:** Class (Object)
 **Fields:**
-- `Text` (String): The raw resume text
+- `Text` (String): The raw JD text
 
 ---
 
@@ -113,7 +113,7 @@ Method GetUniverse():
 ```
 
 ### Controllers/NavigatorController.cs
-**Purpose:** Analyzes user resumes.
+**Purpose:** Analyzes Job Descriptions (JDs).
 **Endpoint:** `POST /api/navigator/analyze`
 **Pseudo Code:**
 ```

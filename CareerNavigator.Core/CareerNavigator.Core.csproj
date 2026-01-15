@@ -12,11 +12,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CareerNavigator.Tests\" />
+    <Compile Remove="CareerNavigator.Tests\**" />
+    <EmbeddedResource Remove="CareerNavigator.Tests\**" />
+    <None Remove="CareerNavigator.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- <Folder Include="CareerNavigator.Tests\" /> Removed -->
     <Folder Include="Controllers\" />
     <Folder Include="Data\" />
     <Folder Include="Insfracture\" />
-    <Folder Include="Models\DTOs\" />    
     <None Update="Data\universe.json">
     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
   </None>

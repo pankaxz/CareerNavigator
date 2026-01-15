@@ -3,11 +3,15 @@ using CareerNavigator.Core.Engines;
 var builder = WebApplication.CreateBuilder(args);
 
 // Register CareerNavigator Engines
-builder.Services.AddSingleton<UniverseProvider>();
-builder.Services.AddScoped<SkillScanner>();
+builder.Services.AddSingleton<IUniverseProvider, UniverseProvider>();
+builder.Services.AddSingleton<SkillParser>();
+builder.Services.AddSingleton<SkillScanner>();
+// Registered the new BridgeEngine
+builder.Services.AddSingleton<BridgeEngine>();
+builder.Services.AddSingleton<GapAnalyzer>();
 
 builder.Services.AddControllers().AddNewtonsoftJson();
-builder.Services.AddCors(opt => opt.AddPolicy("NavGui", p => 
+builder.Services.AddCors(opt => opt.AddPolicy("NavGui", p =>
     p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
 var app = builder.Build();

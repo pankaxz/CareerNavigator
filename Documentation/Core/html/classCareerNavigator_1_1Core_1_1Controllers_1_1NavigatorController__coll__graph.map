@@ -1,0 +1,20 @@
+<map id="CareerNavigator.Core.Controllers.NavigatorController" name="CareerNavigator.Core.Controllers.NavigatorController">
+<area shape="rect" id="Node000001" title="The primary API Controller for CareerNavigator. Exposes endpoints for analysis and gap detection." alt="" coords="477,715,710,855"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="189,531,300,597"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,605,314,642,394,694,478,736,475,740,392,699,311,646,273,609"/>
+<area shape="rect" id="Node000003" href="$classCareerNavigator_1_1Core_1_1Engines_1_1SkillScanner.html" title="Orchestrates the process of analyzing text to extract skill and seniority metadata." alt="" coords="324,484,538,644"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="492,642,535,700,530,703,487,646"/>
+<area shape="rect" id="Node000004" href="$classCareerNavigator_1_1Core_1_1Engines_1_1SkillParser.html" title=" " alt="" coords="175,196,388,336"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="300,336,320,397,348,459,354,469,349,471,343,461,315,399,295,337"/>
+<area shape="rect" id="Node000005" href="$interfaceCareerNavigator_1_1Core_1_1Engines_1_1IUniverseProvider.html" title=" " alt="" coords="460,5,674,125"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="460,80,342,96,214,120,154,136,102,154,61,175,34,198,14,232,8,264,16,298,34,335,61,371,89,396,119,413,151,425,224,446,266,460,311,482,309,486,264,465,222,451,149,430,116,418,86,401,57,375,30,337,11,299,3,264,9,230,30,194,58,170,100,149,153,131,212,115,341,91,460,74"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="484,128,395,189,392,184,480,123"/>
+<area shape="rect" id="Node000007" href="$classCareerNavigator_1_1Core_1_1Engines_1_1BridgeEngine.html" title=" " alt="" coords="542,360,755,460"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="609,124,626,158,640,195,648,233,653,272,655,344,650,344,648,272,643,234,635,197,621,161,604,127"/>
+<area shape="rect" id="Node000008" href="$classCareerNavigator_1_1Core_1_1Engines_1_1GapAnalyzer.html" title="Domain engine responsible for comparing User Profiles against Job Descriptions." alt="" coords="762,360,975,460"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="675,92,723,115,766,147,801,193,828,244,847,296,860,343,854,345,842,298,823,246,797,196,762,151,721,119,673,96"/>
+<area shape="rect" id="Node000006" href="$interfaceCareerNavigator_1_1Core_1_1Engines_1_1Strategies_1_1IAnalysisStrategy.html" title=" " alt="" coords="412,226,626,306"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="468,308,445,332,428,361,420,387,415,413,415,468,410,468,410,413,415,385,423,359,441,329,464,304"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="644,461,609,699,603,698,638,460"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="851,461,809,550,781,599,749,646,694,705,690,701,745,642,776,596,804,548,846,459"/>
+</map>
