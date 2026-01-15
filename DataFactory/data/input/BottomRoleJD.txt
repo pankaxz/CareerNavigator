@@ -1,0 +1,44 @@
+Job description
+Job Summary
+Our team of UX professionals supports the work of hundreds of engineers across several products, so there is always something happening. Our company is global, and our UX team includes members in India, Israel and the US.
+
+
+
+We are an AI-forward UX organization and expect team members to leverage responsible AI to drive measurable outcomes. Candidates should be prepared to discuss and demonstrate how they have used AI tools or models in their past roles to improve productivity, quality, and innovation, including specific examples, quantified results, and the governance practices they followed.
+
+Job Requirements
+Minimum of 8 years designing enterprise product experiences
+An online portfolio demonstrating advanced, wide-ranging experiences
+In-depth professional knowledge of latest interaction patterns for web, user-centered design process, design principles and techniques
+Experience using Figma to create low to high fidelity prototypes and mockups
+Strong written and verbal communication skills with the ability to lead ideation sessions and present a strong rationale for design decisions
+Individual contributor experience leading teams with complex across-feature/theme interaction
+Ability to influence day-to-day design and research work that spans multiple themes
+Ability to balance needs of concurrent projects and work effectively with cross-functional teams
+Proven track record of defining and guiding features and themes to fit with an overall portfolio
+Experience understanding the value of, collaborating with, and leveraging user experience research
+Concrete examples of AI tools usage to improve outcomes (e.g., Copilot, ChatGPT, Claude, Bard, internal ML models, RPA, Figma Make, etc.)
+Ability to quantify AI impact (e.g., time saved, quality improvements, improved usability, revenue growth, reduced errors, faster delivery)
+Proficiency with approaches to AI usage (e.g., prompting strategies, data governance considerations, bias mitigation, evaluation/validation of outputs)
+Practice following relevant safeguards and compliance practices (security, privacy, IP protection)
+
+
+Preferred qualifications:
+
+
+
+Master's degree in design, human-computer interaction (HCI), or equivalent professional experience
+Experience advocating for user experience in defining and prioritizing themes across UX and engineering teams
+Demonstrable experience with complex and modern web designs with the ability to create meaningful and delightful experiences
+Experience maintaining and evolving design systems
+Working knowledge of current web-based technologies and frameworks (e.g. CSS, Angular, React) to inform design decisions
+Education
+Master's degree in design, human-computer interaction (HCI), or equivalent professional experience
+
+Role: Web Designer
+Industry Type: Software Product
+Department: UX, Design & Architecture
+Employment Type: Full Time, Permanent
+Role Category: Other Design
+Education
+PG: Any Postgraduate
